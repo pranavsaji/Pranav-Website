@@ -245,6 +245,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <meta name="theme-color" content="#040d1e" />
         <meta name="color-scheme" content="dark" />
         <meta name="format-detection" content="telephone=no" />
+        <link rel="image_src" href="https://pranav-saji.com/pranav-saji.png" />
+        <meta property="og:image" content="https://pranav-saji.com/pranav-saji.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Pranav Saji — AI Leader and Tech Entrepreneur, San Francisco" />
+        <meta name="twitter:image" content="https://pranav-saji.com/pranav-saji.png" />
+        <meta name="twitter:image:alt" content="Pranav Saji — AI Leader and Tech Entrepreneur, San Francisco" />
       </head>
       <body className="bg-[#040d1e] text-slate-100 min-h-screen">
         <Nav />

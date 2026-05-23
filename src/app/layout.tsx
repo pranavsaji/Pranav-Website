@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     siteName: "Pranav Saji",
     title: "Pranav Saji — AI Leader, Tech Entrepreneur & Full-Stack Engineer | San Francisco",
     description:
-      "AI Leader and Tech Entrepreneur building AI-first platforms. Head of AI Security at Symosis Security, ML Consultant at LinkedIn. $50M+ business impact. Fortune 500 clients: Amazon, Google, Meta.",
+      "AI Leader and Tech Entrepreneur building AI-first platforms. Head of AI Security at Symosis Security, ML Consultant at LinkedIn. $50M+ business impact. 10+ Fortune 500 clients: Amazon, Google, Meta & more.",
     images: [
       {
         url: "/pranav-saji.png",

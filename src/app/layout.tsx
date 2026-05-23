@@ -86,6 +86,9 @@ export const metadata: Metadata = {
   },
   alternates: { canonical: "https://pranav-saji.com" },
   category: "technology",
+  verification: {
+    google: "LsDURyp253LFvXtYjm_2y_3uCK3snwL3Z5tAHBHT7CM",
+  },
   icons: {
     icon: [
       { url: "/pranav-saji.png", type: "image/png" },

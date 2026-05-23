@@ -86,7 +86,7 @@ export default function Home() {
             <div className="flex justify-center lg:justify-end">
               <div className="relative">
                 <div className="absolute -inset-4 bg-gradient-to-br from-blue-600/20 via-indigo-600/12 to-sky-400/8 rounded-3xl blur-3xl" />
-                <div className="relative w-[320px] h-[400px] sm:w-[360px] sm:h-[450px] rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-blue-900/30">
+                <div className="relative w-[min(320px,calc(100vw-48px))] h-[400px] sm:w-[360px] sm:h-[450px] rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-blue-900/30">
                   <Image
                     src="/pranav-saji.png"
                     alt="Pranav Saji — AI Leader and Tech Entrepreneur in San Francisco Bay Area"

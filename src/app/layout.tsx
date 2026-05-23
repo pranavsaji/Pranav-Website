@@ -120,10 +120,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={geist.variable}>
       <head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }} />
-        <meta name="theme-color" content="#050816" />
+        <meta name="theme-color" content="#040d1e" />
         <link rel="canonical" href="https://pranav-saji.com" />
       </head>
-      <body className="bg-[#050816] text-slate-100 min-h-screen">
+      <body className="bg-[#040d1e] text-slate-100 min-h-screen">
         <Nav />
         <main>{children}</main>
         <Footer />

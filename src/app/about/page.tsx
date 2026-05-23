@@ -98,11 +98,11 @@ export default function About() {
       <section className="section-sm">
         <div className="container">
           <h2 className="heading-md text-white mb-8">Impact by the Numbers</h2>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {stats.map((s) => (
               <div key={s.value} className="stat-card text-center">
-                <div className="text-2xl font-bold text-gradient mb-1">{s.value}</div>
-                <div className="text-slate-400 text-xs leading-snug">{s.label}</div>
+                <div className="text-3xl sm:text-4xl font-bold text-gradient mb-2">{s.value}</div>
+                <div className="text-slate-400 text-sm leading-snug">{s.label}</div>
               </div>
             ))}
           </div>

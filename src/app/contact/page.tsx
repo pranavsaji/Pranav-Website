@@ -3,7 +3,7 @@ import Link from "next/link";
 import { siteConfig } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Contact — Pranav Saji",
+  title: "Contact — Pranav Saji | AI Leader San Francisco",
   description:
     "Contact Pranav Saji — AI Leader, Tech Entrepreneur, and Full-Stack Engineer in San Francisco Bay Area. Open to collaborations, speaking engagements, and advisory roles.",
   alternates: { canonical: "https://pranav-saji.com/contact" },

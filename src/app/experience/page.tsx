@@ -25,7 +25,7 @@ const workHistorySchema = {
       "@type": "ListItem",
       position: 1,
       item: {
-        "@type": "WorkBasedLearningProgram",
+        "@type": "Occupation",
         name: "Head of AI Security",
         description: "Building Security, ML, and GenAI workflows for security analytics, evidence-based risk scoring, and audit-ready reporting at enterprise scale.",
         provider: { "@type": "Organization", name: "Symosis Security" },
@@ -37,7 +37,7 @@ const workHistorySchema = {
       "@type": "ListItem",
       position: 2,
       item: {
-        "@type": "WorkBasedLearningProgram",
+        "@type": "Occupation",
         name: "Machine Learning Consultant",
         description: "Leading LinkedIn InfoSec's Custom SSPM initiative on Azure Databricks across 21+ applications and 50+ environments. Built AI agent achieving 90% triage accuracy for Fortune 500 clients.",
         provider: { "@type": "Organization", name: "LinkedIn", sameAs: "https://linkedin.com" },
@@ -49,7 +49,7 @@ const workHistorySchema = {
       "@type": "ListItem",
       position: 3,
       item: {
-        "@type": "WorkBasedLearningProgram",
+        "@type": "Occupation",
         name: "Co-Founder & CTO",
         description: "Architected and delivered an AI-powered dual-platform MVP in 2 months — 66% ahead of the planned 6-month timeline.",
         provider: { "@type": "Organization", name: "Referrio.io" },
@@ -62,7 +62,7 @@ const workHistorySchema = {
       "@type": "ListItem",
       position: 4,
       item: {
-        "@type": "WorkBasedLearningProgram",
+        "@type": "Occupation",
         name: "Founding Engineer",
         description: "Built the core GenAI-powered real estate platform from the ground up at a Y Combinator F24 company.",
         provider: { "@type": "Organization", name: "Flair Labs", description: "Y Combinator F24" },
@@ -73,7 +73,7 @@ const workHistorySchema = {
       "@type": "ListItem",
       position: 5,
       item: {
-        "@type": "WorkBasedLearningProgram",
+        "@type": "Occupation",
         name: "Data Scientist",
         description: "Built real-time fraud detection systems and healthcare data pipelines for Fortune 500 clients.",
         provider: { "@type": "Organization", name: "Deloitte", sameAs: "https://www.deloitte.com" },

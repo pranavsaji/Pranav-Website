@@ -3,7 +3,7 @@ import Link from "next/link";
 import { recognitions, certifications } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Recognitions & Awards — Pranav Saji | AI Leader",
+  title: "Recognitions & Awards — Pranav Saji | AI Leader San Francisco",
   description:
     "Pranav Saji — Core Judge and Featured Speaker at the USAII Global Hackathon. Founding Engineer at Y Combinator F24 startup Flair Labs. Microsoft, Databricks, Oracle, and CompTIA certified AI engineer.",
   alternates: { canonical: "https://pranav-saji.com/recognitions" },

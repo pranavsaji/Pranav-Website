@@ -233,7 +233,7 @@ export const publications = [
 
 export const stats = [
   { value: "$50M+", label: "Business impact delivered across clients & ventures" },
-  { value: "3M+", label: "LinkedIn professionals reached through AI leadership" },
+  { value: "5+", label: "AI companies founded, co-founded, or led as CTO / Head of Engineering" },
   { value: "Fortune 500", label: "Enterprise clients — Amazon, Google, Meta & beyond" },
 ];
 

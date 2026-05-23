@@ -6,8 +6,47 @@ import { stats, experiences, skillCategories } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Pranav Saji — AI Leader, Tech Entrepreneur & Full-Stack Engineer | San Francisco",
   description:
-    "Pranav Saji is a Tech Entrepreneur, Generative AI Expert, Full-Stack Engineer, and Product Leader based in San Francisco Bay Area. Head of AI Security at Symosis Security, Machine Learning Consultant at LinkedIn. Ex-Deloitte.",
+    "Pranav Saji — AI Leader and Tech Entrepreneur in San Francisco. Head of AI Security at Symosis Security, ML Consultant at LinkedIn. $50M+ business impact. Fortune 500 clients: Amazon, Google, Meta. Ex-Deloitte.",
   alternates: { canonical: "https://pranav-saji.com" },
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Who is Pranav Saji?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Pranav Saji is an AI Leader, Tech Entrepreneur, and Full-Stack Engineer based in San Francisco Bay Area. He is currently Head of AI Security at Symosis Security and Machine Learning Consultant at LinkedIn, with over $50M in business impact delivered across Fortune 500 clients including Amazon, Google, and Meta. Previously a Data Scientist at Deloitte and Founding Engineer at Flair Labs (Y Combinator F24).",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What does Pranav Saji do?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Pranav Saji builds AI-first platforms and enterprise security systems. He leads AI security engineering at Symosis Security and heads LinkedIn's Custom SSPM initiative on Azure Databricks. He has co-founded multiple startups and led engineering teams across AI, full-stack, and cloud infrastructure domains.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Where is Pranav Saji located?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Pranav Saji is based in the San Francisco Bay Area, California, USA.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What companies has Pranav Saji worked with?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Pranav Saji has worked with LinkedIn (as ML Consultant), Deloitte (as Data Scientist), and consulted for Fortune 500 enterprises including Amazon, Google, and Meta on AI security and machine learning initiatives. He also co-founded Referrio and served as Head of Engineering at BreatheIT, and was Founding Engineer at Flair Labs (YC F24).",
+      },
+    },
+  ],
 };
 
 export default function Home() {
@@ -15,6 +54,7 @@ export default function Home() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {/* ── Hero ─────────────────────────────────────── */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
         {/* Background glows */}

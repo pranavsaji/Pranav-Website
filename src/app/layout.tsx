@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import { Geist } from "next/font/google";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
     template: "%s — Pranav Saji",
   },
   description:
-    "Pranav Saji is a Tech Entrepreneur, Generative AI Expert, Full-Stack Engineer, and Product Leader in San Francisco Bay Area. Head of AI Security at Symosis Security, Machine Learning Consultant at LinkedIn. Ex-Deloitte. Microsoft, Databricks, Oracle, Comptia certified.",
+    "Pranav Saji — AI Leader and Tech Entrepreneur in San Francisco. Head of AI Security at Symosis Security, Machine Learning Consultant at LinkedIn. $50M+ business impact. Ex-Deloitte. MS Computer Science, Illinois Tech.",
   keywords: [
     "Pranav Saji",
     "pranav saji",
@@ -25,14 +26,24 @@ export const metadata: Metadata = {
     "Pranav Saji Generative AI",
     "Pranav Saji portfolio",
     "pranav saji website",
-    "AI Leader San Francisco",
-    "Generative AI Expert Bay Area",
+    "Pranav Saji Illinois Tech",
+    "Pranav Saji Deloitte",
+    "Pranav Saji LangChain",
+    "Pranav Saji machine learning",
+    "Pranav Saji AI security",
+    "AI Leader San Francisco Bay Area",
+    "Generative AI Expert San Francisco",
     "Machine Learning Consultant LinkedIn",
-    "Head of AI Security",
+    "Head of AI Security San Francisco",
     "Full Stack Engineer AI San Francisco",
-    "USAII Hackathon Judge Speaker",
-    "LangChain engineer San Francisco",
-    "RAG AI engineer",
+    "AI Tech Entrepreneur Bay Area",
+    "LangChain RAG engineer San Francisco",
+    "Azure Databricks ML engineer",
+    "USAII Global Hackathon Judge",
+    "YC F24 Founding Engineer",
+    "AI consultant Fortune 500",
+    "GenAI engineer San Francisco",
+    "AI security engineer San Francisco",
   ],
   authors: [{ name: "Pranav Saji", url: "https://pranav-saji.com" }],
   creator: "Pranav Saji",
@@ -42,28 +53,60 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://pranav-saji.com",
     siteName: "Pranav Saji",
-    title: "Pranav Saji — AI Leader, Tech Entrepreneur & Full-Stack Engineer",
+    title: "Pranav Saji — AI Leader, Tech Entrepreneur & Full-Stack Engineer | San Francisco",
     description:
-      "Tech Entrepreneur, Generative AI Expert, and Full-Stack Engineer building AI-first platforms. Head of AI Security at Symosis Security, ML Consultant at LinkedIn. Based in San Francisco Bay Area.",
-    images: [{ url: "/pranav-saji.png", width: 800, height: 1000, alt: "Pranav Saji" }],
+      "AI Leader and Tech Entrepreneur building AI-first platforms. Head of AI Security at Symosis Security, ML Consultant at LinkedIn. $50M+ business impact. Fortune 500 clients: Amazon, Google, Meta.",
+    images: [
+      {
+        url: "/pranav-saji.png",
+        width: 1200,
+        height: 630,
+        alt: "Pranav Saji — AI Leader and Tech Entrepreneur, San Francisco",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pranav Saji — AI Leader & Full-Stack Engineer",
-    description: "Tech Entrepreneur, Generative AI Expert, Full-Stack Engineer. San Francisco Bay Area.",
+    title: "Pranav Saji — AI Leader & Tech Entrepreneur | San Francisco",
+    description:
+      "AI Leader, Tech Entrepreneur, Full-Stack Engineer. Head of AI Security at Symosis Security, ML Consultant at LinkedIn. $50M+ business impact.",
+    creator: "@pranavsaji",
     images: ["/pranav-saji.png"],
   },
   robots: {
     index: true,
     follow: true,
-    googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
   },
   alternates: { canonical: "https://pranav-saji.com" },
+  category: "technology",
 };
 
-const personSchema = {
+const siteSchema = {
   "@context": "https://schema.org",
   "@graph": [
+    {
+      "@type": "ProfilePage",
+      "@id": "https://pranav-saji.com/#profilepage",
+      url: "https://pranav-saji.com",
+      name: "Pranav Saji — AI Leader, Tech Entrepreneur & Full-Stack Engineer",
+      isPartOf: { "@id": "https://pranav-saji.com/#website" },
+      about: { "@id": "https://pranav-saji.com/#pranav-saji" },
+      dateCreated: "2024-01-01",
+      dateModified: "2026-05-22",
+      breadcrumb: {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://pranav-saji.com" },
+        ],
+      },
+    },
     {
       "@type": "Person",
       "@id": "https://pranav-saji.com/#pranav-saji",
@@ -71,16 +114,44 @@ const personSchema = {
       givenName: "Pranav",
       familyName: "Saji",
       url: "https://pranav-saji.com",
-      image: { "@type": "ImageObject", url: "https://pranav-saji.com/pranav-saji.png" },
+      image: {
+        "@type": "ImageObject",
+        "@id": "https://pranav-saji.com/#photo",
+        url: "https://pranav-saji.com/pranav-saji.png",
+        width: 360,
+        height: 450,
+        caption: "Pranav Saji — AI Leader and Tech Entrepreneur in San Francisco Bay Area",
+      },
+      description:
+        "AI Leader, Tech Entrepreneur, and Full-Stack Engineer based in San Francisco Bay Area. Head of AI Security at Symosis Security, Machine Learning Consultant at LinkedIn. $50M+ in business impact. MS Computer Science from Illinois Institute of Technology.",
       jobTitle: ["Head of AI Security", "Machine Learning Consultant", "Tech Entrepreneur"],
       worksFor: [
-        { "@type": "Organization", name: "Symosis Security" },
-        { "@type": "Organization", name: "LinkedIn" },
+        {
+          "@type": "Organization",
+          name: "Symosis Security",
+          url: "https://symosis.io",
+        },
+        {
+          "@type": "Organization",
+          name: "LinkedIn",
+          url: "https://linkedin.com",
+          sameAs: "https://www.linkedin.com",
+        },
       ],
       alumniOf: [
-        { "@type": "CollegeOrUniversity", name: "Illinois Institute of Technology" },
-        { "@type": "CollegeOrUniversity", name: "Model Engineering College" },
-        { "@type": "CollegeOrUniversity", name: "International Institute of Information Technology Bangalore" },
+        {
+          "@type": "CollegeOrUniversity",
+          name: "Illinois Institute of Technology",
+          url: "https://www.iit.edu",
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          name: "Model Engineering College",
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          name: "International Institute of Information Technology Bangalore",
+        },
       ],
       address: {
         "@type": "PostalAddress",
@@ -95,8 +166,49 @@ const personSchema = {
         "https://pranavsaji.github.io/",
       ],
       knowsAbout: [
-        "Generative AI", "Machine Learning", "AI Security", "Full-Stack Engineering",
-        "Next.js", "React", "LangChain", "RAG", "Azure Databricks", "Python", "Node.js",
+        "Generative AI",
+        "Large Language Models",
+        "AI Security",
+        "Machine Learning",
+        "LangChain",
+        "Retrieval-Augmented Generation",
+        "Azure Databricks",
+        "Full-Stack Engineering",
+        "Next.js",
+        "React",
+        "Python",
+        "Node.js",
+        "Cloud Architecture",
+        "SSPM",
+        "HIPAA Compliance",
+        "Enterprise AI",
+      ],
+      hasCredential: [
+        {
+          "@type": "EducationalOccupationalCredential",
+          name: "Microsoft Certified",
+          credentialCategory: "certification",
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          name: "Databricks Certified",
+          credentialCategory: "certification",
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          name: "Oracle Certified",
+          credentialCategory: "certification",
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          name: "CompTIA Certified",
+          credentialCategory: "certification",
+        },
+      ],
+      award: [
+        "Core Judge — USAII Global Hackathon",
+        "Speaker — USAII Global Hackathon",
+        "Founding Engineer — Flair Labs (Y Combinator F24)",
       ],
     },
     {
@@ -104,24 +216,25 @@ const personSchema = {
       "@id": "https://pranav-saji.com/#website",
       url: "https://pranav-saji.com",
       name: "Pranav Saji",
-      description: "Personal website of Pranav Saji — AI Leader, Tech Entrepreneur, Full-Stack Engineer",
+      description:
+        "Personal website of Pranav Saji — AI Leader, Tech Entrepreneur, and Full-Stack Engineer in San Francisco Bay Area.",
       publisher: { "@id": "https://pranav-saji.com/#pranav-saji" },
-      potentialAction: {
-        "@type": "SearchAction",
-        target: { "@type": "EntryPoint", urlTemplate: "https://pranav-saji.com/search?q={search_term_string}" },
-        "query-input": "required name=search_term_string",
-      },
+      inLanguage: "en-US",
     },
   ],
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className={geist.variable}>
       <head>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteSchema) }}
+        />
         <meta name="theme-color" content="#040d1e" />
-        <link rel="canonical" href="https://pranav-saji.com" />
+        <meta name="color-scheme" content="dark" />
+        <meta name="format-detection" content="telephone=no" />
       </head>
       <body className="bg-[#040d1e] text-slate-100 min-h-screen">
         <Nav />

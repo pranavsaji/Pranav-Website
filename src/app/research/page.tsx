@@ -3,16 +3,48 @@ import Link from "next/link";
 import { publications } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Research & Publications — Pranav Saji",
+  title: "Research & Publications — Pranav Saji | AI Engineer",
   description:
-    "Published research by Pranav Saji: RF Sensor for Food Adulteration Detection and Emotion Detection in Speech Using CNN. Research at the intersection of hardware sensing and deep learning.",
+    "Peer-reviewed research by Pranav Saji: RF Sensor for Food Adulteration Detection and Emotion Detection in Speech Using CNN. Published work at the intersection of hardware sensing, signal processing, and deep learning.",
   alternates: { canonical: "https://pranav-saji.com/research" },
   openGraph: {
     title: "Research & Publications — Pranav Saji",
     description:
-      "Peer-reviewed research: RF Sensor for Food Adulteration Detection, Emotion Detection in Speech Using CNN.",
+      "Peer-reviewed research by Pranav Saji: RF Sensor for Food Adulteration Detection, Emotion Detection in Speech Using CNN.",
     url: "https://pranav-saji.com/research",
   },
+};
+
+const publicationsSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Research Publications by Pranav Saji",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      item: {
+        "@type": "ScholarlyArticle",
+        name: "RF Sensor for Food Adulteration Detection",
+        author: { "@type": "Person", name: "Pranav Saji", url: "https://pranav-saji.com" },
+        about: "A hardware-based RF sensing approach for detecting food adulteration using signal processing techniques.",
+        keywords: ["RF sensor", "food adulteration", "signal processing", "hardware sensing"],
+        inLanguage: "en",
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      item: {
+        "@type": "ScholarlyArticle",
+        name: "Emotion Detection in Speech Using CNN",
+        author: { "@type": "Person", name: "Pranav Saji", url: "https://pranav-saji.com" },
+        about: "Deep learning approach to classifying emotional states from speech audio using Convolutional Neural Networks.",
+        keywords: ["emotion detection", "speech recognition", "CNN", "deep learning", "audio classification"],
+        inLanguage: "en",
+      },
+    },
+  ],
 };
 
 const breadcrumb = {
@@ -28,6 +60,7 @@ export default function Research() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(publicationsSchema) }} />
 
       <div className="page-header">
         <div className="container">

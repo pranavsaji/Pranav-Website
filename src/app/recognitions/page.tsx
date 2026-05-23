@@ -3,16 +3,61 @@ import Link from "next/link";
 import { recognitions, certifications } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Recognitions — Pranav Saji",
+  title: "Recognitions & Awards — Pranav Saji | AI Leader",
   description:
-    "Pranav Saji — Core Judge and Speaker at the USAII Global Hackathon. Founding Engineer at Y Combinator F24 company Flair Labs. Microsoft, Databricks, Oracle, and Comptia certified.",
+    "Pranav Saji — Core Judge and Featured Speaker at the USAII Global Hackathon. Founding Engineer at Y Combinator F24 startup Flair Labs. Microsoft, Databricks, Oracle, and CompTIA certified AI engineer.",
   alternates: { canonical: "https://pranav-saji.com/recognitions" },
   openGraph: {
-    title: "Recognitions & Events — Pranav Saji",
+    title: "Recognitions & Awards — Pranav Saji",
     description:
-      "USAII Global Hackathon Core Judge & Speaker. YC F24 Founding Engineer. Microsoft, Databricks, Oracle certified.",
+      "USAII Global Hackathon Core Judge & Speaker. Y Combinator F24 Founding Engineer. Microsoft, Databricks, Oracle, CompTIA certified.",
     url: "https://pranav-saji.com/recognitions",
   },
+};
+
+const awardsSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Recognitions and Awards — Pranav Saji",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      item: {
+        "@type": "Event",
+        name: "USAII Global Hackathon — Core Judge",
+        description: "Selected as a Core Judge for the USAII Global Hackathon, one of the premier global AI competitions. Evaluated cutting-edge AI innovations from teams worldwide.",
+        performer: { "@type": "Person", name: "Pranav Saji", url: "https://pranav-saji.com" },
+        organizer: { "@type": "Organization", name: "USAII" },
+        eventStatus: "https://schema.org/EventScheduled",
+        about: "Artificial Intelligence Competition",
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      item: {
+        "@type": "Event",
+        name: "USAII Global Hackathon — Featured Speaker",
+        description: "Featured speaker sharing insights on Generative AI, AI security, and the future of AI-first product development to a global audience.",
+        performer: { "@type": "Person", name: "Pranav Saji", url: "https://pranav-saji.com" },
+        organizer: { "@type": "Organization", name: "USAII" },
+        eventStatus: "https://schema.org/EventScheduled",
+        about: "Generative AI, AI Security",
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      item: {
+        "@type": "Role",
+        name: "Founding Engineer — Flair Labs (Y Combinator F24)",
+        description: "Selected as Founding Engineer at Flair Labs, a Y Combinator F24 company. Built the core GenAI-powered real estate platform from the ground up.",
+        roleName: "Founding Engineer",
+        about: { "@type": "Organization", name: "Flair Labs", description: "Y Combinator F24 company" },
+      },
+    },
+  ],
 };
 
 const breadcrumb = {
@@ -46,6 +91,7 @@ export default function Recognitions() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(awardsSchema) }} />
 
       <div className="page-header">
         <div className="container">

@@ -3,16 +3,84 @@ import Link from "next/link";
 import { experiences } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Experience — Pranav Saji",
+  title: "Experience — Pranav Saji | AI Leader San Francisco",
   description:
-    "Full work history of Pranav Saji — Head of AI Security at Symosis Security, Machine Learning Consultant at LinkedIn, Co-Founder at Referrio, Head of Engineering at BreatheIT, Founding Engineer at Flair Labs (YC F24), AI Consultant at Syndicate Bio, and Data Scientist at Deloitte.",
+    "Pranav Saji's full career: Head of AI Security at Symosis Security, ML Consultant at LinkedIn (Amazon, Google, Meta clients), Co-Founder at Referrio, Head of Engineering at BreatheIT, Founding Engineer at Flair Labs (YC F24), Data Scientist at Deloitte.",
   alternates: { canonical: "https://pranav-saji.com/experience" },
   openGraph: {
-    title: "Experience — Pranav Saji",
+    title: "Professional Experience — Pranav Saji | AI Leader San Francisco",
     description:
-      "Full career history: Symosis Security, LinkedIn, Referrio, BreatheIT, Flair Labs (YC F24), Syndicate Bio, Deloitte.",
+      "AI leadership across Symosis Security, LinkedIn, Flair Labs (YC F24), BreatheIT, Referrio, and Deloitte. $50M+ business impact. Fortune 500 clients.",
     url: "https://pranav-saji.com/experience",
   },
+};
+
+const workHistorySchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Pranav Saji — Work Experience",
+  description: "Professional experience of Pranav Saji, AI Leader and Tech Entrepreneur",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      item: {
+        "@type": "WorkBasedLearningProgram",
+        name: "Head of AI Security",
+        description: "Building Security, ML, and GenAI workflows for security analytics, evidence-based risk scoring, and audit-ready reporting at enterprise scale.",
+        provider: { "@type": "Organization", name: "Symosis Security" },
+        startDate: "2026-02",
+        occupationalCategory: "AI Security Engineering",
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      item: {
+        "@type": "WorkBasedLearningProgram",
+        name: "Machine Learning Consultant",
+        description: "Leading LinkedIn InfoSec's Custom SSPM initiative on Azure Databricks across 21+ applications and 50+ environments. Built AI agent achieving 90% triage accuracy for Fortune 500 clients.",
+        provider: { "@type": "Organization", name: "LinkedIn", sameAs: "https://linkedin.com" },
+        startDate: "2024-12",
+        occupationalCategory: "Machine Learning Engineering",
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      item: {
+        "@type": "WorkBasedLearningProgram",
+        name: "Co-Founder & CTO",
+        description: "Architected and delivered an AI-powered dual-platform MVP in 2 months — 66% ahead of the planned 6-month timeline.",
+        provider: { "@type": "Organization", name: "Referrio.io" },
+        startDate: "2025-02",
+        endDate: "2025-08",
+        occupationalCategory: "Software Engineering",
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 4,
+      item: {
+        "@type": "WorkBasedLearningProgram",
+        name: "Founding Engineer",
+        description: "Built the core GenAI-powered real estate platform from the ground up at a Y Combinator F24 company.",
+        provider: { "@type": "Organization", name: "Flair Labs", description: "Y Combinator F24" },
+        occupationalCategory: "Full-Stack Engineering",
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 5,
+      item: {
+        "@type": "WorkBasedLearningProgram",
+        name: "Data Scientist",
+        description: "Built real-time fraud detection systems and healthcare data pipelines for Fortune 500 clients.",
+        provider: { "@type": "Organization", name: "Deloitte", sameAs: "https://www.deloitte.com" },
+        occupationalCategory: "Data Science",
+      },
+    },
+  ],
 };
 
 const breadcrumb = {
@@ -28,6 +96,7 @@ export default function Experience() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(workHistorySchema) }} />
 
       <div className="page-header">
         <div className="container">
@@ -59,7 +128,7 @@ export default function Experience() {
                       className={`w-2.5 h-2.5 rounded-full border-2 ${
                         exp.current
                           ? "border-blue-500 bg-blue-500"
-                          : "border-blue-500/50 bg-[#050816]"
+                          : "border-blue-500/50 bg-[#040d1e]"
                       }`}
                     />
                   </div>

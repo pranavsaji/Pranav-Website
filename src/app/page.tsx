@@ -85,16 +85,17 @@ export default function Home() {
             {/* Photo */}
             <div className="flex justify-center lg:justify-end">
               <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-indigo-600/15 to-blue-400/10 rounded-full blur-2xl scale-110" />
-                <div className="relative w-72 h-72 sm:w-80 sm:h-80 rounded-full overflow-hidden border border-white/10 ring-1 ring-blue-500/20">
+                <div className="absolute -inset-4 bg-gradient-to-br from-blue-600/20 via-indigo-600/12 to-sky-400/8 rounded-3xl blur-3xl" />
+                <div className="relative w-[320px] h-[400px] sm:w-[360px] sm:h-[450px] rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-blue-900/30">
                   <Image
                     src="/pranav-saji.png"
                     alt="Pranav Saji — AI Leader and Tech Entrepreneur in San Francisco Bay Area"
                     fill
                     priority
                     className="object-cover object-top"
-                    sizes="(max-width: 640px) 288px, 320px"
+                    sizes="(max-width: 640px) 320px, 360px"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#040d1e]/40 via-transparent to-transparent" />
                 </div>
               </div>
             </div>
@@ -106,11 +107,11 @@ export default function Home() {
       <section className="section-sm">
         <div className="container">
           <div className="divider mb-12" />
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {stats.map((s) => (
               <div key={s.value} className="stat-card text-center">
-                <div className="text-2xl sm:text-3xl font-bold text-gradient mb-1">{s.value}</div>
-                <div className="text-slate-400 text-xs sm:text-sm leading-snug">{s.label}</div>
+                <div className="text-3xl sm:text-4xl font-bold text-gradient mb-2">{s.value}</div>
+                <div className="text-slate-400 text-sm leading-snug">{s.label}</div>
               </div>
             ))}
           </div>

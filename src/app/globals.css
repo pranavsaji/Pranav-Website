@@ -11,8 +11,8 @@ html {
 }
 
 body {
-  background: #050816;
-  color: #f8fafc;
+  background: #040d1e;
+  color: #f1f5f9;
   font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
   line-height: 1.6;
 }
@@ -41,7 +41,7 @@ body {
 
 /* ── Gradient text ─────────────────────────────── */
 .text-gradient {
-  background: linear-gradient(135deg, #60a5fa 0%, #818cf8 50%, #38bdf8 100%);
+  background: linear-gradient(135deg, #3b82f6 0%, #6366f1 50%, #0ea5e9 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -148,7 +148,7 @@ body {
   height: 10px;
   border-radius: 50%;
   border: 2px solid #3b82f6;
-  background: #050816;
+  background: #040d1e;
   flex-shrink: 0;
   margin-top: 6px;
 }
@@ -175,16 +175,17 @@ body {
 
 /* ── Stat card ─────────────────────────────────── */
 .stat-card {
-  background: linear-gradient(135deg, rgba(37, 99, 235, 0.08), rgba(99, 102, 241, 0.08));
-  border: 1px solid rgba(96, 165, 250, 0.15);
-  border-radius: 12px;
-  padding: 24px;
-  transition: transform 0.2s, border-color 0.2s;
+  background: linear-gradient(145deg, rgba(30, 64, 175, 0.12), rgba(67, 56, 202, 0.08));
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 16px;
+  padding: 32px 24px;
+  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
 }
 
 .stat-card:hover {
-  transform: translateY(-2px);
-  border-color: rgba(96, 165, 250, 0.3);
+  transform: translateY(-3px);
+  border-color: rgba(59, 130, 246, 0.4);
+  box-shadow: 0 8px 32px rgba(59, 130, 246, 0.12);
 }
 
 /* ── Recognition card ──────────────────────────── */
@@ -199,7 +200,7 @@ body {
 
 /* ── Scrollbar ─────────────────────────────────── */
 ::-webkit-scrollbar { width: 5px; }
-::-webkit-scrollbar-track { background: #050816; }
+::-webkit-scrollbar-track { background: #040d1e; }
 ::-webkit-scrollbar-thumb {
   background: rgba(59, 130, 246, 0.4);
   border-radius: 3px;

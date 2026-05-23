@@ -232,10 +232,9 @@ export const publications = [
 ];
 
 export const stats = [
-  { value: "$3M+", label: "Cost savings delivered at LinkedIn" },
-  { value: "92%", label: "AI triage accuracy achieved (from 60%)" },
-  { value: "83%", label: "Reduction in document processing time" },
-  { value: "66%", label: "Ahead of schedule at Referrio" },
+  { value: "$50M+", label: "Business impact delivered across clients & ventures" },
+  { value: "3M+", label: "LinkedIn professionals reached through AI leadership" },
+  { value: "Fortune 500", label: "Enterprise clients — Amazon, Google, Meta & beyond" },
 ];
 
 export const recognitions = [

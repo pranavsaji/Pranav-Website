@@ -109,8 +109,8 @@ const siteSchema = {
       isPartOf: { "@id": "https://pranav-saji.com/#website" },
       mainEntity: { "@id": "https://pranav-saji.com/#pranav-saji" },
       about: { "@id": "https://pranav-saji.com/#pranav-saji" },
-      dateCreated: "2024-01-01",
-      dateModified: "2026-05-22",
+      dateCreated: "2024-01-01T00:00:00Z",
+      dateModified: "2026-05-22T00:00:00Z",
       breadcrumb: {
         "@type": "BreadcrumbList",
         itemListElement: [

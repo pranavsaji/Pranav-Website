@@ -269,11 +269,4 @@ export const recognitions = [
     link: "https://aihackathon.usaii.org/global-ai-builder-series",
     linkLabel: "View Speaker Lineup",
   },
-  {
-    title: "Founding Engineer",
-    event: "Flair Labs — Y Combinator F24",
-    type: "FOUNDING",
-    description:
-      "Selected as Founding Engineer at Flair Labs, a Y Combinator F24 company. Built the core GenAI-powered real estate platform from the ground up.",
-  },
 ];

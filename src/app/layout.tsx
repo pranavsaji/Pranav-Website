@@ -86,6 +86,13 @@ export const metadata: Metadata = {
   },
   alternates: { canonical: "https://pranav-saji.com" },
   category: "technology",
+  icons: {
+    icon: [
+      { url: "/pranav-saji.png", type: "image/png" },
+    ],
+    apple: "/pranav-saji.png",
+    shortcut: "/pranav-saji.png",
+  },
 };
 
 const siteSchema = {

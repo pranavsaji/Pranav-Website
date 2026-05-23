@@ -78,14 +78,18 @@ export default function About() {
             </div>
 
             <div className="flex justify-center lg:justify-end">
-              <div className="relative w-64 h-64 rounded-2xl overflow-hidden border border-white/8">
-                <Image
-                  src="/pranav-saji.png"
-                  alt="Pranav Saji — AI Leader and Tech Entrepreneur in San Francisco"
-                  fill
-                  className="object-cover object-top"
-                  sizes="256px"
-                />
+              <div className="relative">
+                <div className="absolute -inset-4 bg-gradient-to-br from-blue-600/20 via-indigo-600/12 to-sky-400/8 rounded-3xl blur-3xl" />
+                <div className="relative w-64 h-80 rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-blue-900/30">
+                  <Image
+                    src="/pranav-saji.png"
+                    alt="Pranav Saji — AI Leader and Tech Entrepreneur in San Francisco"
+                    fill
+                    className="object-cover object-top"
+                    sizes="256px"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#040d1e]/40 via-transparent to-transparent" />
+                </div>
               </div>
             </div>
           </div>

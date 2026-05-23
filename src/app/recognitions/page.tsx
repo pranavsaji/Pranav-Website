@@ -26,9 +26,10 @@ const awardsSchema = {
       item: {
         "@type": "Event",
         name: "USAII Global Hackathon — Core Judge",
+        url: "https://aihackathon.usaii.org/global-ai-builder-series",
         description: "Selected as a Core Judge for the USAII Global Hackathon, one of the premier global AI competitions. Evaluated cutting-edge AI innovations from teams worldwide.",
         performer: { "@type": "Person", name: "Pranav Saji", url: "https://pranav-saji.com" },
-        organizer: { "@type": "Organization", name: "USAII" },
+        organizer: { "@type": "Organization", name: "USAII", url: "https://usaii.org" },
         eventStatus: "https://schema.org/EventScheduled",
         about: "Artificial Intelligence Competition",
       },
@@ -39,9 +40,10 @@ const awardsSchema = {
       item: {
         "@type": "Event",
         name: "USAII Global Hackathon — Featured Speaker",
+        url: "https://aihackathon.usaii.org/global-ai-builder-series",
         description: "Featured speaker sharing insights on Generative AI, AI security, and the future of AI-first product development to a global audience.",
         performer: { "@type": "Person", name: "Pranav Saji", url: "https://pranav-saji.com" },
-        organizer: { "@type": "Organization", name: "USAII" },
+        organizer: { "@type": "Organization", name: "USAII", url: "https://usaii.org" },
         eventStatus: "https://schema.org/EventScheduled",
         about: "Generative AI, AI Security",
       },
@@ -129,7 +131,21 @@ export default function Recognitions() {
                   </div>
                   <h3 className="text-white font-semibold text-base mb-1">{rec.title}</h3>
                   <p className="text-sm mb-3" style={{ color: s.text }}>{rec.event}</p>
-                  <p className="text-slate-400 text-sm leading-relaxed">{rec.description}</p>
+                  <p className="text-slate-400 text-sm leading-relaxed mb-4">{rec.description}</p>
+                  {rec.link && (
+                    <a
+                      href={rec.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-xs font-medium transition-opacity opacity-70 hover:opacity-100"
+                      style={{ color: s.text }}
+                    >
+                      {rec.linkLabel}
+                      <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
+                  )}
                 </article>
               );
             })}

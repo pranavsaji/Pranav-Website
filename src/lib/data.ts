@@ -244,6 +244,8 @@ export const recognitions = [
     type: "JUDGE",
     description:
       "Selected as a Core Judge for the USAII Global Hackathon — one of the premier global AI competitions. Evaluated cutting-edge AI innovations and projects from teams worldwide.",
+    link: "https://aihackathon.usaii.org/global-ai-builder-series",
+    linkLabel: "View Speaker Lineup",
   },
   {
     title: "Speaker",
@@ -251,6 +253,8 @@ export const recognitions = [
     type: "SPEAKER",
     description:
       "Featured speaker at the USAII Global Hackathon, sharing insights on Generative AI, AI security, and the future of AI-first product development to a global audience.",
+    link: "https://aihackathon.usaii.org/global-ai-builder-series",
+    linkLabel: "View Speaker Lineup",
   },
   {
     title: "Founding Engineer",

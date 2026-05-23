@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     siteName: "Pranav Saji",
     title: "Pranav Saji — AI Leader, Tech Entrepreneur & Full-Stack Engineer | San Francisco",
     description:
-      "AI Leader and Tech Entrepreneur building AI-first platforms. Head of AI Security at Symosis Security, ML Consultant at LinkedIn. $50M+ business impact. 10+ Fortune 500 clients: Amazon, Google, Meta & more.",
+      "AI Leader and Tech Entrepreneur building AI-first platforms. Head of AI Security at Symosis Security, ML Consultant at LinkedIn. $50M+ business impact. Clients from Fortune 100 companies to multiple successful startups.",
     images: [
       {
         url: "/pranav-saji.png",
@@ -206,9 +206,9 @@ const siteSchema = {
         },
       ],
       award: [
-        "Core Judge — USAII Global Hackathon",
-        "Speaker — USAII Global Hackathon",
-        "Founding Engineer — Flair Labs (Y Combinator F24)",
+        "Core Judge at USAII Global Hackathon",
+        "Featured Speaker at USAII Global Hackathon",
+        "Founding Engineer at Flair Labs (Y Combinator F24)",
       ],
     },
     {

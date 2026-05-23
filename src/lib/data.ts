@@ -234,7 +234,7 @@ export const publications = [
 export const stats = [
   { value: "$50M+", label: "Business impact delivered across clients & ventures" },
   { value: "5+", label: "AI companies founded, co-founded, or led as CTO / Head of Engineering" },
-  { value: "10+", label: "Clients from Fortune 100 companies to multiple successful startups" },
+  { value: "20+", label: "Clients from Fortune 100 companies to multiple successful startups" },
 ];
 
 export const recognitions = [

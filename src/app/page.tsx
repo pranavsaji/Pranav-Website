@@ -77,12 +77,12 @@ export default function Home() {
               <p className="text-slate-300 text-xl font-medium mb-4 leading-snug">
                 AI Leader · Tech Entrepreneur
                 <br />
-                Full-Stack Engineer
+                Engineer · Security
               </p>
 
               <p className="text-slate-400 text-base leading-relaxed mb-8 max-w-lg">
-                Building AI-first platforms that deliver measurable business outcomes.
-                Head of AI Security at{" "}
+                I build AI systems that create real business leverage — $50M+ in impact
+                across Fortune 100 companies and high-growth startups. Head of AI Security at{" "}
                 <span className="text-slate-200">Symosis Security</span>{" "}
                 and Machine Learning Consultant at{" "}
                 <span className="text-slate-200">LinkedIn</span>.

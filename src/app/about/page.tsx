@@ -46,34 +46,34 @@ export default function About() {
           <div className="grid lg:grid-cols-[1fr_320px] gap-12 items-start">
             <div className="space-y-5 text-slate-400 text-base leading-relaxed">
               <p>
-                I&apos;m Pranav Saji — a Tech Entrepreneur, Full-Stack Engineer, Generative AI Expert,
-                and Product Leader who architects and scales AI-first platforms that deliver measurable
-                business outcomes and intuitive user experiences.
-              </p>
-              <p>
-                My expertise spans the full stack: frontend development with React, Next.js, and React
-                Native; backend systems with Node.js, Python, Flask, and FastAPI; cloud-native
-                microservices on Azure, AWS, and GCP; and AI/ML engineering with LangChain, RAG
-                architectures, and large language models.
+                I build AI systems that create real business leverage — not demos, but production
+                infrastructure that scales. My work sits at the intersection of AI engineering,
+                security, and product strategy, with a track record of{" "}
+                <span className="text-slate-200 font-medium">$50M+ in measurable business impact</span>{" "}
+                across Fortune 100 companies and high-growth startups.
               </p>
               <p>
                 Currently, I lead AI security engineering at{" "}
-                <span className="text-slate-200 font-medium">Symosis Security</span>, where I build
-                GenAI workflows for security analytics and evidence-based risk scoring. Simultaneously,
-                I serve as a Machine Learning Consultant at{" "}
-                <span className="text-slate-200 font-medium">LinkedIn</span>, leading the InfoSec
-                team&apos;s Custom SSPM initiative across Azure Databricks.
+                <span className="text-slate-200 font-medium">Symosis Security</span>, architecting
+                GenAI workflows for security analytics and evidence-based risk scoring. In parallel,
+                I drive the InfoSec Custom SSPM initiative as a Machine Learning Consultant at{" "}
+                <span className="text-slate-200 font-medium">LinkedIn</span> — spanning 21+
+                applications across 50+ environments on Azure Databricks.
               </p>
               <p>
-                Before that, I co-founded Referrio, served as Head of Engineering at BreatheIT,
-                and was a Founding Engineer at Flair Labs — a Y Combinator F24 company. Earlier in my
-                career, I was a Data Scientist at{" "}
-                <span className="text-slate-200 font-medium">Deloitte</span>, where I built real-time
-                fraud detection systems and healthcare data pipelines for Fortune 500 clients.
+                I have founded and led engineering at multiple AI companies: co-founded Referrio,
+                served as Head of Engineering at BreatheIT, and was a Founding Engineer at{" "}
+                <span className="text-slate-200 font-medium">Flair Labs (Y Combinator F24)</span>.
+                Earlier, as a Data Scientist at{" "}
+                <span className="text-slate-200 font-medium">Deloitte</span>, I built real-time
+                fraud detection and HIPAA-compliant healthcare data pipelines for Fortune 500 clients.
               </p>
               <p>
-                I hold a Master of Science in Computer Science with a specialization in Artificial
-                Intelligence from the Illinois Institute of Technology, Chicago.
+                My technical range covers the full delivery stack: React, Next.js, Node.js, Python,
+                FastAPI; cloud-native architecture on Azure, AWS, and GCP; and AI/ML systems built
+                on LangChain, RAG, and large language models. I hold an{" "}
+                <span className="text-slate-200 font-medium">MS in Computer Science (AI)</span>{" "}
+                from Illinois Institute of Technology.
               </p>
             </div>
 

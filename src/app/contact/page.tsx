@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/lib/data";
+import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact — Pranav Saji | AI Leader San Francisco",
@@ -68,7 +69,13 @@ export default function Contact() {
       <section className="section-sm">
         <div className="container">
           <div className="grid lg:grid-cols-[1fr_360px] gap-12">
-            {/* Contact channels */}
+            {/* Contact form */}
+            <div>
+              <h2 className="text-white font-semibold text-base mb-6">Send a Message</h2>
+              <ContactForm />
+            </div>
+
+            {/* Sidebar */}
             <div className="space-y-4">
               {channels.map((ch) => (
                 <a
@@ -95,14 +102,6 @@ export default function Contact() {
                   </svg>
                 </a>
               ))}
-            </div>
-
-            {/* Sidebar */}
-            <div className="space-y-4">
-              <div className="card p-6">
-                <h2 className="text-white font-medium text-sm mb-3">Location</h2>
-                <p className="text-slate-400 text-sm">San Francisco Bay Area, CA</p>
-              </div>
 
               <div className="card p-6">
                 <h2 className="text-white font-medium text-sm mb-3">Open to</h2>
@@ -122,15 +121,8 @@ export default function Contact() {
               </div>
 
               <div className="card p-6">
-                <h2 className="text-white font-medium text-sm mb-3">Portfolio</h2>
-                <a
-                  href={siteConfig.portfolio}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-400 text-sm hover:text-blue-300 transition-colors"
-                >
-                  pranavsaji.github.io →
-                </a>
+                <h2 className="text-white font-medium text-sm mb-2">Location</h2>
+                <p className="text-slate-400 text-sm">San Francisco Bay Area, CA</p>
               </div>
             </div>
           </div>

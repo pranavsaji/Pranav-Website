@@ -82,7 +82,7 @@ export default function Research() {
               <article key={i} className="card p-7">
                 <h2 className="text-white font-semibold text-base leading-snug mb-3">{pub.title}</h2>
                 <p className="text-slate-400 text-sm leading-relaxed mb-5">{pub.description}</p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mb-5">
                   {pub.tags.map((tag) => (
                     <span
                       key={tag}
@@ -92,6 +92,19 @@ export default function Research() {
                     </span>
                   ))}
                 </div>
+                {pub.url && (
+                  <a
+                    href={pub.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-xs font-medium text-blue-400 hover:text-blue-300 transition-colors"
+                  >
+                    View Publication
+                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                )}
               </article>
             ))}
           </div>

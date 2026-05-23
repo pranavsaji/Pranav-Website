@@ -7,7 +7,6 @@ export const siteConfig = {
   email: "pranavs.mec@gmail.com",
   linkedin: "https://www.linkedin.com/in/pranav-saji/",
   github: "https://github.com/pranavsaji",
-  portfolio: "https://pranavsaji.github.io/",
   location: "San Francisco Bay Area",
 };
 
@@ -222,12 +221,14 @@ export const publications = [
     description:
       "Research leveraging Radio Frequency sensors to detect food adulteration, combining signal processing techniques with machine learning classifiers for accurate, non-destructive detection.",
     tags: ["RF Sensors", "Signal Processing", "Machine Learning", "Food Safety"],
+    url: "https://www.jpier.org/issues/volume.html?paper=20090103",
   },
   {
     title: "Emotion Detection in Speech Using CNN",
     description:
       "Deep learning approach using Convolutional Neural Networks for real-time emotion recognition in speech signals, achieving high accuracy across multiple emotional states.",
     tags: ["CNN", "Deep Learning", "NLP", "Speech Analysis"],
+    url: "https://ijircce.com/admin/main/storage/app/pdf/k4xULe5uygjmxMGOHpDQmSI6HvvdVeqtdeK8jo0M.pdf",
   },
 ];
 

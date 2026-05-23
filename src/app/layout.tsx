@@ -107,6 +107,7 @@ const siteSchema = {
       url: "https://pranav-saji.com",
       name: "Pranav Saji — AI Leader, Tech Entrepreneur & Full-Stack Engineer",
       isPartOf: { "@id": "https://pranav-saji.com/#website" },
+      mainEntity: { "@id": "https://pranav-saji.com/#pranav-saji" },
       about: { "@id": "https://pranav-saji.com/#pranav-saji" },
       dateCreated: "2024-01-01",
       dateModified: "2026-05-22",

@@ -208,11 +208,23 @@ export const education = [
 ];
 
 export const certifications = [
-  { name: "Azure Databricks Platform Architect", issuer: "Databricks" },
-  { name: "Generative AI: Working with Large Language Models", issuer: "LinkedIn Learning" },
-  { name: "Career Essentials in Generative AI", issuer: "Microsoft & LinkedIn" },
-  { name: "Introduction to TensorFlow for AI, ML, and Deep Learning", issuer: "DeepLearning.AI / Coursera" },
-  { name: "Installing, Running and Testing LLMs Locally", issuer: "LinkedIn Learning" },
+  { name: "CompTIA Security+", issuer: "CompTIA" },
+  { name: "Microsoft Certified: Azure AI Engineer Associate", issuer: "Microsoft" },
+  { name: "Oracle Cloud Infrastructure 2024 Generative AI Certified Professional", issuer: "Oracle" },
+  { name: "Academy Accreditation - Azure Databricks Platform Architect", issuer: "Databricks" },
+  { name: "Academy Accreditation - Databricks Fundamentals", issuer: "Databricks" },
+  { name: "Academy Accreditation - Generative AI Fundamentals", issuer: "Databricks" },
+  { name: "Building Agentic Workflows with LlamaIndex", issuer: "DataCamp" },
+  { name: "Multi-Agent Systems with LangGraph", issuer: "DataCamp" },
+  { name: "Building Scalable Agentic Systems", issuer: "DataCamp" },
+  { name: "Career Essentials in Generative AI by Microsoft and LinkedIn", issuer: "Microsoft" },
+  { name: "Generative AI: Working with Large Language Models", issuer: "LinkedIn" },
+  { name: "Installing, Running and Testing LLMs on Your Local Computer", issuer: "LinkedIn" },
+  { name: "Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning", issuer: "Coursera" },
+  { name: "Neural Networks and Deep Learning", issuer: "Coursera" },
+  { name: "Structuring Machine Learning Projects", issuer: "Coursera" },
+  { name: "Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization", issuer: "Coursera" },
+  { name: "Introduction to FPGA Design for Embedded Systems", issuer: "Coursera" },
 ];
 
 export const publications = [

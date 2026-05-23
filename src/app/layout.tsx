@@ -195,26 +195,15 @@ const siteSchema = {
         "Enterprise AI",
       ],
       hasCredential: [
-        {
-          "@type": "EducationalOccupationalCredential",
-          name: "Microsoft Certified",
-          credentialCategory: "certification",
-        },
-        {
-          "@type": "EducationalOccupationalCredential",
-          name: "Databricks Certified",
-          credentialCategory: "certification",
-        },
-        {
-          "@type": "EducationalOccupationalCredential",
-          name: "Oracle Certified",
-          credentialCategory: "certification",
-        },
-        {
-          "@type": "EducationalOccupationalCredential",
-          name: "CompTIA Certified",
-          credentialCategory: "certification",
-        },
+        { "@type": "EducationalOccupationalCredential", name: "CompTIA Security+", credentialCategory: "certification" },
+        { "@type": "EducationalOccupationalCredential", name: "Microsoft Certified: Azure AI Engineer Associate", credentialCategory: "certification" },
+        { "@type": "EducationalOccupationalCredential", name: "Oracle Cloud Infrastructure 2024 Generative AI Certified Professional", credentialCategory: "certification" },
+        { "@type": "EducationalOccupationalCredential", name: "Academy Accreditation - Azure Databricks Platform Architect", credentialCategory: "certification" },
+        { "@type": "EducationalOccupationalCredential", name: "Academy Accreditation - Databricks Fundamentals", credentialCategory: "certification" },
+        { "@type": "EducationalOccupationalCredential", name: "Academy Accreditation - Generative AI Fundamentals", credentialCategory: "certification" },
+        { "@type": "EducationalOccupationalCredential", name: "Building Agentic Workflows with LlamaIndex", credentialCategory: "certification" },
+        { "@type": "EducationalOccupationalCredential", name: "Multi-Agent Systems with LangGraph", credentialCategory: "certification" },
+        { "@type": "EducationalOccupationalCredential", name: "Building Scalable Agentic Systems", credentialCategory: "certification" },
       ],
       award: [
         "Core Judge at USAII Global Hackathon",

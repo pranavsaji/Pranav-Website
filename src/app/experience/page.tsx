@@ -3,12 +3,12 @@ import Link from "next/link";
 import { experiences } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Experience — Pranav Saji | AI Leader San Francisco",
+  title: "Experience - Pranav Saji | AI Leader San Francisco",
   description:
     "Pranav Saji's full career: Head of AI Security at Symosis Security, ML Consultant at LinkedIn (Amazon, Google, Meta clients), Co-Founder at Referrio, Head of Engineering at BreatheIT, Founding Engineer at Flair Labs (YC F24), Data Scientist at Deloitte.",
   alternates: { canonical: "https://pranav-saji.com/experience" },
   openGraph: {
-    title: "Professional Experience — Pranav Saji | AI Leader San Francisco",
+    title: "Professional Experience - Pranav Saji | AI Leader San Francisco",
     description:
       "AI leadership across Symosis Security, LinkedIn, Flair Labs (YC F24), BreatheIT, Referrio, and Deloitte. $50M+ business impact. Fortune 500 clients.",
     url: "https://pranav-saji.com/experience",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 const workHistorySchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  name: "Pranav Saji — Work Experience",
+  name: "Pranav Saji - Work Experience",
   description: "Professional experience of Pranav Saji, AI Leader and Tech Entrepreneur",
   itemListElement: [
     {
@@ -51,7 +51,7 @@ const workHistorySchema = {
       item: {
         "@type": "Occupation",
         name: "Co-Founder & CTO",
-        description: "Architected and delivered an AI-powered dual-platform MVP in 2 months — 66% ahead of the planned 6-month timeline.",
+        description: "Architected and delivered an AI-powered dual-platform MVP in 2 months - 66% ahead of the planned 6-month timeline.",
         provider: { "@type": "Organization", name: "Referrio.io" },
         startDate: "2025-02",
         endDate: "2025-08",
@@ -105,7 +105,7 @@ export default function Experience() {
             Professional <span className="text-gradient">Experience</span>
           </h1>
           <p className="text-slate-400 mt-3 text-base max-w-xl">
-            Building AI-powered products at scale — from enterprise security to Y Combinator-backed startups.
+            Building AI-powered products at scale - from enterprise security to Y Combinator-backed startups.
           </p>
         </div>
       </div>

@@ -4,9 +4,9 @@ import Link from "next/link";
 import { stats, experiences, skillCategories } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Pranav Saji — AI Leader, Tech Entrepreneur & Full-Stack Engineer | San Francisco",
+  title: "Pranav Saji - AI Leader, Tech Entrepreneur & Full-Stack Engineer | San Francisco",
   description:
-    "Pranav Saji — AI Leader and Tech Entrepreneur in San Francisco. Head of AI Security at Symosis Security, ML Consultant at LinkedIn. $50M+ business impact. Fortune 500 clients: Amazon, Google, Meta. Ex-Deloitte.",
+    "Pranav Saji - AI Leader and Tech Entrepreneur in San Francisco. Head of AI Security at Symosis Security, ML Consultant at LinkedIn. $50M+ business impact. Fortune 500 clients: Amazon, Google, Meta. Ex-Deloitte.",
   alternates: { canonical: "https://pranav-saji.com" },
 };
 
@@ -81,7 +81,7 @@ export default function Home() {
               </p>
 
               <p className="text-slate-400 text-base leading-relaxed mb-8 max-w-lg">
-                I build AI systems that create real business leverage — $50M+ in impact
+                I build AI systems that create real business leverage - $50M+ in impact
                 across Fortune 100 companies and high-growth startups. Head of AI Security at{" "}
                 <span className="text-slate-200">Symosis Security</span>{" "}
                 and Machine Learning Consultant at{" "}
@@ -129,7 +129,7 @@ export default function Home() {
                 <div className="relative w-[min(320px,calc(100vw-48px))] h-[400px] sm:w-[360px] sm:h-[450px] rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-blue-900/30">
                   <Image
                     src="/pranav-saji.png"
-                    alt="Pranav Saji — AI Leader and Tech Entrepreneur in San Francisco Bay Area"
+                    alt="Pranav Saji - AI Leader and Tech Entrepreneur in San Francisco Bay Area"
                     fill
                     priority
                     className="object-cover object-top"

@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Pranav Saji",
-  title: "Pranav Saji — AI Leader, Tech Entrepreneur & Full-Stack Engineer",
+  title: "Pranav Saji - AI Leader, Tech Entrepreneur & Full-Stack Engineer",
   description:
     "Pranav Saji is a Tech Entrepreneur, Generative AI Expert, Full-Stack Engineer, and Product Leader based in San Francisco Bay Area. Head of AI Security at Symosis Security, Machine Learning Consultant at LinkedIn. Ex-Deloitte.",
   url: "https://pranav-saji.com",
@@ -14,7 +14,7 @@ export const experiences = [
   {
     company: "Symosis Security",
     role: "Head of AI Security",
-    period: "Feb 2026 – Present",
+    period: "Feb 2026 - Present",
     location: "San Francisco Bay Area",
     current: true,
     points: [
@@ -26,23 +26,23 @@ export const experiences = [
   {
     company: "LinkedIn",
     role: "Machine Learning Consultant",
-    period: "Dec 2024 – Present",
+    period: "Dec 2024 - Present",
     location: "San Francisco Bay Area",
     current: true,
     points: [
       "Leading LinkedIn InfoSec's Custom SSPM initiative on Azure Databricks, spanning 21+ applications across 50+ environments.",
-      "Designed and implemented a Python-based AI agent using LangChain to automate Jira-based InfoSec ticket triage for high-profile clients (Amazon, Google, Meta) — achieving 90% accuracy vs. a 70% target, delivering 2 quarters of time savings.",
+      "Designed and implemented a Python-based AI agent using LangChain to automate Jira-based InfoSec ticket triage for high-profile clients (Amazon, Google, Meta) - achieving 90% accuracy vs. a 70% target, delivering 2 quarters of time savings.",
       "Developed 3 custom tools with dynamic workflows, deployed on Azure with Azure Key Vault and LangSmith for observability.",
     ],
   },
   {
     company: "Referrio.io",
     role: "Co-Founder & CTO",
-    period: "Feb 2025 – Aug 2025",
+    period: "Feb 2025 - Aug 2025",
     location: "San Francisco Bay Area",
     current: false,
     points: [
-      "Architected and delivered an AI-powered dual-platform MVP in 2 months — 66% ahead of the planned 6-month timeline.",
+      "Architected and delivered an AI-powered dual-platform MVP in 2 months - 66% ahead of the planned 6-month timeline.",
       "Built with Next.js, Node.js, Python, Prisma, Docker, GCP; deployed via Nginx and Cloudflare (WAF, CDN, SSL).",
       "Integrated AI-driven candidate scoring, real-time notification systems, and Stripe for automated referral payouts.",
     ],
@@ -50,7 +50,7 @@ export const experiences = [
   {
     company: "BreatheIT",
     role: "Head of Engineering",
-    period: "Nov 2024 – Jul 2025",
+    period: "Nov 2024 - Jul 2025",
     location: "United States",
     current: false,
     points: [
@@ -62,7 +62,7 @@ export const experiences = [
   {
     company: "BreatheIT",
     role: "Founding Engineer",
-    period: "Jul 2024 – Nov 2024",
+    period: "Jul 2024 - Nov 2024",
     location: "United States",
     current: false,
     points: [
@@ -73,7 +73,7 @@ export const experiences = [
   {
     company: "Syndicate Bio",
     role: "AI Consultant",
-    period: "Nov 2024 – Jul 2025",
+    period: "Nov 2024 - Jul 2025",
     location: "Chicago, IL",
     current: false,
     points: [
@@ -85,7 +85,7 @@ export const experiences = [
   {
     company: "Flair Labs (YC F24)",
     role: "Founding Engineer",
-    period: "Sep 2024 – Nov 2024",
+    period: "Sep 2024 - Nov 2024",
     location: "United States",
     current: false,
     points: [
@@ -97,7 +97,7 @@ export const experiences = [
   {
     company: "LinkedIn",
     role: "AI/ML Data Scientist",
-    period: "Mar 2024 – May 2024",
+    period: "Mar 2024 - May 2024",
     location: "Sunnyvale, CA",
     current: false,
     points: [
@@ -109,7 +109,7 @@ export const experiences = [
   {
     company: "CREWASIS.AI",
     role: "Data Scientist",
-    period: "Aug 2024 – Oct 2024",
+    period: "Aug 2024 - Oct 2024",
     location: "United States",
     current: false,
     points: [
@@ -119,7 +119,7 @@ export const experiences = [
   {
     company: "Illinois Institute of Technology",
     role: "Graduate Teaching Assistant",
-    period: "Sep 2023 – May 2024",
+    period: "Sep 2023 - May 2024",
     location: "Chicago, IL",
     current: false,
     points: [
@@ -129,13 +129,13 @@ export const experiences = [
   },
   {
     company: "Deloitte India",
-    role: "Analyst — Data Scientist",
-    period: "Nov 2020 – Jul 2022",
+    role: "Analyst - Data Scientist",
+    period: "Nov 2020 - Jul 2022",
     location: "Bengaluru, India",
     current: false,
     points: [
-      "Led credit card fraud detection system development — achieved 25% reduction in false positives using XGBoost, Apache Kafka, and Airflow.",
-      "Built healthcare PDF data extraction pipeline with CNN, PyTesseract, and spaCy — 75% increase in processing efficiency.",
+      "Led credit card fraud detection system development - achieved 25% reduction in false positives using XGBoost, Apache Kafka, and Airflow.",
+      "Built healthcare PDF data extraction pipeline with CNN, PyTesseract, and spaCy - 75% increase in processing efficiency.",
       "Delivered real-time analytics solutions for Fortune 500 financial and healthcare clients.",
     ],
   },
@@ -189,7 +189,7 @@ export const skillCategories = [
 export const education = [
   {
     school: "Illinois Institute of Technology",
-    degree: "Master of Science — Computer Science",
+    degree: "Master of Science - Computer Science",
     specialization: "Specialization in Artificial Intelligence",
     location: "Chicago, IL",
   },
@@ -201,7 +201,7 @@ export const education = [
   },
   {
     school: "Model Engineering College",
-    degree: "Bachelor of Technology — Electronics & Communications Engineering",
+    degree: "Bachelor of Technology - Electronics & Communications Engineering",
     specialization: "",
     location: "Kerala, India",
   },
@@ -256,7 +256,7 @@ export const recognitions = [
     event: "USAII Global Hackathon",
     type: "JUDGE",
     description:
-      "Selected as a Core Judge for the USAII Global Hackathon — one of the premier global AI competitions. Evaluated cutting-edge AI innovations and projects from teams worldwide.",
+      "Selected as a Core Judge for the USAII Global Hackathon - one of the premier global AI competitions. Evaluated cutting-edge AI innovations and projects from teams worldwide.",
     link: "https://aihackathon.usaii.org/global-ai-builder-series",
     linkLabel: "View Speaker Lineup",
   },

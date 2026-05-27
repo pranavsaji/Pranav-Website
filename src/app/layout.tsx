@@ -10,11 +10,11 @@ const geist = Geist({ subsets: ["latin"], variable: "--font-geist-sans" });
 export const metadata: Metadata = {
   metadataBase: new URL("https://pranav-saji.com"),
   title: {
-    default: "Pranav Saji — AI Leader, Tech Entrepreneur & Full-Stack Engineer | San Francisco",
-    template: "%s — Pranav Saji",
+    default: "Pranav Saji - AI Leader, Tech Entrepreneur & Full-Stack Engineer | San Francisco",
+    template: "%s - Pranav Saji",
   },
   description:
-    "Pranav Saji — AI Leader and Tech Entrepreneur in San Francisco. Head of AI Security at Symosis Security, Machine Learning Consultant at LinkedIn. $50M+ business impact. Ex-Deloitte. MS Computer Science, Illinois Tech.",
+    "Pranav Saji - AI Leader and Tech Entrepreneur in San Francisco. Head of AI Security at Symosis Security, Machine Learning Consultant at LinkedIn. $50M+ business impact. Ex-Deloitte. MS Computer Science, Illinois Tech.",
   keywords: [
     "Pranav Saji",
     "pranav saji",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://pranav-saji.com",
     siteName: "Pranav Saji",
-    title: "Pranav Saji — AI Leader, Tech Entrepreneur & Full-Stack Engineer | San Francisco",
+    title: "Pranav Saji - AI Leader, Tech Entrepreneur & Full-Stack Engineer | San Francisco",
     description:
       "AI Leader and Tech Entrepreneur building AI-first platforms. Head of AI Security at Symosis Security, ML Consultant at LinkedIn. $50M+ business impact. Clients from Fortune 100 companies to multiple successful startups.",
     images: [
@@ -61,13 +61,13 @@ export const metadata: Metadata = {
         url: "/pranav-saji.png",
         width: 1200,
         height: 630,
-        alt: "Pranav Saji — AI Leader and Tech Entrepreneur, San Francisco",
+        alt: "Pranav Saji - AI Leader and Tech Entrepreneur, San Francisco",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pranav Saji — AI Leader & Tech Entrepreneur | San Francisco",
+    title: "Pranav Saji - AI Leader & Tech Entrepreneur | San Francisco",
     description:
       "AI Leader, Tech Entrepreneur, Full-Stack Engineer. Head of AI Security at Symosis Security, ML Consultant at LinkedIn. $50M+ business impact.",
     creator: "@pranavsaji",
@@ -105,7 +105,7 @@ const siteSchema = {
       "@type": "ProfilePage",
       "@id": "https://pranav-saji.com/#profilepage",
       url: "https://pranav-saji.com",
-      name: "Pranav Saji — AI Leader, Tech Entrepreneur & Full-Stack Engineer",
+      name: "Pranav Saji - AI Leader, Tech Entrepreneur & Full-Stack Engineer",
       isPartOf: { "@id": "https://pranav-saji.com/#website" },
       mainEntity: { "@id": "https://pranav-saji.com/#pranav-saji" },
       about: { "@id": "https://pranav-saji.com/#pranav-saji" },
@@ -131,7 +131,7 @@ const siteSchema = {
         url: "https://pranav-saji.com/pranav-saji.png",
         width: 360,
         height: 450,
-        caption: "Pranav Saji — AI Leader and Tech Entrepreneur in San Francisco Bay Area",
+        caption: "Pranav Saji - AI Leader and Tech Entrepreneur in San Francisco Bay Area",
       },
       description:
         "AI Leader, Tech Entrepreneur, and Full-Stack Engineer based in San Francisco Bay Area. Head of AI Security at Symosis Security, Machine Learning Consultant at LinkedIn. $50M+ in business impact. MS Computer Science from Illinois Institute of Technology.",
@@ -217,7 +217,7 @@ const siteSchema = {
       url: "https://pranav-saji.com",
       name: "Pranav Saji",
       description:
-        "Personal website of Pranav Saji — AI Leader, Tech Entrepreneur, and Full-Stack Engineer in San Francisco Bay Area.",
+        "Personal website of Pranav Saji - AI Leader, Tech Entrepreneur, and Full-Stack Engineer in San Francisco Bay Area.",
       publisher: { "@id": "https://pranav-saji.com/#pranav-saji" },
       inLanguage: "en-US",
     },

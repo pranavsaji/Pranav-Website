@@ -6,10 +6,10 @@ import { education, certifications, stats } from "@/lib/data";
 export const metadata: Metadata = {
   title: "About Pranav Saji",
   description:
-    "Learn about Pranav Saji — Tech Entrepreneur, Generative AI Expert, and Full-Stack Engineer based in San Francisco Bay Area. MS Computer Science from Illinois Institute of Technology. Head of AI Security at Symosis Security.",
+    "Learn about Pranav Saji - Tech Entrepreneur, Generative AI Expert, and Full-Stack Engineer based in San Francisco Bay Area. MS Computer Science from Illinois Institute of Technology. Head of AI Security at Symosis Security.",
   alternates: { canonical: "https://pranav-saji.com/about" },
   openGraph: {
-    title: "About Pranav Saji — AI Leader & Tech Entrepreneur",
+    title: "About Pranav Saji - AI Leader & Tech Entrepreneur",
     description:
       "Tech Entrepreneur, Generative AI Expert, Full-Stack Engineer. MS CS from Illinois Tech. Head of AI Security at Symosis, ML Consultant at LinkedIn.",
     url: "https://pranav-saji.com/about",
@@ -46,7 +46,7 @@ export default function About() {
           <div className="grid lg:grid-cols-[1fr_320px] gap-12 items-start">
             <div className="space-y-5 text-slate-400 text-base leading-relaxed">
               <p>
-                I build AI systems that create real business leverage — not demos, but production
+                I build AI systems that create real business leverage - not demos, but production
                 infrastructure that scales. My work sits at the intersection of AI engineering,
                 security, and product strategy, with a track record of{" "}
                 <span className="text-slate-200 font-medium">$50M+ in measurable business impact</span>{" "}
@@ -57,7 +57,7 @@ export default function About() {
                 <span className="text-slate-200 font-medium">Symosis Security</span>, architecting
                 GenAI workflows for security analytics and evidence-based risk scoring. In parallel,
                 I drive the InfoSec Custom SSPM initiative as a Machine Learning Consultant at{" "}
-                <span className="text-slate-200 font-medium">LinkedIn</span> — spanning 21+
+                <span className="text-slate-200 font-medium">LinkedIn</span> - spanning 21+
                 applications across 50+ environments on Azure Databricks.
               </p>
               <p>
@@ -83,7 +83,7 @@ export default function About() {
                 <div className="relative w-64 h-80 rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-blue-900/30">
                   <Image
                     src="/pranav-saji.png"
-                    alt="Pranav Saji — AI Leader and Tech Entrepreneur in San Francisco"
+                    alt="Pranav Saji - AI Leader and Tech Entrepreneur in San Francisco"
                     fill
                     className="object-cover object-top"
                     sizes="256px"

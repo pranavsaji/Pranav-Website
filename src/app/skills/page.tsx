@@ -3,12 +3,12 @@ import Link from "next/link";
 import { skillCategories } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Skills — Pranav Saji | AI & Full-Stack Engineer San Francisco",
+  title: "Skills - Pranav Saji | AI & Full-Stack Engineer San Francisco",
   description:
     "Technical skills of Pranav Saji: Generative AI, LangChain, LLMs, RAG, React, Next.js, Node.js, Python, Azure, AWS, GCP, Docker, Kubernetes, AI Security, and more.",
   alternates: { canonical: "https://pranav-saji.com/skills" },
   openGraph: {
-    title: "Technical Skills — Pranav Saji",
+    title: "Technical Skills - Pranav Saji",
     description:
       "Full-stack capabilities: AI/ML, Frontend, Backend, Cloud, Security, and Data Engineering.",
     url: "https://pranav-saji.com/skills",

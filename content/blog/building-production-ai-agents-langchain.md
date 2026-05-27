@@ -9,7 +9,7 @@ readTime: "10 min read"
 featured: false
 ---
 
-There's a significant gap between "working in a notebook" and "running reliably in production with real users and real stakes." I've spent the last 18 months closing that gap on several LangChain-based agentic systems — including a production agent handling InfoSec ticket triage for Fortune 500 clients at LinkedIn.
+There's a significant gap between "working in a notebook" and "running reliably in production with real users and real stakes." I've spent the last 18 months closing that gap on several LangChain-based agentic systems - including a production agent handling InfoSec ticket triage for Fortune 500 clients at LinkedIn.
 
 This is what I wish I'd known at the start.
 
@@ -25,7 +25,7 @@ The pattern I've found most reliable is a **supervisor + specialized agent** arc
 
 This separation of concerns has three practical benefits: specialized agents can be prompted more precisely, failures are isolated (a broken sub-agent doesn't crash the whole pipeline), and you can update individual agents independently.
 
-In the InfoSec triage system, the supervisor agent routes tickets into categories (access requests, vulnerability reports, policy questions, escalations). Each category has a dedicated sub-agent with tools and prompts optimized for that specific workflow. This design hit 90% accuracy — vs. a 70% target — in part because the narrow scope made it possible to write much tighter prompts.
+In the InfoSec triage system, the supervisor agent routes tickets into categories (access requests, vulnerability reports, policy questions, escalations). Each category has a dedicated sub-agent with tools and prompts optimized for that specific workflow. This design hit 90% accuracy - vs. a 70% target - in part because the narrow scope made it possible to write much tighter prompts.
 
 ## Prompt Engineering for Production
 
@@ -33,9 +33,9 @@ The prompts that work in demos almost never work in production. The difference:
 
 **Production inputs are noisy.** Users don't write clean, well-formed inputs. They write with typos, jargon, incomplete context, mixed languages, and implicit assumptions. Your prompts need to handle this gracefully.
 
-**Edge cases matter.** In production, the distribution of inputs is long-tailed. 80% of inputs might be handled perfectly by a simple prompt. The other 20% — the long tail — is where agents fail, and in production, failures are costly.
+**Edge cases matter.** In production, the distribution of inputs is long-tailed. 80% of inputs might be handled perfectly by a simple prompt. The other 20% - the long tail - is where agents fail, and in production, failures are costly.
 
-**The prompt is an interface, not configuration.** Treat it like an API — define expected inputs and outputs explicitly, version it, test against a regression suite before deploying changes.
+**The prompt is an interface, not configuration.** Treat it like an API - define expected inputs and outputs explicitly, version it, test against a regression suite before deploying changes.
 
 Practical prompt engineering principles that have made a real difference:
 
@@ -46,16 +46,16 @@ Practical prompt engineering principles that have made a real difference:
 
 ## Tool Design: The Underrated Part
 
-Most LangChain resources focus on the LLM layer. The tool layer deserves equal attention — the quality of your tools determines the ceiling of your agent's capability.
+Most LangChain resources focus on the LLM layer. The tool layer deserves equal attention - the quality of your tools determines the ceiling of your agent's capability.
 
 **Tool interfaces should be designed for LLM consumption, not human consumption.** LLMs read tool descriptions and parameter schemas to decide how to use them. Ambiguous tool names, unclear parameter descriptions, and inconsistent return formats cause systematic errors.
 
 Rules I follow for tool design:
 - Tool names should be verb-first and specific: `search_jira_tickets`, not `jira` or `ticket_tool`
 - Every parameter should have a clear description explaining what values are valid and what effect they have
-- Return formats should be consistent and structured — the LLM needs to reliably parse what came back
+- Return formats should be consistent and structured - the LLM needs to reliably parse what came back
 - Include explicit failure modes in the return schema: a `success` boolean, an `error` field, and a structured `result` field
-- Limit each tool to one action — a tool that "looks up a user AND updates their status" is harder for an LLM to reason about than two separate tools
+- Limit each tool to one action - a tool that "looks up a user AND updates their status" is harder for an LLM to reason about than two separate tools
 
 **Tools should fail loudly, not silently.** A tool that returns `{"status": "ok", "result": null}` when it actually failed will cause the agent to proceed with incorrect information. Fail explicitly: `{"success": false, "error": "Record not found for ID 12345", "result": null}`.
 
@@ -65,7 +65,7 @@ Production agents fail in ways that are different from other software. These are
 
 **Retry logic with exponential backoff and jitter.** LLM API calls fail. Rate limits hit. Network timeouts happen. Every tool call and LLM call should be wrapped in retry logic that doesn't create thundering herd problems.
 
-**Explicit state management.** Agents working on multi-step tasks need to persist state across steps. Don't rely on the context window for this — externalize state to a database or cache. This enables recovery from mid-task failures without restarting from scratch.
+**Explicit state management.** Agents working on multi-step tasks need to persist state across steps. Don't rely on the context window for this - externalize state to a database or cache. This enables recovery from mid-task failures without restarting from scratch.
 
 **Timeout enforcement at every level.** Individual tool calls, LLM generation calls, and overall task execution should each have timeouts. An agent that runs indefinitely because one tool is hanging is a production incident.
 
@@ -80,7 +80,7 @@ Debugging agentic systems is hard without good tracing. LangSmith (LangChain's o
 The specific things it makes easy:
 
 - **Full trace inspection**: see exactly what prompt was sent, what the model generated, what tools were called, in what order, with what inputs and outputs
-- **Latency breakdowns**: identify which steps are slow (usually it's not the LLM — it's a slow API call in a tool)
+- **Latency breakdowns**: identify which steps are slow (usually it's not the LLM - it's a slow API call in a tool)
 - **Evaluation runs**: run a set of test inputs against two prompt versions and compare outputs side-by-side
 - **Failure analysis**: filter traces to only failed runs and find patterns in the inputs that caused failure
 

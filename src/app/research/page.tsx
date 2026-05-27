@@ -3,12 +3,12 @@ import Link from "next/link";
 import { publications } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Research & Publications — Pranav Saji | AI Engineer San Francisco",
+  title: "Research & Publications - Pranav Saji | AI Engineer San Francisco",
   description:
     "Peer-reviewed research by Pranav Saji: RF Sensor for Food Adulteration Detection and Emotion Detection in Speech Using CNN. Published work at the intersection of hardware sensing, signal processing, and deep learning.",
   alternates: { canonical: "https://pranav-saji.com/research" },
   openGraph: {
-    title: "Research & Publications — Pranav Saji",
+    title: "Research & Publications - Pranav Saji",
     description:
       "Peer-reviewed research by Pranav Saji: RF Sensor for Food Adulteration Detection, Emotion Detection in Speech Using CNN.",
     url: "https://pranav-saji.com/research",

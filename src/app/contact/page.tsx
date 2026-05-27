@@ -4,9 +4,9 @@ import { siteConfig } from "@/lib/data";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact — Pranav Saji | AI Leader San Francisco",
+  title: "Contact - Pranav Saji | AI Leader San Francisco",
   description:
-    "Contact Pranav Saji — AI Leader, Tech Entrepreneur, and Full-Stack Engineer in San Francisco Bay Area. Open to collaborations, speaking engagements, and advisory roles.",
+    "Contact Pranav Saji - AI Leader, Tech Entrepreneur, and Full-Stack Engineer in San Francisco Bay Area. Open to collaborations, speaking engagements, and advisory roles.",
   alternates: { canonical: "https://pranav-saji.com/contact" },
   openGraph: {
     title: "Contact Pranav Saji",

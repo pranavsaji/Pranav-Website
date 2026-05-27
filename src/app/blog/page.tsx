@@ -3,7 +3,7 @@ import Link from "next/link";
 import { getAllPosts, formatDate } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Blog — AI, Cybersecurity & Engineering Insights | Pranav Saji",
+  title: "Blog - AI, Cybersecurity & Engineering Insights | Pranav Saji",
   description:
     "Pranav Saji's blog on AI security, large language models, agentic systems, and enterprise AI engineering. Practical insights from the field.",
   keywords: [
@@ -20,9 +20,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://pranav-saji.com/blog",
-    title: "Blog — AI, Cybersecurity & Engineering Insights | Pranav Saji",
+    title: "Blog - AI, Cybersecurity & Engineering Insights | Pranav Saji",
     description:
-      "Practical insights on AI security, LLMs, agentic systems, and enterprise AI from Pranav Saji — Head of AI Security at Symosis Security.",
+      "Practical insights on AI security, LLMs, agentic systems, and enterprise AI from Pranav Saji - Head of AI Security at Symosis Security.",
     images: [{ url: "/pranav-saji.png", width: 1200, height: 630, alt: "Pranav Saji Blog" }],
   },
 };
@@ -32,7 +32,7 @@ const blogListingSchema = {
   "@type": "Blog",
   "@id": "https://pranav-saji.com/blog",
   url: "https://pranav-saji.com/blog",
-  name: "Pranav Saji — AI & Cybersecurity Blog",
+  name: "Pranav Saji - AI & Cybersecurity Blog",
   description:
     "Insights on AI security, large language models, agentic systems, and enterprise AI engineering.",
   author: {
@@ -78,7 +78,7 @@ export default function BlogPage() {
             </h1>
             <p className="text-slate-400 text-lg max-w-2xl">
               Practical writing on AI security, large language models, agentic
-              systems, and building AI that works in production — from the field.
+              systems, and building AI that works in production - from the field.
             </p>
           </div>
 
@@ -112,7 +112,7 @@ export default function BlogPage() {
 
           {posts.length === 0 && (
             <p className="text-slate-500 text-center py-20">
-              No posts yet — check back soon.
+              No posts yet - check back soon.
             </p>
           )}
         </div>

@@ -232,6 +232,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(siteSchema) }}
         />
+        <meta name="msvalidate.01" content="71F5BA4BF6EC8DC5AD859C5749CC68F2" />
         <meta name="theme-color" content="#040d1e" />
         <meta name="color-scheme" content="dark" />
         <meta name="format-detection" content="telephone=no" />

@@ -125,6 +125,7 @@ const siteSchema = {
       givenName: "Pranav",
       familyName: "Saji",
       url: "https://pranav-saji.com",
+      mainEntityOfPage: "https://pranav-saji.com/about",
       image: {
         "@type": "ImageObject",
         "@id": "https://pranav-saji.com/#photo",

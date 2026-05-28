@@ -5,7 +5,7 @@ import { experiences } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Experience - Pranav Saji | AI Leader San Francisco",
   description:
-    "Pranav Saji's full career: Head of AI Security at Symosis Security, ML Consultant at LinkedIn (Amazon, Google, Meta clients), Co-Founder at Referrio, Head of Engineering at BreatheIT, Founding Engineer at Flair Labs (YC F24), Analyst at Deloitte serving Fortune 500 clients.",
+    "Pranav Saji's full career: Head of AI Security at Symosis Security, ML Consultant at LinkedIn, Co-Founder at Referrio, Head of Engineering at BreatheIT, Founding Engineer at Flair Labs (YC F24), Analyst at Deloitte serving Fortune 500 clients.",
   alternates: { canonical: "https://pranav-saji.com/experience" },
   openGraph: {
     title: "Professional Experience - Pranav Saji | AI Leader San Francisco",

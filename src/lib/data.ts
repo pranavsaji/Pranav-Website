@@ -31,7 +31,7 @@ export const experiences = [
     current: true,
     points: [
       "Leading LinkedIn InfoSec's Custom SSPM initiative on Azure Databricks, spanning 21+ applications across 50+ environments.",
-      "Designed and implemented a Python-based AI agent using LangChain to automate Jira-based InfoSec ticket triage for high-profile clients (Amazon, Google, Meta) - achieving 90% accuracy vs. a 70% target, delivering 2 quarters of time savings.",
+      "Designed and implemented a Python-based AI agent using LangChain to automate Jira-based InfoSec ticket triage - achieving 90% accuracy vs. a 70% target, delivering 2 quarters of time savings.",
       "Developed 3 custom tools with dynamic workflows, deployed on Azure with Azure Key Vault and LangSmith for observability.",
     ],
   },

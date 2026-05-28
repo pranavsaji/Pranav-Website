@@ -6,7 +6,7 @@ import { stats, experiences, skillCategories } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Pranav Saji - AI Leader, Tech Entrepreneur & Full-Stack Engineer | San Francisco",
   description:
-    "Pranav Saji - AI Leader and Tech Entrepreneur in San Francisco. Head of AI Security at Symosis Security, ML Consultant at LinkedIn. $50M+ business impact. Fortune 500 clients: Amazon, Google, Meta. Ex-Deloitte.",
+    "Pranav Saji - AI Leader and Tech Entrepreneur in San Francisco. Head of AI Security at Symosis Security, ML Consultant at LinkedIn. $50M+ business impact across Fortune 500 clients and high-growth startups. Ex-Deloitte.",
   alternates: { canonical: "https://pranav-saji.com" },
 };
 
@@ -19,7 +19,7 @@ const faqSchema = {
       name: "Who is Pranav Saji?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Pranav Saji is an AI Leader, Tech Entrepreneur, and Full-Stack Engineer based in San Francisco Bay Area. He is currently Head of AI Security at Symosis Security and Machine Learning Consultant at LinkedIn, with over $50M in business impact delivered across Fortune 500 clients including Amazon, Google, and Meta. Previously an Analyst at Deloitte serving Fortune 500 clients, and Founding Engineer at Flair Labs (Y Combinator F24).",
+        text: "Pranav Saji is an AI Leader, Tech Entrepreneur, and Full-Stack Engineer based in San Francisco Bay Area. He is currently Head of AI Security at Symosis Security and Machine Learning Consultant at LinkedIn, with over $50M in business impact delivered across Fortune 500 clients and high-growth startups. Previously an Analyst at Deloitte serving Fortune 500 clients, and Founding Engineer at Flair Labs (Y Combinator F24).",
       },
     },
     {
@@ -43,7 +43,7 @@ const faqSchema = {
       name: "What companies has Pranav Saji worked with?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Pranav Saji has worked with LinkedIn (as ML Consultant), Deloitte (as Analyst serving Fortune 500 clients), and consulted for Fortune 500 enterprises including Amazon, Google, and Meta on AI security and machine learning initiatives. He also co-founded Referrio and served as Head of Engineering at BreatheIT, and was Founding Engineer at Flair Labs (YC F24).",
+        text: "Pranav Saji has worked with LinkedIn (as ML Consultant), Deloitte (as Analyst serving Fortune 500 clients), and consulted for Fortune 500 enterprises and high-growth startups on AI security and machine learning initiatives. He also co-founded Referrio and served as Head of Engineering at BreatheIT, and was Founding Engineer at Flair Labs (YC F24).",
       },
     },
   ],

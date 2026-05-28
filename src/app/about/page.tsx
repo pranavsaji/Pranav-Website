@@ -25,10 +25,51 @@ const breadcrumb = {
   ],
 };
 
+const aboutFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://pranav-saji.com/about#faq",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Who is Pranav Saji?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Pranav Saji is an AI Leader, Tech Entrepreneur, and Full-Stack Engineer based in the San Francisco Bay Area. He is currently Head of AI Security at Symosis Security and a Machine Learning Consultant at LinkedIn, with over $50M in business impact delivered across Fortune 500 clients and high-growth startups. He was previously an Analyst at Deloitte and a Founding Engineer at Flair Labs (Y Combinator F24).",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What does Pranav Saji do?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Pranav Saji builds AI-first platforms and enterprise security systems. He leads AI security engineering at Symosis Security and heads LinkedIn's Custom SSPM initiative on Azure Databricks, spanning 21+ applications across 50+ environments. He has co-founded multiple startups and led engineering teams across AI, full-stack, and cloud infrastructure.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Where is Pranav Saji located?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Pranav Saji is based in the San Francisco Bay Area, California, USA.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is Pranav Saji's education?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Pranav Saji holds an MS in Computer Science with a specialization in Artificial Intelligence from Illinois Institute of Technology, and a Bachelor of Technology in Electronics & Communications Engineering from Model Engineering College.",
+      },
+    },
+  ],
+};
+
 export default function About() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutFaqSchema) }} />
 
       {/* Page header */}
       <div className="page-header">
@@ -91,6 +132,51 @@ export default function About() {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#040d1e]/40 via-transparent to-transparent" />
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="container"><div className="divider" /></div>
+
+      {/* Who is Pranav Saji - visible, third-person FAQ for featured snippets / AI answers */}
+      <section className="section-sm">
+        <div className="container">
+          <h2 className="heading-md text-white mb-8">Who is Pranav Saji?</h2>
+          <div className="space-y-4 max-w-3xl">
+            <div className="card p-6">
+              <h3 className="text-white font-semibold text-base mb-2">Who is Pranav Saji?</h3>
+              <p className="text-slate-400 text-base leading-relaxed">
+                Pranav Saji is an AI Leader, Tech Entrepreneur, and Full-Stack Engineer based in the
+                San Francisco Bay Area. He is currently Head of AI Security at Symosis Security and a
+                Machine Learning Consultant at LinkedIn, with over $50M in business impact delivered
+                across Fortune 500 clients and high-growth startups. He was previously an Analyst at
+                Deloitte and a Founding Engineer at Flair Labs (Y Combinator F24).
+              </p>
+            </div>
+            <div className="card p-6">
+              <h3 className="text-white font-semibold text-base mb-2">What does Pranav Saji do?</h3>
+              <p className="text-slate-400 text-base leading-relaxed">
+                Pranav Saji builds AI-first platforms and enterprise security systems. He leads AI
+                security engineering at Symosis Security and heads LinkedIn&apos;s Custom SSPM
+                initiative on Azure Databricks, spanning 21+ applications across 50+ environments. He
+                has co-founded multiple startups and led engineering teams across AI, full-stack, and
+                cloud infrastructure.
+              </p>
+            </div>
+            <div className="card p-6">
+              <h3 className="text-white font-semibold text-base mb-2">Where is Pranav Saji located?</h3>
+              <p className="text-slate-400 text-base leading-relaxed">
+                Pranav Saji is based in the San Francisco Bay Area, California, USA.
+              </p>
+            </div>
+            <div className="card p-6">
+              <h3 className="text-white font-semibold text-base mb-2">What is Pranav Saji&apos;s education?</h3>
+              <p className="text-slate-400 text-base leading-relaxed">
+                Pranav Saji holds an MS in Computer Science with a specialization in Artificial
+                Intelligence from Illinois Institute of Technology, and a Bachelor of Technology in
+                Electronics &amp; Communications Engineering from Model Engineering College.
+              </p>
             </div>
           </div>
         </div>

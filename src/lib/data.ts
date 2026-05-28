@@ -129,7 +129,7 @@ export const experiences = [
   },
   {
     company: "Deloitte India",
-    role: "Analyst - Data Scientist",
+    role: "Analyst",
     period: "Nov 2020 - Jul 2022",
     location: "Bengaluru, India",
     current: false,

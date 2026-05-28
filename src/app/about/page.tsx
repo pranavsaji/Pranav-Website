@@ -64,9 +64,9 @@ export default function About() {
                 I have founded and led engineering at multiple AI companies: co-founded Referrio,
                 served as Head of Engineering at BreatheIT, and was a Founding Engineer at{" "}
                 <span className="text-slate-200 font-medium">Flair Labs (Y Combinator F24)</span>.
-                Earlier, as a Data Scientist at{" "}
-                <span className="text-slate-200 font-medium">Deloitte</span>, I built real-time
-                fraud detection and HIPAA-compliant healthcare data pipelines for Fortune 500 clients.
+                Earlier, as an Analyst at{" "}
+                <span className="text-slate-200 font-medium">Deloitte</span>, I served multiple
+                Fortune 500 clients delivering significant business impact.
               </p>
               <p>
                 My technical range covers the full delivery stack: React, Next.js, Node.js, Python,

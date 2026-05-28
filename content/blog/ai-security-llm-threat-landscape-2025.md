@@ -1,5 +1,5 @@
 ---
-title: "The LLM Threat Landscape: What Every Security Team Needs to Know in 2025"
+title: "The LLM Threat Landscape: What Every Security Team Needs to Know in 2026"
 slug: "ai-security-llm-threat-landscape-2025"
 date: "2026-05-20"
 category: "AI Cybersecurity"
@@ -11,7 +11,7 @@ featured: true
 
 Large language models are no longer a research novelty - they're embedded in customer-facing products, internal copilots, security tools, and infrastructure automation. And with that ubiquity comes an attack surface most security teams weren't trained to defend.
 
-This isn't theoretical. In 2024 and 2025, we've seen real-world exploits targeting LLM-integrated systems across healthcare, finance, and critical infrastructure. The threat landscape has matured faster than most defensive playbooks.
+This isn't theoretical. In 2025 and into 2026, we've seen real-world exploits targeting LLM-integrated systems across healthcare, finance, and critical infrastructure. The threat landscape has matured faster than most defensive playbooks.
 
 Here's what actually matters.
 
@@ -68,7 +68,7 @@ Best practices:
 
 ## Agentic Systems: The New Attack Surface
 
-The most consequential shift in 2025 is the proliferation of agentic AI systems - LLMs given tools, memory, and the ability to take multi-step actions autonomously. This fundamentally changes the threat model.
+The most consequential shift entering 2026 is the proliferation of agentic AI systems - LLMs given tools, memory, and the ability to take multi-step actions autonomously. This fundamentally changes the threat model.
 
 An agent with email access can be manipulated into exfiltrating data. An agent with code execution can be hijacked to run attacker-controlled commands. An agent with API credentials can be turned into an insider threat.
 

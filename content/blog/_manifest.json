@@ -1,8 +1,15 @@
 {
   "posts": [
     {
+      "slug": "claude-opus-4-8-what-leaders-need-to-know",
+      "title": "Claude Opus 4.8: What AI Leaders Actually Need to Know",
+      "category": "AI",
+      "date": "2026-05-28",
+      "topics": ["Claude Opus 4.8", "Anthropic", "agentic AI", "effort control", "dynamic workflows", "AI model benchmarks"]
+    },
+    {
       "slug": "ai-security-llm-threat-landscape-2025",
-      "title": "The LLM Threat Landscape: What Every Security Team Needs to Know in 2025",
+      "title": "The LLM Threat Landscape: What Every Security Team Needs to Know in 2026",
       "category": "AI Cybersecurity",
       "date": "2026-05-20",
       "topics": ["prompt injection", "model inversion", "jailbreaking", "supply chain attacks", "agentic systems", "LLM security"]
@@ -27,6 +34,34 @@
       "category": "AI",
       "date": "2026-05-05",
       "topics": ["LangChain", "production AI agents", "LLMOps", "agent architecture", "prompt engineering", "observability"]
+    },
+    {
+      "slug": "model-context-protocol-ai-tool-integration",
+      "title": "Model Context Protocol: The Standard That's Quietly Wiring AI to Everything",
+      "category": "AI",
+      "date": "2026-05-28",
+      "topics": ["MCP", "model context protocol", "AI tool integration", "agentic AI infrastructure", "AI standards"]
+    },
+    {
+      "slug": "eu-ai-act-compliance-guide-2026",
+      "title": "EU AI Act 2026: What High-Risk AI Systems Actually Need to Comply",
+      "category": "AI Cybersecurity",
+      "date": "2026-05-26",
+      "topics": ["EU AI Act", "AI compliance", "AI governance", "AI regulation", "high-risk AI systems"]
+    },
+    {
+      "slug": "ai-deepfake-threats-enterprise-2026",
+      "title": "Deepfake Threats in 2026: How Synthetic Media is Reshaping Enterprise Security",
+      "category": "AI Cybersecurity",
+      "date": "2026-05-24",
+      "topics": ["deepfakes", "synthetic media", "social engineering", "AI fraud", "identity security", "voice cloning"]
+    },
+    {
+      "slug": "reasoning-models-production-2026",
+      "title": "Reasoning Models in Production: When Extended Thinking Actually Pays Off",
+      "category": "AI",
+      "date": "2026-05-22",
+      "topics": ["reasoning models", "extended thinking", "Claude Opus", "o3", "LLMOps", "AI routing"]
     }
   ]
 }

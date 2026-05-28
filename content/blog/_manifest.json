@@ -1,6 +1,13 @@
 {
   "posts": [
     {
+      "slug": "mcp-poisoning-attack-defense-2026",
+      "title": "MCP Poisoning: The Supply Chain Attack Hiding Inside Your AI Agent",
+      "category": "AI Cybersecurity",
+      "date": "2026-05-28",
+      "topics": ["MCP poisoning", "tool poisoning", "rug pull attack", "MCP supply chain", "CVE-2025-54136", "agentic AI security", "prompt injection MCP"]
+    },
+    {
       "slug": "claude-opus-4-8-what-leaders-need-to-know",
       "title": "Claude Opus 4.8: What AI Leaders Actually Need to Know",
       "category": "AI",

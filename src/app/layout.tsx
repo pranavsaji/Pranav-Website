@@ -181,6 +181,7 @@ const siteSchema = {
         "https://orcid.org/0009-0007-9783-566X",
         "https://medium.com/@pranavs.mec",
         "https://x.com/PranavInnovates",
+        "https://www.youtube.com/channel/UCSSgLP-Jz11cwOQA3ILwR8w",
         "https://sessionize.com/Pranav-Saji/",
       ],
       knowsAbout: [

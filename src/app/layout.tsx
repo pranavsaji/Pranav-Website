@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     title: "Pranav Saji - AI Leader & Tech Entrepreneur | San Francisco",
     description:
       "AI Leader, Tech Entrepreneur, Full-Stack Engineer. Head of AI Security at Symosis Security, ML Consultant at LinkedIn. $50M+ business impact.",
-    creator: "@pranavsaji",
+    creator: "@PranavInnovates",
     images: ["/pranav-saji.png"],
   },
   robots: {
@@ -122,6 +122,7 @@ const siteSchema = {
       "@type": "Person",
       "@id": "https://pranav-saji.com/#pranav-saji",
       name: "Pranav Saji",
+      alternateName: "Pranav S",
       givenName: "Pranav",
       familyName: "Saji",
       url: "https://pranav-saji.com",
@@ -176,6 +177,11 @@ const siteSchema = {
         "https://www.linkedin.com/in/pranav-saji/",
         "https://github.com/pranavsaji",
         "https://pranavsaji.github.io/",
+        "https://www.wikidata.org/wiki/Q139970723",
+        "https://orcid.org/0009-0007-9783-566X",
+        "https://medium.com/@pranavs.mec",
+        "https://x.com/PranavInnovates",
+        "https://sessionize.com/Pranav-Saji/",
       ],
       knowsAbout: [
         "Generative AI",

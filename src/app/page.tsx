@@ -49,72 +49,11 @@ const faqSchema = {
   ],
 };
 
-const personSchema = {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": "https://pranav-saji.com/#pranav-saji",
-  name: "Pranav Saji",
-  alternateName: "Pranav S",
-  url: "https://pranav-saji.com",
-  image: "https://commons.wikimedia.org/wiki/Special:FilePath/Pranav-Photo.jpg",
-  jobTitle: "Head of AI Security",
-  description:
-    "AI Leader, Tech Entrepreneur, and Full-Stack Engineer based in the San Francisco Bay Area. Head of AI Security at Symosis Security and Machine Learning Consultant at LinkedIn.",
-  worksFor: [
-    { "@type": "Organization", name: "Symosis Security" },
-    {
-      "@type": "Organization",
-      name: "LinkedIn",
-      sameAs: "https://www.wikidata.org/wiki/Q213660",
-    },
-  ],
-  alumniOf: [
-    {
-      "@type": "CollegeOrUniversity",
-      name: "Illinois Institute of Technology",
-      sameAs: "https://www.wikidata.org/wiki/Q659706",
-    },
-    {
-      "@type": "CollegeOrUniversity",
-      name: "International Institute of Information Technology, Bangalore",
-      sameAs: "https://www.wikidata.org/wiki/Q1666651",
-    },
-    {
-      "@type": "CollegeOrUniversity",
-      name: "Model Engineering College",
-      sameAs: "https://www.wikidata.org/wiki/Q6888240",
-    },
-  ],
-  homeLocation: {
-    "@type": "Place",
-    name: "San Francisco Bay Area, California, USA",
-  },
-  knowsAbout: [
-    "Generative AI",
-    "Machine Learning",
-    "AI Security",
-    "Large Language Models",
-    "LangChain",
-    "Retrieval-Augmented Generation",
-    "Full-Stack Engineering",
-    "Cloud Architecture",
-  ],
-  sameAs: [
-    "https://www.linkedin.com/in/pranav-saji/",
-    "https://github.com/pranavsaji",
-    "https://www.wikidata.org/wiki/Q139970723",
-    "https://orcid.org/0009-0007-9783-566X",
-    "https://medium.com/@pranavs.mec",
-    "https://sessionize.com/Pranav-Saji/",
-  ],
-};
-
 export default function Home() {
   const featured = experiences.slice(0, 3);
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {/* ── Hero ─────────────────────────────────────── */}
       <section className="relative min-h-screen flex items-center overflow-hidden">

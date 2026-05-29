@@ -104,6 +104,7 @@ const personSchema = {
     "https://github.com/pranavsaji",
     "https://www.wikidata.org/wiki/Q139970723",
     "https://orcid.org/0009-0007-9783-566X",
+    "https://medium.com/@pranavs.mec",
     "https://sessionize.com/Pranav-Saji/",
   ],
 };

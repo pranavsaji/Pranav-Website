@@ -182,6 +182,7 @@ const siteSchema = {
         "https://medium.com/@pranavs.mec",
         "https://x.com/PranavInnovates",
         "https://www.youtube.com/channel/UCSSgLP-Jz11cwOQA3ILwR8w",
+        "https://www.instagram.com/pranavinnovates/",
         "https://sessionize.com/Pranav-Saji/",
       ],
       knowsAbout: [

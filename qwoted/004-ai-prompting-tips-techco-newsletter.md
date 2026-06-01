@@ -9,7 +9,7 @@
 | Type | Written interview for newsletter |
 | Deadline | Fri Jun 5, 4:00am (4 days) |
 | Status | Pitched |
-| Qwoted URL | https://app.qwoted.com (opportunity: AI experts who can give actionable tips on prompting AI tools) |
+| Qwoted URL | https://app.qwoted.com/source_requests/ai-experts-who-can-give-actionable-tips-on-prompting-ai-tools (opportunity: AI experts who can give actionable tips on prompting AI tools) |
 | Tags | AI, MachineLearning, DigitalTransformation, AiTOOLS, AIExperts, TechTips |
 
 ## What the Reporter Is Looking For
@@ -35,19 +35,19 @@ Audience: business leaders navigating AI. Goal: demystify AI, be actionable.
 
 Hi,
 
-I'm Pranav Saji, Head of AI Security at Symosis Security and a Machine Learning Consultant at LinkedIn. I build and deploy production AI agents every day, and I spend a significant part of that time engineering prompts that actually work in enterprise environments.
+I'm Pranav Saji, Head of AI Security at Symosis Security and a Machine Learning Consultant at LinkedIn. I spend my days building production AI agents, engineering the prompts that power them, and then trying to break those prompts before attackers do. That last part is a bit unusual and I think it gives me a perspective most AI experts will not bring to this piece.
 
-I would be a useful source for this piece because my prompting experience comes from real production systems with measurable outcomes. At LinkedIn, I built a LangChain-based AI agent for InfoSec ticket triage that hit 90% accuracy against a 70% target. The difference between 70% and 90% was almost entirely in how the prompts were structured. I can speak concretely to what that looks like.
+I have shipped real systems with measurable outcomes. At LinkedIn, I built a LangChain-based agent for InfoSec ticket triage that hit 90% accuracy against a 70% target. Most of the gap between those two numbers came down to how the prompts were written, not the model. I have also built tools that defend against prompt injection, which is what happens when someone crafts an input specifically designed to hijack what your AI does. Knowing how prompts get exploited makes you a much sharper prompt engineer on the legitimate side.
 
-On the specific topics you mentioned:
+On the specific things your newsletter is covering:
 
-Prompting templates: I use a consistent structure in production that I can walk through: role definition, context injection, output format constraints, and failure handling. Most businesses skip the last two and wonder why the output is inconsistent.
+Prompting templates: In production I follow a four-part structure every time: define the role, inject the context, constrain the output format, and specify what to do when the model is uncertain. Most businesses nail the first two and skip the last two, then wonder why the output is all over the place.
 
-Common mistakes: The biggest one I see is treating AI like a search engine. Business leaders type a question and expect an answer. Prompting well means giving the model a job, not asking it a question. That mindset shift changes everything about how employees engage with these tools.
+Common mistakes: Treating AI like a search engine is the big one. You type a question, you expect an answer. But prompting well means giving the model a job with a clear deliverable, not lobbing a query at it. That one mindset shift changes how every employee in a business interacts with these tools.
 
-Teaching employees: I have found that the fastest way to upskill a team is to show them one worked example end to end, then have them reverse-engineer why it worked. Abstract prompting principles do not stick. Concrete before-and-after examples do.
+Teaching employees: The fastest thing that works is a single worked example, end to end, followed by asking them to break it. Show them a prompt that works, then show them what happens when you remove one piece. People learn prompting by understanding why it fails, not by memorizing rules.
 
-Maximizing productivity: Specificity is the highest-leverage variable. The more precisely you define the output format, the less time you spend reformatting or re-running. For business use, I always prompt for structured output first, then style.
+Maximizing productivity: Specify the output format before you specify anything else. If you need a table, say so. If you need three bullet points, say so. Every minute spent reformatting AI output is a minute the prompt could have saved.
 
 Happy to do a written Q&A or a short call. Background: https://pranav-saji.com
 

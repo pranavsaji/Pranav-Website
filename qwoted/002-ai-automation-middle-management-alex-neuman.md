@@ -42,9 +42,25 @@ pranavs.mec@gmail.com
 https://pranav-saji.com
 https://www.linkedin.com/in/pranav-saji/
 
+## Reporter Follow-Up (Received Jun 1, 2026)
+
+Thanks for your pitch! Let's talk more. Let's have a 15 minute meeting to plan - there's no rush. I'm just using Qwoted to get more international speakers for my podcast/radio show here in Panama. Spanish is preferred (as most of my audience in Panama speaks Spanish) but English is welcome.
+
+Use my meeting link at https://cal.com/vidadigital/15min and we'll work on specifics.
+
+-- Alex Neuman
+
+## Response Sent
+
+Sounds great Alex. I will schedule some time for next week. I do not speak Spanish unfortunately but I can speak in English.
+
+## Next Step
+
+Book a slot at https://cal.com/vidadigital/15min for next week.
+
 ## Outcome
 
-- [ ] Selected for podcast
-- [ ] Not selected
-- [ ] Follow-up needed
+- [x] Reporter replied and invited to podcast meeting (Jun 1, 2026)
+- [ ] Meeting scheduled
+- [ ] Episode recorded
 - [ ] Episode published: URL ___

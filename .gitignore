@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# private press outreach content
+/qwoted/
+/media-article/
+/PRESS-KIT.md

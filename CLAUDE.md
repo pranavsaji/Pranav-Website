@@ -39,5 +39,23 @@ npm run lint     # ESLint
 - Deploy: Vercel (connected to GitHub, auto-deploys on push to `main`)
 - Domain: pranav-saji.com
 
+## Press Outreach Structure
+
+### media-article/
+Contains drafted articles for trade publication submission. One file per article. Each file has a comment block at the top with submission metadata (outlet, email, word count, status). Do not deploy these as web pages — they are working documents only.
+
+| File | Outlet | Status |
+|---|---|---|
+| `mcp-poisoning-your-agent-trusts-its-tools.md` | HackerNoon | Submitted, in review |
+| `sspm-illusion-of-control-dark-reading.md` | Dark Reading | Ready to send |
+| `deepfake-cfo-fraud-sc-media.md` | SC Media | Ready to send |
+| `ai-agents-fail-integration-layer-venturebeat.md` | VentureBeat | Submitted, watch Google Doc |
+| `ai-finds-zero-days-what-security-teams-must-do.md` | Dark Reading / SC Media | Ready to send |
+
+### qwoted/
+One file per Qwoted journalist opportunity. Named `NNN-short-description-reporter-name.md`. Each file contains: opportunity details, why it fits Pranav, the exact pitch sent, and an outcome tracker. Update outcome when the article publishes or the pitch is not selected.
+
+Convention: never write a new pitch without creating a corresponding file here first.
+
 ## Last Updated
-2026-05-22
+2026-06-01

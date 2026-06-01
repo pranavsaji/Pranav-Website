@@ -10,6 +10,7 @@
 | Deadline | Sun Jul 2, 9:00am |
 | Status | Pitched |
 | Tags | MentalHealth, ArtificialIntelligence, AI, SocialBehavior, Technology, HumanBehavior, EmotionalWellBeing |
+| Qwoted URL | https://app.qwoted.com/pitches/1917578/thanks |
 
 ## What the Reporter Is Looking For
 

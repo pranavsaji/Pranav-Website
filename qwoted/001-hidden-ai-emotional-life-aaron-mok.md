@@ -49,9 +49,37 @@ pranavs.mec@gmail.com
 https://pranav-saji.com
 https://www.linkedin.com/in/pranav-saji/
 
+## Reporter Follow-Up (Received Jun 1, 2026)
+
+Hi Pranav. Thank you for your comment. I'd love to dig deeper into your observations. At the AI wellness startup, what were some specific things users told the AI that surprised you, perhaps feelings or incidents that would be typically be reserved for a therapist? Also, from your perspective inside an AI security company, what exactly happens to those intimate conversations? How is that data used by companies and threat actors? Any examples you can provide?
+
+## Response Sent
+
+Hi Aaron,
+
+Happy to go deeper on both.
+
+On what surprised me at the startup: honestly, it was not the topics that caught us off guard, it was the specificity. People were not venting in generalities. They were reconstructing conversations word for word. Naming the exact moment a relationship started going wrong. Describing feelings about a parent or a partner in a way that made it obvious they had never said it out loud to anyone before.
+
+One pattern stuck with me. Users would come back to the same unresolved thing across multiple sessions, the way you might with a therapist, except our app had no memory of the previous session and they knew that. They were not looking for continuity. They were looking for a space where they could say the thing without it changing how someone saw them. The no-judgment quality was not a nice-to-have feature. For a lot of users it was the whole reason they were there.
+
+On what actually happens to that data: I want to be precise here because the answer varies a lot and most users have no idea which situation they are in.
+
+At the responsible end, a company retains conversation data to improve their model, stores it encrypted, and gives users a real way to delete it. At the less responsible end, and there are companies operating this way, that data gets retained indefinitely, used for ad targeting, sold to data brokers, or it just sits in a poorly secured database waiting to be breached.
+
+From a threat actor perspective, this data is valuable for two specific reasons. First, it is deeply personal, which makes it perfect for social engineering. If I know from a breached AI conversation that you are going through a divorce and worried about money, I know exactly how to craft a message that gets you to click something. Second, credential databases from AI platforms are already showing up on dark web markets. In 2025, over 300,000 ChatGPT credential sets were listed for sale. The conversations tied to those accounts go with them.
+
+The thing that most people do not realize: there is no HIPAA for AI wellness apps. A real therapist is bound by strict confidentiality rules. An AI wellness app is bound by whatever its terms of service says, and almost nobody reads those. That gap is real, it is significant, and it is not talked about nearly enough.
+
+Happy to jump on a call if that would be easier.
+
+Pranav
+pranavs.mec@gmail.com
+https://www.linkedin.com/in/pranav-saji/
+
 ## Outcome
 
+- [x] Reporter replied with follow-up questions (Jun 1, 2026)
 - [ ] Quoted in article
 - [ ] Not selected
-- [ ] Follow-up needed
 - [ ] Article published: URL ___

@@ -35,8 +35,6 @@ Hi Dawn,
 
 I'm Pranav Saji, Head of AI Security at Symosis Security, and this is genuinely my space. I spend every day building AI security systems and thinking through exactly the risks your piece is covering. Before that I built credit card fraud detection systems at Deloitte for Fortune 500 financial institutions. So I am coming at this from both sides. The person who built the fraud defenses, and the person who now thinks about how AI breaks them.
 
-Let me give you some direct, quotable answers to the questions you are exploring.
-
 Asking ChatGPT about your finances does make your information vulnerable, and most people have no idea how exposed they are. A general-purpose AI tool is not a bank. When you type your account balance, a transaction you are worried about, or any identifying financial detail into ChatGPT or a similar tool, that data passes through third-party servers, may be retained and used for model training, and becomes part of what attackers find in a breach. My rule of thumb, and one I share with everyone I work with, is to never type into an AI tool anything you would not want to see in a breach notification email.
 
 The AI agents and fraud angle is the part of the story I think is genuinely underreported. The same capability that makes an AI agent useful, the fact that it can act on your behalf without you having to be present, is exactly what makes a rogue one dangerous. Traditional fraud requires getting access to your credentials and then doing something with them. An AI agent with financial access can initiate transactions, move funds, and interact with platforms autonomously. If that agent is compromised or maliciously designed, the fraud happens before you even know to look.

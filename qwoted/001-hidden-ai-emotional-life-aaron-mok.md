@@ -33,7 +33,7 @@ Looking for: firsthand experiences, psychologists/sociologists/therapists, surve
 
 Hi Aaron,
 
-I can offer something a bit different from the typical source on this.
+I'm Pranav Saji, former Head of Engineering at a GenAI wellness startup and current Head of AI Security at Symosis Security. I can offer something a bit different from the typical source on this.
 
 I used to be Head of Engineering at a GenAI wellness startup where we built tools specifically designed for the quiet, private ways people use AI: journaling through hard emotions, rehearsing difficult conversations, working through major decisions they were not ready to say out loud to anyone yet. I watched how people actually used the product versus what we expected, and the gap was striking. The most engaged users were not the ones doing structured goal-setting. They were the ones processing things they had not told their therapist.
 

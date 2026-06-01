@@ -4,12 +4,12 @@
 
 | Field | Info |
 |---|---|
-| Reporter | US News and World Report (contact revealed after pitch credit) |
+| Reporter | Dawn Papandrea (Freelance Writer) |
 | Outlet | US News and World Report |
 | Type | Online / Print expert quote |
 | Deadline | Fri Jun 5, 9:00am |
 | Status | Pitched |
-| Qwoted URL | https://app.qwoted.com (opportunity: AI security experts who can discuss financial/credit safety in the age of AI) |
+| Qwoted URL | https://app.qwoted.com/source_requests/ai-security-experts-who-can-discuss-financial-credit-safety-in-the-age-of-ai |
 | Tags | AISecurityExpert, CreditSafety, FinancialSafety, FraudPrevention, DataPrivacy, CybersecurityExpert |
 
 ## What the Reporter Is Looking For
@@ -31,21 +31,21 @@ Expert quotes on AI and financial/credit safety. Specific questions:
 
 ## Pitch
 
-Hi,
+Hi Dawn,
 
-I'm Pranav Saji, Head of AI Security at Symosis Security and a Machine Learning Consultant at LinkedIn. Financial security in the age of AI is something I work on from two directions: I build AI security systems, and earlier in my career at Deloitte I built credit card fraud detection systems for Fortune 500 financial clients. I can speak to the specific risks your readers are asking about.
+I'm Pranav Saji, Head of AI Security at Symosis Security, and this is genuinely my space. I spend every day building AI security systems and thinking through exactly the risks your piece is covering. Before that I built credit card fraud detection systems at Deloitte for Fortune 500 financial institutions. So I am coming at this from both sides: the person who built the fraud defenses, and the person who now thinks about how AI breaks them.
 
-A few direct answers to the questions you are exploring:
+Let me give you some direct, quotable answers to the questions you are exploring.
 
-Asking ChatGPT about your finances does carry real risk, and most people underestimate it. Consumer AI tools are not encrypted financial services. When you type account details, balances, or transaction history into a general-purpose AI, that data passes through third-party servers, may be retained for model training, and in the event of a breach, becomes part of what attackers find. The rule I follow: never type into an AI tool anything you would not want to appear in a data breach.
+On whether asking ChatGPT about your finances makes your information vulnerable: yes, and most people have no idea how exposed they are. A general-purpose AI tool is not a bank. When you type your account balance, a transaction you are worried about, or any identifying financial detail into ChatGPT or a similar tool, that data passes through third-party servers, may be retained and used for model training, and becomes part of what attackers find in a breach. My rule of thumb, and one I give to everyone I work with: never type into an AI tool anything you would not want to see in a breach notification email.
 
-AI agents create a genuinely new fraud surface. Traditional fraud happens when a bad actor gets access to your credentials. With AI agents that can initiate transactions, move funds, and interact with financial platforms autonomously, a compromised or maliciously designed agent can do all of that without you being in the loop. The same capability that makes AI agents useful, acting on your behalf, is what makes a rogue one dangerous.
+On AI agents and fraud: this is the part of the story that I think is genuinely underreported. The same capability that makes an AI agent useful, the fact that it can act on your behalf without you having to be present, is exactly what makes a rogue one dangerous. Traditional fraud requires getting access to your credentials and then doing something with them. An AI agent with financial access can initiate transactions, move funds, and interact with platforms autonomously. If that agent is compromised or maliciously designed, the fraud happens before you even know to look.
 
-The scams are already here and they are convincing. Deepfake voice calls impersonating bank representatives, AI-generated phishing emails that pass spam filters because they have no grammatical errors, and fake AI financial tools that harvest credentials while appearing to help. In 2025, deepfake fraud drained over $1.1 billion from US corporate accounts. Consumer-facing versions of the same attacks are cheaper to run and increasingly targeted.
+On AI-generated scams: they are already here and they work. Deepfake voice calls that sound exactly like your bank's fraud department. Phishing emails that pass every spam filter because they are grammatically flawless. Fake AI financial tools that look legitimate and harvest credentials while appearing to help. In 2025, deepfake fraud cost US businesses over $1.1 billion. The consumer-facing versions of these attacks are cheaper to run and getting more targeted every month.
 
-Three things anyone can do right now: never share account numbers or full financial details with any AI tool, enable transaction alerts on every financial account so you are notified of activity in real time, and treat any urgent financial request that came through a digital channel, phone, email, or chat, as suspicious until verified through a separate channel you initiated yourself.
+The three things I tell people to do right now: never share full account details or numbers with any AI tool, turn on real-time transaction alerts on every account you own, and treat any urgent financial request that arrived digitally, however convincing it sounds, as suspicious until you verify it through a channel you initiated yourself.
 
-Happy to answer follow-up questions or provide additional detail on any of these.
+Happy to go deeper on any of these or hop on a quick call.
 
 Pranav Saji
 pranavs.mec@gmail.com

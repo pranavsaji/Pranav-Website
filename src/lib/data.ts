@@ -252,6 +252,15 @@ export const stats = [
 
 export const recognitions = [
   {
+    title: "Speaker",
+    event: "OWASP Global AppSec USA 2026",
+    type: "SPEAKER",
+    description:
+      "Accepted as a speaker at OWASP Global AppSec USA 2026 in San Francisco (November 2026), the flagship conference of the global application security community, presenting on AI agent security and the emerging tool-layer attack surface.",
+    link: "https://owasp.glueup.com/event/owasp-global-appsec-usa-2026-167174/",
+    linkLabel: "View Event",
+  },
+  {
     title: "Core Judge",
     event: "USAII Global Hackathon",
     type: "JUDGE",

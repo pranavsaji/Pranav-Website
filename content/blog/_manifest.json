@@ -97,6 +97,13 @@
       "category": "AI",
       "date": "2026-05-22",
       "topics": ["reasoning models", "extended thinking", "Claude Opus", "o3", "LLMOps", "AI routing"]
+    },
+    {
+      "slug": "teaching-ai-to-team-up-understand-mcp",
+      "title": "Teaching AI to Team Up: The Easy Way to Understand MCP",
+      "category": "AI",
+      "date": "2025-07-15",
+      "topics": ["MCP", "model context protocol", "AI agents", "agent collaboration", "LLM", "AI integration"]
     }
   ]
 }

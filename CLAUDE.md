@@ -46,7 +46,7 @@ Contains drafted articles for trade publication submission. One file per article
 
 | File | Outlet | Status |
 |---|---|---|
-| `mcp-poisoning-your-agent-trusts-its-tools.md` | HackerNoon | Submitted, in review |
+| `mcp-poisoning-your-agent-trusts-its-tools.md` | HackerNoon | Published 2026-06-03 — [link](https://hackernoon.com/your-ai-agent-trusts-its-tools-too-much) |
 | `sspm-illusion-of-control-dark-reading.md` | Dark Reading | Ready to send |
 | `deepfake-cfo-fraud-sc-media.md` | SC Media | Ready to send |
 | `ai-agents-fail-integration-layer-venturebeat.md` | VentureBeat | Submitted, watch Google Doc |

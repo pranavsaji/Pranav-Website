@@ -244,6 +244,18 @@ export const publications = [
   },
 ];
 
+export const writings = [
+  {
+    title: "Your AI Agent Trusts Its Tools Too Much",
+    outlet: "HackerNoon",
+    date: "2026-06-03",
+    description:
+      "Tool poisoning turns an AI agent's most trusted input, its tool descriptions, into an attack surface. How MCP poisoning works, the real incidents from 2025 and 2026, and what to actually do about it.",
+    tags: ["AI Security", "MCP", "Prompt Injection", "Tool Poisoning", "LLM Security"],
+    url: "https://hackernoon.com/your-ai-agent-trusts-its-tools-too-much",
+  },
+];
+
 export const stats = [
   { value: "$50M+", label: "Business impact delivered across clients & ventures" },
   { value: "5+", label: "AI companies founded, co-founded, or led as CTO / Head of Engineering" },

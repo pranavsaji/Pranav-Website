@@ -18,15 +18,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const post = await getPostWithHtml(slug);
   const url = `https://pranav-saji.com/blog/${slug}`;
+  const canonical = post.canonical ?? url;
 
   return {
     title: post.title,
     description: post.excerpt,
     keywords: post.tags,
-    alternates: { canonical: url },
+    alternates: { canonical },
     openGraph: {
       type: "article",
-      url,
+      url: canonical,
       title: post.title,
       description: post.excerpt,
       publishedTime: post.date,

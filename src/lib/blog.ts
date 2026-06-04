@@ -15,6 +15,7 @@ export interface BlogPost {
   tags: string[];
   readTime: string;
   featured: boolean;
+  canonical?: string;
   content?: string;
 }
 
@@ -40,6 +41,7 @@ export function getPostBySlug(slug: string): BlogPost {
     tags: data.tags ?? [],
     readTime: data.readTime ?? "5 min read",
     featured: data.featured ?? false,
+    canonical: data.canonical ?? undefined,
     content,
   };
 }

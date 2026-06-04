@@ -7,6 +7,7 @@ excerpt: "One company torched roughly $500 million in AI spend in a single month
 tags: ["AI Agents", "AI Security", "Non-Human Identity", "Prompt Injection", "AI Governance"]
 readTime: "6 min read"
 featured: true
+canonical: "https://medium.com/@pranavs.mec/the-500-million-ai-bill-nobody-threat-modeled-67ce082bb797"
 ---
 
 One company torched roughly $500 million in AI spend in a single month, and the scary part is not the number.

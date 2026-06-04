@@ -277,9 +277,11 @@ export const recognitions = [
     event: "USAII Global Hackathon",
     type: "JUDGE",
     description:
-      "Selected as a Core Judge for the USAII Global Hackathon - one of the premier global AI competitions. Evaluated cutting-edge AI innovations and projects from teams worldwide.",
-    link: "https://aihackathon.usaii.org/global-ai-builder-series",
-    linkLabel: "View Speaker Lineup",
+      "Selected as a Core Judge for the USAII Global Hackathon - one of the premier global AI competitions, listed on the official judges roster. Evaluated cutting-edge AI innovations and projects from teams worldwide.",
+    link: "https://usaii-global-ai-hackathon-2026.devpost.com/",
+    linkLabel: "View Hackathon",
+    secondaryLink: "https://aihackathon.usaii.org/content/docs/meet-the-judges.pdf",
+    secondaryLinkLabel: "Meet the Judges (PDF)",
   },
   {
     title: "Speaker",

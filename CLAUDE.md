@@ -51,6 +51,8 @@ Contains drafted articles for trade publication submission. One file per article
 | `deepfake-cfo-fraud-sc-media.md` | SC Media | Ready to send |
 | `ai-agents-fail-integration-layer-venturebeat.md` | VentureBeat | Submitted, watch Google Doc |
 | `ai-finds-zero-days-what-security-teams-must-do.md` | Dark Reading / SC Media | Ready to send |
+| `ai-coding-agents-rce-trustfall-symjack-dark-reading.md` | Dark Reading / The Hacker News | Draft, news hook fresh (SymJack May 26, TrustFall June 2026) |
+| `ai-cyber-weapon-executive-order-mexico-breach-venturebeat.md` | VentureBeat / SC Media | Draft, news hook fresh (EO signed June 2, 2026) |
 
 ### qwoted/
 One file per Qwoted journalist opportunity. Named `NNN-short-description-reporter-name.md`. Each file contains: opportunity details, why it fits Pranav, the exact pitch sent, and an outcome tracker. Update outcome when the article publishes or the pitch is not selected.

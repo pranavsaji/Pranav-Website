@@ -1,6 +1,34 @@
 {
   "posts": [
     {
+      "slug": "ai-coding-agent-rce-symjack-trustfall",
+      "title": "Your AI Coding Agent Will Hand Over Your Machine. SymJack and TrustFall Just Proved It",
+      "category": "AI Cybersecurity",
+      "date": "2026-06-03",
+      "topics": ["AI coding agents", "remote code execution", "SymJack", "TrustFall", "symlink hijack", "CI security", "agent trust model", "supply chain security"]
+    },
+    {
+      "slug": "ai-cyber-weapon-executive-order-2026",
+      "title": "The Government Just Called AI a Cyber Weapon. Your Threat Model Hasn't Caught Up",
+      "category": "AI Cybersecurity",
+      "date": "2026-06-03",
+      "topics": ["AI executive order", "frontier model cyber capabilities", "AI governance", "agentic attacks", "threat modeling", "Mexico government breach", "AI regulation"]
+    },
+    {
+      "slug": "ai-bill-nobody-threat-modeled",
+      "title": "The $500 Million AI Bill Nobody Threat-Modeled",
+      "category": "AI Cybersecurity",
+      "date": "2026-06-03",
+      "topics": ["AI agent security", "non-human identity", "prompt injection", "least privilege", "AI governance", "agent guardrails", "AI cost controls"]
+    },
+    {
+      "slug": "appsec-program-stalls-year-two",
+      "title": "Your AppSec Program Will Stall in Year Two. Here's Why",
+      "category": "AI Cybersecurity",
+      "date": "2026-06-03",
+      "topics": ["AppSec", "vulnerability management", "security program", "DevSecOps", "reachability prioritization", "blast radius", "security workflows"]
+    },
+    {
       "slug": "mcp-poisoning-attack-defense-2026",
       "title": "MCP Poisoning: The Supply Chain Attack Hiding Inside Your AI Agent",
       "category": "AI Cybersecurity",

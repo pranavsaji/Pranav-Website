@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       tags: post.tags,
       images: [
         {
-          url: "/pranav-saji.png",
+          url: "/og-image.png",
           width: 1200,
           height: 630,
           alt: post.title,
@@ -46,8 +46,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: "summary_large_image",
       title: post.title,
       description: post.excerpt,
-      creator: "@pranavsaji",
-      images: ["/pranav-saji.png"],
+      creator: "@PranavInnovates",
+      images: ["/og-image.png"],
     },
   };
 }
@@ -100,7 +100,7 @@ export default async function BlogPostPage({ params }: Props) {
     },
     image: {
       "@type": "ImageObject",
-      url: "https://pranav-saji.com/pranav-saji.png",
+      url: "https://pranav-saji.com/og-image.png",
       width: 1200,
       height: 630,
     },

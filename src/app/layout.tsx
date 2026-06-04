@@ -58,7 +58,7 @@ export const metadata: Metadata = {
       "AI Leader and Tech Entrepreneur building AI-first platforms. Head of AI Security at Symosis Security, ML Consultant at LinkedIn. $50M+ business impact. Clients from Fortune 100 companies to multiple successful startups.",
     images: [
       {
-        url: "/pranav-saji.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Pranav Saji - AI Leader and Tech Entrepreneur, San Francisco",
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     description:
       "AI Leader, Tech Entrepreneur, Full-Stack Engineer. Head of AI Security at Symosis Security, ML Consultant at LinkedIn. $50M+ business impact.",
     creator: "@PranavInnovates",
-    images: ["/pranav-saji.png"],
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
@@ -131,8 +131,8 @@ const siteSchema = {
         "@type": "ImageObject",
         "@id": "https://pranav-saji.com/#photo",
         url: "https://pranav-saji.com/pranav-saji.png",
-        width: 360,
-        height: 450,
+        width: 720,
+        height: 1081,
         caption: "Pranav Saji - AI Leader and Tech Entrepreneur in San Francisco Bay Area",
       },
       description:

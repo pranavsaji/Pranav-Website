@@ -44,3 +44,9 @@ next-env.d.ts
 /qwoted/
 /media-article/
 /PRESS-KIT.md
+
+# disposable processing files
+/.tmp/
+
+# unused asset
+/public/newsletter-logo.png

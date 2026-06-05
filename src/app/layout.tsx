@@ -138,6 +138,16 @@ const siteSchema = {
       description:
         "AI Leader, Tech Entrepreneur, and Full-Stack Engineer based in San Francisco Bay Area. Head of AI Security at Symosis Security, Machine Learning Consultant at LinkedIn. $50M+ in business impact. MS Computer Science from Illinois Institute of Technology.",
       jobTitle: ["Head of AI Security", "Machine Learning Consultant", "Tech Entrepreneur"],
+      nationality: { "@type": "Country", name: "India" },
+      birthPlace: {
+        "@type": "Place",
+        name: "Kerala, India",
+        address: {
+          "@type": "PostalAddress",
+          addressRegion: "Kerala",
+          addressCountry: "IN",
+        },
+      },
       worksFor: [
         {
           "@type": "Organization",
@@ -160,6 +170,12 @@ const siteSchema = {
         {
           "@type": "CollegeOrUniversity",
           name: "Model Engineering College",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Cochin",
+            addressRegion: "Kerala",
+            addressCountry: "IN",
+          },
         },
         {
           "@type": "CollegeOrUniversity",
@@ -179,11 +195,14 @@ const siteSchema = {
         "https://pranavsaji.github.io/",
         "https://www.wikidata.org/wiki/Q139970723",
         "https://orcid.org/0009-0007-9783-566X",
-        "https://medium.com/@pranavs.mec",
+        "https://medium.com/@pranavsaji",
         "https://x.com/PranavInnovates",
         "https://www.youtube.com/channel/UCSSgLP-Jz11cwOQA3ILwR8w",
         "https://www.instagram.com/pranavinnovates/",
         "https://sessionize.com/Pranav-Saji/",
+        "https://dev.to/pranav_saji",
+        "https://gravatar.com/differentfunc2ae4de0f9",
+        "https://linktr.ee/pranavsaji",
       ],
       knowsAbout: [
         "Generative AI",

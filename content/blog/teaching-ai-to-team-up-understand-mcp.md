@@ -7,7 +7,7 @@ excerpt: "Model Context Protocol is the language AI agents use to coordinate lik
 tags: ["MCP", "Model Context Protocol", "AI Agents", "Large Language Models", "AI Integration"]
 readTime: "4 min read"
 featured: false
-canonical: "https://medium.com/@pranavs.mec/teaching-ai-to-team-up-the-easy-way-to-understand-mcp-32a934659bac"
+canonical: "https://medium.com/@pranavsaji/teaching-ai-to-team-up-the-easy-way-to-understand-mcp-32a934659bac"
 ---
 
 ## MCP: The Protocol that's Teaching AI Agents How to Collaborate Like Humans
@@ -119,4 +119,4 @@ Model Context Protocol (MCP) is more than just another tech buzzword — it's an
 
 By embracing MCP today, you're investing in future-proofing your projects, products, or even your career — positioning yourself ahead in the rapidly evolving AI landscape.
 
-*This article was originally published on [Medium](https://medium.com/@pranavs.mec/teaching-ai-to-team-up-the-easy-way-to-understand-mcp-32a934659bac).*
+*This article was originally published on [Medium](https://medium.com/@pranavsaji/teaching-ai-to-team-up-the-easy-way-to-understand-mcp-32a934659bac).*

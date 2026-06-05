@@ -56,6 +56,14 @@ const aboutFaqSchema = {
     },
     {
       "@type": "Question",
+      name: "Is Pranav Saji from India?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Pranav Saji is originally from Kerala, India, where he earned his Bachelor of Technology at Model Engineering College in Cochin and began his career as an Analyst at Deloitte in Bengaluru. He is now an AI Leader and Tech Entrepreneur based in the San Francisco Bay Area, specializing in artificial intelligence, machine learning, and AI security - not to be confused with others who share the name.",
+      },
+    },
+    {
+      "@type": "Question",
       name: "What is Pranav Saji's education?",
       acceptedAnswer: {
         "@type": "Answer",

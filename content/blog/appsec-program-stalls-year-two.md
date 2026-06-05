@@ -7,7 +7,7 @@ excerpt: "Year one of an AppSec program feels productive: scanners deploy, champ
 tags: ["AppSec", "Security Program", "Vulnerability Management", "DevSecOps", "Security Strategy"]
 readTime: "6 min read"
 featured: true
-canonical: "https://medium.com/@pranavs.mec/your-appsec-program-will-stall-in-year-two-heres-why-c2d3b0ee2db8"
+canonical: "https://medium.com/@pranavsaji/your-appsec-program-will-stall-in-year-two-heres-why-c2d3b0ee2db8"
 ---
 
 Year one of an AppSec program feels productive. Scanners deploy, security champions emerge, dashboards impress leadership. But around month thirteen, the energy dissipates. The backlog stops shrinking, champions go quiet, and the program hits a wall.
@@ -60,4 +60,4 @@ This approach makes year two sustainable without adrenaline dependency. The alte
 
 ---
 
-*This article was originally published on [Medium](https://medium.com/@pranavs.mec/your-appsec-program-will-stall-in-year-two-heres-why-c2d3b0ee2db8).*
+*This article was originally published on [Medium](https://medium.com/@pranavsaji/your-appsec-program-will-stall-in-year-two-heres-why-c2d3b0ee2db8).*

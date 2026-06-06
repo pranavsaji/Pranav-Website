@@ -273,6 +273,14 @@ export default function Home() {
                 >
                   Qwoted Profile
                 </a>
+                <a
+                  href="https://www.linkedin.com/newsletters/7468174182753820672/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-outline"
+                >
+                  Newsletter
+                </a>
               </div>
             </div>
           </div>

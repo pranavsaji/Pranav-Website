@@ -8,6 +8,7 @@ export const siteConfig = {
   linkedin: "https://www.linkedin.com/in/pranav-saji/",
   github: "https://github.com/pranavsaji",
   qwoted: "https://app.qwoted.com/sources/pranav-saji?utm_source=profile-sidebar",
+  newsletter: "https://www.linkedin.com/newsletters/7468174182753820672/",
   location: "San Francisco Bay Area",
 };
 

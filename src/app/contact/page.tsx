@@ -53,6 +53,13 @@ const channels = [
     description: "Source profile for journalists seeking expert commentary on AI and security.",
     external: true,
   },
+  {
+    label: "Newsletter",
+    value: "LinkedIn Newsletter",
+    href: siteConfig.newsletter,
+    description: "Subscribe for insights on AI, LLM security, and AI governance.",
+    external: true,
+  },
 ];
 
 export default function Contact() {

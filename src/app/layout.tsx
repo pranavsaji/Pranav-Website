@@ -204,6 +204,7 @@ const siteSchema = {
         "https://gravatar.com/differentfunc2ae4de0f9",
         "https://linktr.ee/pranavsaji",
         "https://app.qwoted.com/sources/pranav-saji",
+        "https://www.linkedin.com/newsletters/7468174182753820672/",
       ],
       knowsAbout: [
         "Generative AI",

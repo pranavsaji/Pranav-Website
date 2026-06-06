@@ -7,6 +7,7 @@ export const siteConfig = {
   email: "pranavs.mec@gmail.com",
   linkedin: "https://www.linkedin.com/in/pranav-saji/",
   github: "https://github.com/pranavsaji",
+  qwoted: "https://app.qwoted.com/sources/pranav-saji?utm_source=profile-sidebar",
   location: "San Francisco Bay Area",
 };
 

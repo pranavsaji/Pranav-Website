@@ -265,6 +265,14 @@ export default function Home() {
                 >
                   View LinkedIn
                 </a>
+                <a
+                  href="https://app.qwoted.com/sources/pranav-saji?utm_source=profile-sidebar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-outline"
+                >
+                  Qwoted Profile
+                </a>
               </div>
             </div>
           </div>

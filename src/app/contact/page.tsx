@@ -46,6 +46,13 @@ const channels = [
     description: "Browse open-source work and technical projects.",
     external: true,
   },
+  {
+    label: "Qwoted",
+    value: "app.qwoted.com/sources/pranav-saji",
+    href: siteConfig.qwoted,
+    description: "Source profile for journalists seeking expert commentary on AI and security.",
+    external: true,
+  },
 ];
 
 export default function Contact() {

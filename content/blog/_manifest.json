@@ -1,6 +1,20 @@
 {
   "posts": [
     {
+      "slug": "prompt-injection-to-rce-agent-frameworks",
+      "title": "When a Prompt Becomes a Shell: Agent Frameworks Are Turning Text Into RCE",
+      "category": "AI Cybersecurity",
+      "date": "2026-06-09",
+      "topics": ["prompt injection", "remote code execution", "Semantic Kernel", "CVE-2026-26030", "CVE-2026-25592", "agent frameworks", "sandbox escape", "LLM security"]
+    },
+    {
+      "slug": "lethal-trifecta-ai-agents",
+      "title": "The Lethal Trifecta: Why Your Most Useful AI Agent Is One Bad Email Away From a Breach",
+      "category": "AI Cybersecurity",
+      "date": "2026-06-09",
+      "topics": ["lethal trifecta", "prompt injection", "data exfiltration", "EchoLeak", "GeminiJack", "RAG security", "least privilege", "AI governance"]
+    },
+    {
       "slug": "ai-coding-agent-rce-symjack-trustfall",
       "title": "Your AI Coding Agent Will Hand Over Your Machine. SymJack and TrustFall Just Proved It",
       "category": "AI Cybersecurity",

@@ -16,9 +16,10 @@ Personal portfolio site for Pranav Saji (AI Leader, SF Bay Area) — deployed at
 | `src/lib/data.ts` | Single source of truth — all content (experiences, stats, skills, recognitions, publications) |
 | `src/app/globals.css` | Global styles, custom classes (`.card`, `.btn`, `.stat-card`, `.text-gradient`, `.tag`) |
 | `src/app/layout.tsx` | Root layout — fonts, Nav, Footer |
-| `src/app/page.tsx` | Home: hero, stats strip, featured experience, skills preview, CTA |
+| `src/app/page.tsx` | Home: hero, stats strip, featured experience, skills preview, FAQ, CTA |
+| `src/app/ai-security/page.tsx` | SEO pillar page — "Pranav Saji AI Security Expert" hub; auto-links all AI-security blog posts (cluster), ProfilePage + FAQPage schema |
 | `src/components/Nav.tsx` | Top nav with "Get in touch" CTA |
-| `src/app/*/page.tsx` | Sub-pages: about, experience, skills, recognitions, research, contact |
+| `src/app/*/page.tsx` | Sub-pages: about, experience, ai-security, skills, recognitions, research, writing, blog, contact |
 
 ## CLI / Entry Points
 ```bash

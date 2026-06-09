@@ -45,8 +45,20 @@ next-env.d.ts
 /media-article/
 /PRESS-KIT.md
 
+# private immigration / profile docs
+/eb1a-profile-evaluation.md
+/eb1a-all-10-criteria-playbook.md
+/eb1a-detailed-action-guide.md
+/ieee.md
+
 # disposable processing files
 /.tmp/
 
 # unused asset
 /public/newsletter-logo.png
+
+# newsletter working drafts (not deployed as web pages)
+/newsletter linkedin/
+
+# private speaker submission working docs (Sessionize / AISS)
+/sessionaize/

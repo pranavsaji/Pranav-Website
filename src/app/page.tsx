@@ -46,8 +46,29 @@ const faqSchema = {
         text: "Pranav Saji has worked with LinkedIn (as ML Consultant), Deloitte (as Analyst serving Fortune 500 clients), and consulted for Fortune 500 enterprises and high-growth startups on AI security and machine learning initiatives. He also co-founded Referrio and served as Head of Engineering at BreatheIT, and was Founding Engineer at Flair Labs (YC F24).",
       },
     },
+    {
+      "@type": "Question",
+      name: "What does Pranav Saji do in AI security?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Pranav Saji is Head of AI Security at Symosis Security, where he specializes in securing AI and LLM applications. His work covers prompt injection defense, agentic AI security, AI red teaming, Model Context Protocol (MCP) security, and RAG pipeline security. He writes and speaks regularly on the LLM threat landscape and how enterprises can deploy AI safely.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is Pranav Saji an AI security expert?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Pranav Saji is an AI security expert and AI Leader based in San Francisco. He leads AI security engineering at Symosis Security, publishes research on LLM and agentic-AI threats, has been featured in HackerNoon and other security publications, and serves as a judge and speaker at AI hackathons and conferences.",
+      },
+    },
   ],
 };
+
+const faqs = faqSchema.mainEntity.map((q) => ({
+  q: q.name,
+  a: q.acceptedAnswer.text,
+}));
 
 export default function Home() {
   const featured = experiences.slice(0, 3);
@@ -239,6 +260,38 @@ export default function Home() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── FAQ ─────────────────────────────────────── */}
+      <section className="section-sm">
+        <div className="container">
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="heading-lg text-white">
+                Frequently Asked <span className="text-gradient">Questions</span>
+              </h2>
+              <p className="text-slate-400 mt-2 text-sm">About Pranav Saji and his work in AI and security</p>
+            </div>
+            <div className="space-y-3">
+              {faqs.map((item) => (
+                <details key={item.q} className="card p-5 group">
+                  <summary className="flex items-center justify-between cursor-pointer list-none text-white font-medium text-sm">
+                    {item.q}
+                    <svg
+                      className="w-4 h-4 text-blue-400 shrink-0 transition-transform group-open:rotate-180"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </summary>
+                  <p className="text-slate-400 text-sm leading-relaxed mt-3">{item.a}</p>
+                </details>
+              ))}
+            </div>
           </div>
         </div>
       </section>

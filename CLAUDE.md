@@ -17,7 +17,8 @@ Personal portfolio site for Pranav Saji (AI Leader, SF Bay Area) — deployed at
 | `src/app/globals.css` | Global styles, custom classes (`.card`, `.btn`, `.stat-card`, `.text-gradient`, `.tag`) |
 | `src/app/layout.tsx` | Root layout — fonts, Nav, Footer |
 | `src/app/page.tsx` | Home: hero, stats strip, featured experience, skills preview, FAQ, CTA |
-| `src/app/ai-security/page.tsx` | SEO pillar page — "Pranav Saji AI Security Expert" hub; auto-links all AI-security blog posts (cluster), ProfilePage + FAQPage schema |
+| `src/app/ai/page.tsx` | SEO pillar page — "Pranav Saji AI Leader & Expert" hub targeting "pranav ai"; pillars, stats, post list, FAQ, Connect-with-Pranav block; ProfilePage + FAQPage schema. In nav as "AI" |
+| `src/app/ai-security/page.tsx` | SEO pillar page — "Pranav Saji AI Security Expert" hub; auto-links all AI-security blog posts (cluster), ProfilePage + FAQPage schema. Linked from /ai (not in nav) |
 | `src/components/Nav.tsx` | Top nav with "Get in touch" CTA |
 | `src/app/*/page.tsx` | Sub-pages: about, experience, ai-security, skills, recognitions, research, writing, blog, contact |
 

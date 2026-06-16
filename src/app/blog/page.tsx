@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: "Blog - AI, Cybersecurity & Engineering Insights | Pranav Saji",
     description:
       "Practical insights on AI security, LLMs, agentic systems, and enterprise AI from Pranav Saji - Head of AI Security at Symosis Security.",
-    images: [{ url: "/pranav-saji.png", width: 1200, height: 630, alt: "Pranav Saji Blog" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Pranav Saji Blog" }],
   },
 };
 
@@ -48,6 +48,25 @@ const blogListingSchema = {
   inLanguage: "en-US",
 };
 
+const blogBreadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://pranav-saji.com",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Blog",
+      item: "https://pranav-saji.com/blog",
+    },
+  ],
+};
+
 const CATEGORY_COLORS: Record<string, string> = {
   "AI Cybersecurity": "bg-red-500/10 text-red-400 border-red-500/20",
   AI: "bg-blue-500/10 text-blue-400 border-blue-500/20",
@@ -63,6 +82,10 @@ export default function BlogPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(blogListingSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogBreadcrumbSchema) }}
       />
 
       <div className="min-h-screen pt-28 pb-20 px-6">

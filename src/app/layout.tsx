@@ -84,17 +84,15 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
     },
   },
-  alternates: { canonical: "https://pranav-saji.com" },
+  alternates: {
+    canonical: "https://pranav-saji.com",
+    types: {
+      "application/rss+xml": "https://pranav-saji.com/feed.xml",
+    },
+  },
   category: "technology",
   verification: {
     google: "LsDURyp253LFvXtYjm_2y_3uCK3snwL3Z5tAHBHT7CM",
-  },
-  icons: {
-    icon: [
-      { url: "/pranav-saji.png", type: "image/png" },
-    ],
-    apple: "/pranav-saji.png",
-    shortcut: "/pranav-saji.png",
   },
 };
 
@@ -188,6 +186,29 @@ const siteSchema = {
         addressRegion: "CA",
         addressCountry: "US",
       },
+      homeLocation: {
+        "@type": "Place",
+        name: "San Francisco Bay Area, California",
+      },
+      hasOccupation: [
+        {
+          "@type": "Occupation",
+          name: "Head of AI Security",
+          occupationLocation: { "@type": "City", name: "San Francisco" },
+          skills: "AI security, LLM security, prompt injection defense, agentic AI security, AI red teaming",
+        },
+        {
+          "@type": "Occupation",
+          name: "AI Leader and Machine Learning Consultant",
+          occupationLocation: { "@type": "City", name: "San Francisco" },
+          skills: "Generative AI, large language models, agentic AI, RAG, Azure Databricks, enterprise AI strategy",
+        },
+      ],
+      subjectOf: [
+        { "@type": "WebPage", "@id": "https://pranav-saji.com/ai#page" },
+        { "@type": "WebPage", url: "https://pranav-saji.com/ai-security" },
+        { "@type": "Blog", "@id": "https://pranav-saji.com/blog" },
+      ],
       email: "pranavs.mec@gmail.com",
       sameAs: [
         "https://www.linkedin.com/in/pranav-saji/",

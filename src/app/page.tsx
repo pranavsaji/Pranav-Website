@@ -101,13 +101,25 @@ export default function Home() {
                 Engineer · Security
               </p>
 
-              <p className="text-slate-400 text-base leading-relaxed mb-8 max-w-lg">
+              <p className="text-slate-400 text-base leading-relaxed mb-6 max-w-lg">
                 I build AI systems that create real business leverage - $50M+ in impact
                 across Fortune 100 companies and high-growth startups. Head of AI Security at{" "}
                 <span className="text-slate-200">Symosis Security</span>{" "}
                 and Machine Learning Consultant at{" "}
                 <span className="text-slate-200">LinkedIn</span>.
                 Previously Deloitte.
+              </p>
+
+              <p className="text-slate-400 text-base leading-relaxed mb-8 max-w-lg">
+                Explore{" "}
+                <Link href="/ai" className="text-blue-400 hover:text-blue-300 underline underline-offset-2">
+                  Pranav Saji&apos;s AI work
+                </Link>{" "}
+                across generative AI, LLMs, and agentic systems, or his focus on{" "}
+                <Link href="/ai-security" className="text-blue-400 hover:text-blue-300 underline underline-offset-2">
+                  AI security
+                </Link>
+                .
               </p>
 
               <div className="flex flex-wrap gap-3 mb-10">

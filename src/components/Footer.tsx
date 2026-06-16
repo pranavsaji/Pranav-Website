@@ -15,10 +15,13 @@ export default function Footer() {
 
           <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-500">
             <Link href="/about" className="hover:text-slate-300 transition-colors">About</Link>
+            <Link href="/ai" className="hover:text-slate-300 transition-colors">AI</Link>
             <Link href="/experience" className="hover:text-slate-300 transition-colors">Experience</Link>
             <Link href="/skills" className="hover:text-slate-300 transition-colors">Skills</Link>
             <Link href="/recognitions" className="hover:text-slate-300 transition-colors">Recognitions</Link>
             <Link href="/research" className="hover:text-slate-300 transition-colors">Research</Link>
+            <Link href="/writing" className="hover:text-slate-300 transition-colors">Writing</Link>
+            <Link href="/blog" className="hover:text-slate-300 transition-colors">Blog</Link>
             <Link href="/contact" className="hover:text-slate-300 transition-colors">Contact</Link>
           </div>
 
@@ -48,8 +51,14 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 pt-6 border-t border-white/[0.04] text-xs text-slate-600">
-          © {new Date().getFullYear()} Pranav Saji. All rights reserved.
+        <div className="mt-8 pt-6 border-t border-white/[0.04] flex flex-wrap items-center justify-between gap-3 text-xs text-slate-600">
+          <span>© {new Date().getFullYear()} Pranav Saji. All rights reserved.</span>
+          <a
+            href="/feed.xml"
+            className="hover:text-slate-400 transition-colors"
+          >
+            RSS feed
+          </a>
         </div>
       </div>
     </footer>

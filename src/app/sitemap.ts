@@ -1,25 +1,58 @@
 import type { MetadataRoute } from "next";
 import { getAllPosts } from "@/lib/blog";
 
+// Real last-modified dates. Update a page's date when its content meaningfully
+// changes — emitting `new Date()` on every build makes Google ignore the field.
+const PAGE_DATES: Record<string, string> = {
+  "": "2026-06-11",
+  "/about": "2026-05-22",
+  "/ai": "2026-06-09",
+  "/experience": "2026-05-22",
+  "/ai-security": "2026-06-09",
+  "/skills": "2026-05-22",
+  "/recognitions": "2026-05-22",
+  "/research": "2026-05-22",
+  "/writing": "2026-06-03",
+  "/contact": "2026-05-22",
+};
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://pranav-saji.com";
-  const now = new Date();
+  const posts = getAllPosts();
+  const latestPost = posts.length ? new Date(posts[0].date) : new Date(PAGE_DATES[""]);
 
-  const staticPages: MetadataRoute.Sitemap = [
-    { url: base, lastModified: now, changeFrequency: "monthly", priority: 1.0 },
-    { url: `${base}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${base}/ai`, lastModified: now, changeFrequency: "weekly", priority: 0.95 },
-    { url: `${base}/experience`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${base}/ai-security`, lastModified: now, changeFrequency: "weekly", priority: 0.95 },
-    { url: `${base}/skills`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${base}/recognitions`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${base}/research`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/writing`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${base}/blog`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
-    { url: `${base}/contact`, lastModified: now, changeFrequency: "yearly", priority: 0.7 },
-  ];
+  const priorities: Record<string, number> = {
+    "": 1.0,
+    "/ai": 0.95,
+    "/ai-security": 0.95,
+    "/about": 0.9,
+    "/experience": 0.9,
+    "/blog": 0.9,
+    "/skills": 0.8,
+    "/recognitions": 0.8,
+    "/writing": 0.8,
+    "/research": 0.7,
+    "/contact": 0.7,
+  };
 
-  const blogPages: MetadataRoute.Sitemap = getAllPosts().map((post) => ({
+  const staticPages: MetadataRoute.Sitemap = Object.entries(PAGE_DATES).map(
+    ([path, date]) => ({
+      url: `${base}${path}`,
+      lastModified: new Date(date),
+      changeFrequency: path === "/ai" || path === "/ai-security" ? "weekly" : "monthly",
+      priority: priorities[path] ?? 0.7,
+    })
+  );
+
+  // /blog and the pillar hubs surface the newest post, so they update with it
+  staticPages.push({
+    url: `${base}/blog`,
+    lastModified: latestPost,
+    changeFrequency: "weekly",
+    priority: 0.9,
+  });
+
+  const blogPages: MetadataRoute.Sitemap = posts.map((post) => ({
     url: `${base}/blog/${post.slug}`,
     lastModified: new Date(post.date),
     changeFrequency: "monthly",

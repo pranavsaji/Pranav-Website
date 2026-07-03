@@ -329,32 +329,6 @@ export const projectCategories = [
 export const projects = [
   // ===== AI Security & Governance =====
   {
-    name: "AgentGuard",
-    slug: "agentguard",
-    category: "ai-security",
-    tagline: "Non-human identity governance for the agent era",
-    description:
-      "SaaS platform that discovers, risk-scores, and auto-rotates non-human identities (service accounts, API keys, agent credentials) across AWS, Azure, GCP, and GitHub. Closes the fastest-growing gap in enterprise AI security: the exploding population of machine identities that agents create and use.",
-    tags: ["Non-Human Identity", "Cloud Security", "AI Governance", "AWS", "Azure", "GCP"],
-    language: "Python",
-    repo: "https://github.com/pranavsaji/agentguard",
-    featured: true,
-    year: 2026,
-  },
-  {
-    name: "MCPGuard",
-    slug: "mcpguard",
-    category: "ai-security",
-    tagline: "The 'npm audit' for Model Context Protocol servers",
-    description:
-      "A security scanner for MCP servers that detects tool poisoning, rug-pull tool definitions, and prompt-injection payloads hidden in tool metadata before an agent ever trusts them. Purpose-built for the MCP supply-chain attack surface that is now the most urgent problem in agentic AI security.",
-    tags: ["MCP Security", "Tool Poisoning", "Supply Chain", "Agentic AI Security", "Static Analysis"],
-    language: "Python",
-    repo: "https://github.com/pranavsaji/mcpguard",
-    featured: true,
-    year: 2026,
-  },
-  {
     name: "Attack Surface Intel",
     slug: "attack-surface-intel",
     category: "ai-security",
@@ -365,18 +339,6 @@ export const projects = [
     language: "Python",
     repo: "https://github.com/pranavsaji/attack-surface-intel",
     year: 2026,
-  },
-  {
-    name: "Compliance Copilot",
-    slug: "compliance-copilot",
-    category: "ai-security",
-    tagline: "AI assistant for security compliance and audit",
-    description:
-      "LLM assistant that accelerates security reviews and audit-readiness by mapping controls, drafting evidence, and answering compliance questions against frameworks, cutting the manual effort in SOC 2, ISO, and enterprise vendor assessments.",
-    tags: ["Compliance", "GRC", "Audit Automation", "LLM", "SOC 2"],
-    language: "Python",
-    repo: "https://github.com/pranavsaji/compliance-copilot",
-    year: 2025,
   },
   {
     name: "Fake Finder",
@@ -951,6 +913,391 @@ export const projects = [
     language: "Python",
     repo: "https://github.com/pranavsaji/movie-finder",
     year: 2025,
+  },
+];
+
+// ============================================================================
+// Symosis Security Suite
+// Production and production-oriented platforms designed and built single-handedly
+// by Pranav Saji as Head of AI Security at Symosis Security (Nov 2025 - Jun 2026).
+// Most are proprietary client work; a few ship as public repos.
+// ============================================================================
+
+export const symosisGroups = [
+  {
+    slug: "ai-sec-gov",
+    name: "AI Security & Governance",
+    tagline:
+      "Securing AI agents, non-human identities, and the LLM tool layer across multi-cloud enterprises.",
+    accent: "red",
+  },
+  {
+    slug: "sspm",
+    name: "SSPM & SaaS Integration",
+    tagline:
+      "SaaS Security Posture Management platforms and production data-ingestion connectors.",
+    accent: "blue",
+  },
+  {
+    slug: "grc",
+    name: "GRC & Compliance Automation",
+    tagline:
+      "AI systems that automate gap analysis, evidence reconciliation, and remediation across regulatory frameworks.",
+    accent: "amber",
+  },
+  {
+    slug: "rag",
+    name: "Governed RAG & Knowledge",
+    tagline:
+      "Auditable, access-controlled retrieval platforms for enterprise and public-sector knowledge.",
+    accent: "violet",
+  },
+  {
+    slug: "mssp",
+    name: "MSSP & SOC Automation",
+    tagline: "Incident orchestration and detection tooling for managed security operations.",
+    accent: "cyan",
+  },
+  {
+    slug: "govcon",
+    name: "Government Contracting",
+    tagline: "Federated data tooling for public-sector opportunity discovery.",
+    accent: "emerald",
+  },
+];
+
+export const symosisProjects = [
+  // ===== AI Security & Governance =====
+  {
+    name: "Symosis Iris",
+    codename: "AI-Agent Security & Governance",
+    slug: "symosis-iris",
+    group: "ai-sec-gov",
+    tagline: "Multi-cloud AI-agent & non-human-identity discovery",
+    description:
+      "Deployed inside the client's own cloud, Iris discovers every AI agent and non-human identity across AWS, Azure, and GCP, maps them into a Neo4j relationship graph, hardens MCP servers, baselines behavior, and right-sizes permissions. No data leaves the environment.",
+    stack: ["Python", "Neo4j", "Open Policy Agent (Rego)", "boto3 / Azure / GCP SDKs", "scikit-learn"],
+    highlight: "Over 40% least-privilege scope reduction with zero production breakage",
+    frameworks: ["NIST AI RMF", "MITRE ATLAS", "OWASP LLM Top 10", "EU AI Act"],
+    proprietary: true,
+    featured: true,
+  },
+  {
+    name: "Symosis ARGUS",
+    codename: "AI Governance Framework",
+    slug: "symosis-argus",
+    group: "ai-sec-gov",
+    tagline: "Shadow-AI discovery & EU AI Act governance",
+    description:
+      "An audit-ready AI governance system that discovers shadow AI across the identity plane, classifies every tool by regulatory risk tier, maps 57 controls to EU AI Act, NIST AI RMF, and ISO 42001, and enforces policy through the client's existing IAM and CASB stack.",
+    stack: ["Python", "SQLite", "Okta / Entra APIs", "Netskope CASB", "OPA", "JWT-secured MCP"],
+    highlight: "57 controls mapped in code; under 48-hour drift-to-ticket SLA",
+    frameworks: ["EU AI Act", "NIST AI RMF", "ISO 42001"],
+    proprietary: true,
+    featured: true,
+  },
+  {
+    name: "SYNAPSE",
+    codename: "Secure AI Integration",
+    slug: "synapse-secure-ai-integration",
+    group: "ai-sec-gov",
+    tagline: "Defense-in-depth for enterprise AI touch points",
+    description:
+      "A roughly 9,400-line security layer that sits between enterprise AI systems (M365 Copilot, GitHub Copilot, custom LLMs) and the business, deciding what gets through at every input, model call, output, access, and audit point.",
+    stack: ["Python", "FastAPI", "MSAL / OIDC", "Semgrep", "CodeQL", "Gitleaks", "Pinecone / ChromaDB"],
+    highlight: "Over 95% prompt-injection detection at under 0.5% false positives; 30-attack red-team suite",
+    frameworks: ["OWASP LLM Top 10", "CIS Benchmarks"],
+    proprietary: true,
+    featured: true,
+  },
+  {
+    name: "Symosis Prism",
+    codename: "Agentic SOC & Custom Detection",
+    slug: "symosis-prism",
+    group: "ai-sec-gov",
+    tagline: "AI investigation agents plus custom ML detection",
+    description:
+      "Layers LangGraph investigation agents and custom ML detection models on a client's existing SIEM or XDR to cut SOC alert noise, with human-in-the-loop on every consequential decision and a tamper-evident, hash-chained audit trail.",
+    stack: ["Python", "XGBoost", "SHAP", "Optuna", "MLflow", "ONNX", "LangGraph", "Claude"],
+    highlight: "70 to 90% SOC alert-noise reduction with hard model acceptance gates",
+    frameworks: ["MITRE ATT&CK"],
+    proprietary: true,
+    featured: true,
+  },
+  {
+    name: "AI-Powered Penetration Testing",
+    codename: "Autonomous Pentest Platform",
+    slug: "ai-powered-penetration-testing",
+    group: "ai-sec-gov",
+    tagline: "Claude as an autonomous pentest orchestrator",
+    description:
+      "An end-to-end autonomous penetration-testing platform where Claude reads methodology SOPs, chains 10-plus security tools, decides on findings, and generates professional PDF reports, with legal and scope guardrails the AI cannot bypass.",
+    stack: ["Claude Sonnet", "Python", "nmap", "Nuclei", "Metasploit", "OWASP ZAP", "SQLmap", "React"],
+    highlight: "HMAC-signed scope enforcement plus DB-trigger append-only audit the model cannot override",
+    frameworks: ["OWASP", "MITRE ATT&CK"],
+    proprietary: true,
+  },
+  {
+    name: "AI Code Scanner",
+    codename: "Software Composition Analysis",
+    slug: "ai-code-scanner",
+    group: "ai-sec-gov",
+    tagline: "SCA scanning prioritized by real exploitability",
+    description:
+      "An enterprise Software Composition Analysis scanner that builds a dependency inventory, maps it against live CVEs, and prioritizes by actual exploitable risk rather than raw CVSS, proposing deterministic copy-pasteable fixes.",
+    stack: ["Python", "FastAPI", "Anthropic (forced tool-use)", "OSV.dev", "EPSS", "CISA KEV", "SARIF"],
+    highlight: "Composite risk = CVSS x EPSS x KEV x reachability x exposure; SARIF for GitHub Code Scanning",
+    frameworks: ["OWASP", "CWE"],
+    proprietary: true,
+  },
+  {
+    name: "AgentGuard",
+    codename: "Non-Human Identity Governance",
+    slug: "agentguard",
+    group: "ai-sec-gov",
+    tagline: "Discover, risk-score & auto-rotate machine credentials",
+    description:
+      "A multi-tenant SaaS that discovers, risk-scores, and auto-rotates non-human credentials (API keys, service accounts, OAuth tokens, AI-agent creds) across AWS, Azure, GCP, and GitHub, without raw IAM data leaving the customer's VPC.",
+    stack: ["Next.js 16", "FastAPI", "OPA / Rego", "PostgreSQL (RLS)", "ClickHouse", "EKS / Terraform / ArgoCD"],
+    highlight: "Two-plane architecture with fail-closed, deterministic auto-rotation",
+    frameworks: ["SOC 2", "NIST 800-53", "PCI DSS", "ISO 27001"],
+    repo: "https://github.com/pranavsaji/agentguard",
+    featured: true,
+  },
+  {
+    name: "MCPGuard",
+    codename: "MCP Server Security Scanner",
+    slug: "mcpguard",
+    group: "ai-sec-gov",
+    tagline: "The 'npm audit' for Model Context Protocol servers",
+    description:
+      "A security scanner for MCP servers that statically and dynamically scans a config, manifest, or live connection and emits a graded, CI-gating report mapped to the OWASP LLM and Agentic Top 10, CWE, and MCP CVE classes.",
+    stack: ["Python (zero-dependency core)", "Next.js 16", "Vitest", "MCP SDK"],
+    highlight: "7 detection rules, ~98% test coverage, parity-tested TypeScript port, live MCP Registry",
+    frameworks: ["OWASP LLM Top 10", "CWE"],
+    repo: "https://github.com/pranavsaji/mcpguard",
+    featured: true,
+  },
+  {
+    name: "Zero-Day Sentinel",
+    codename: "Zero-Day Intel & Auto-Remediation",
+    slug: "zero-day-sentinel",
+    group: "ai-sec-gov",
+    tagline: "7-agent zero-day intelligence & remediation",
+    description:
+      "AI zero-day vulnerability intelligence combining live threat feeds, a 7-agent pipeline, and local system scanning to move teams from awareness to remediation in minutes, generating EDR threat-hunting queries and APT attributions.",
+    stack: ["Python", "FastAPI", "OpenAI", "Next.js", "NVD / CISA KEV / ExploitDB", "SSE streaming"],
+    highlight: "4,373 CVEs ingested; EDR queries for 7 platforms (FQL / KQL / EQL / AQL / CBQL); 40+ APT groups",
+    frameworks: ["MITRE ATT&CK"],
+    proprietary: true,
+  },
+
+  // ===== SSPM & SaaS Integration =====
+  {
+    name: "Symosis SSPM",
+    codename: "SaaS Security Posture Management",
+    slug: "symosis-sspm",
+    group: "sspm",
+    tagline: "Full-stack SSPM across 8 SaaS providers",
+    description:
+      "A full-stack SaaS Security Posture Management platform connecting 8 providers (Salesforce, Google Workspace, ServiceNow, Slack, Okta, Jira, Microsoft 365, GitHub), surfacing findings and orchestrating AI-driven remediation with human approval.",
+    stack: ["React 19", "Express", "PostgreSQL", "GPT-4o / DeepSeek / Kimi", "Claude"],
+    highlight: "8 integrations, natural-language-to-SQL, real Jira and ServiceNow ticketing",
+    frameworks: ["SOC 2", "ISO 27001", "NIST CSF 2.0", "CIS v8"],
+    proprietary: true,
+  },
+  {
+    name: "SSPM Custom Integrations",
+    codename: "LinkedIn InfoSec",
+    slug: "sspm-custom-integrations",
+    group: "sspm",
+    tagline: "Production SaaS connectors into LinkedIn's data platform",
+    description:
+      "Config-driven ingestion connectors pulling user and security data from enterprise SaaS apps into LinkedIn's Enterprise Data Platform (Databricks) for SSPM, feeding Adaptive Shield. Real production enterprise contract work.",
+    stack: ["Python", "Databricks", "Azure Key Vault", "OAuth2 / IMS", "LinkedIn CI/CD"],
+    highlight: "8 production connectors, multi-region and multi-environment aware",
+    frameworks: ["SSPM"],
+    badge: "Production - LinkedIn InfoSec",
+    proprietary: true,
+  },
+  {
+    name: "SSPM Enterprise Platform",
+    codename: "Multi-Tenant SSPM API",
+    slug: "sspm-enterprise-platform",
+    group: "sspm",
+    tagline: "TypeScript / Fastify SSPM backend",
+    description:
+      "A production-oriented SSPM backend implementing a confidential Enterprise Platform PRD, with a multi-tenant API, AI-driven API-surface discovery, security classification, dashboards, AI chat, and ITSM sync.",
+    stack: ["TypeScript", "Fastify 5", "PostgreSQL (RLS)", "RS256 JWT", "TOTP MFA", "Argon2"],
+    highlight: "Row-level security plus DB-level append-only audit triggers; RS256 with refresh rotation",
+    frameworks: ["SOC 2"],
+    proprietary: true,
+  },
+  {
+    name: "SaaS-Integrations Platform",
+    codename: "Integration Monorepo",
+    slug: "saas-integrations-platform",
+    group: "sspm",
+    tagline: "Config-driven enterprise integration platform",
+    description:
+      "An enterprise integration platform with secure connections, queued ingestion workers, tenant-isolated storage, a SQL workspace with natural-language querying, and an SSPM policy engine. Add a connector by dropping a YAML file.",
+    stack: ["NestJS 11", "Next.js 16", "Prisma 7", "PostgreSQL", "BullMQ", "Redis", "OpenAI"],
+    highlight: "7-role RBAC, YAML-config connectors with no code changes",
+    frameworks: ["SSPM"],
+    proprietary: true,
+  },
+
+  // ===== GRC & Compliance Automation =====
+  {
+    name: "Security-Mapper",
+    codename: "Compliance Gap Platform",
+    slug: "security-mapper",
+    group: "grc",
+    tagline: "Flagship compliance-gap SaaS, 268 commits",
+    description:
+      "An AI-powered multi-tenant compliance platform: upload standards and company docs, get parallel LLM-driven gap evaluation, POA&Ms, remediation roadmaps, and a compliance chatbot. The most production-hardened build in the suite.",
+    stack: ["FastAPI", "PostgreSQL", "Redis / RQ", "OpenAI / LangChain / Claude Opus", "Azure AI Search"],
+    highlight: "268 commits, hundreds of Azure blue/green deploys, OpenTelemetry and Prometheus observability",
+    frameworks: ["NIST", "ISO 27001", "SOC 2", "CIS"],
+    proprietary: true,
+    featured: true,
+  },
+  {
+    name: "EvidenceIQ",
+    codename: "Evidence Reconciliation Engine",
+    slug: "evidenceiq",
+    group: "grc",
+    tagline: "Policy-claim vs live-evidence reconciliation",
+    description:
+      "A multi-tenant SaaS that cross-references what security policy documents claim against what live APIs actually show, surfacing contradictions, risk-scoring them, and mapping them to compliance frameworks.",
+    stack: ["FastAPI", "PostgreSQL", "Pinecone", "GPT-4o + Claude (dual-LLM)", "React"],
+    highlight: "7-agent pipeline over 8 evidence providers with SSE live streaming and mid-run cancel",
+    frameworks: ["NIST CSF", "SOC 2", "ISO 27001", "CIS"],
+    proprietary: true,
+  },
+  {
+    name: "AI Risk Finder",
+    codename: "Automated Gap Analysis",
+    slug: "ai-risk-finder",
+    group: "grc",
+    tagline: "Framework gap analysis with advanced RAG",
+    description:
+      "Upload policy and evidence docs, pick a framework, and get automated gap analysis with prioritized remediation via a 3-phase retrieval pipeline and a CMMI-anchored LLM evaluator.",
+    stack: ["FastAPI", "Pinecone", "OpenAI embeddings", "Cohere reranking", "React", "Google OAuth"],
+    highlight: "HyDE plus multi-query expansion plus Cohere reranking; live control-by-control feed",
+    frameworks: ["NIST CSF 2.0", "ISO 27001", "SOC 2", "CIS v8"],
+    proprietary: true,
+  },
+  {
+    name: "POAM-Plus",
+    codename: "AI Remediation Playbooks",
+    slug: "poam-plus",
+    group: "grc",
+    tagline: "POA&M entries to platform-specific playbooks",
+    description:
+      "An AI SaaS that transforms vague Plan of Action & Milestones entries into platform-specific, step-by-step remediation playbooks for Azure, M365, Okta, AWS, GCP, ServiceNow, and on-prem.",
+    stack: ["FastAPI", "PostgreSQL", "Redis / RQ", "Claude Sonnet + GPT-4o", "Pinecone", "Tavily"],
+    highlight: "Self-healing multi-model fallback loop that never crashes; status state machine",
+    frameworks: ["NIST 800-53", "FedRAMP", "CMMC", "ISO 27001", "SOC 2"],
+    proprietary: true,
+  },
+  {
+    name: "Vendor Risk Dossier Generator",
+    codename: "Third-Party Risk",
+    slug: "vendor-risk-dossier-generator",
+    group: "grc",
+    tagline: "Vendor risk dossiers from security artifacts",
+    description:
+      "An AI SaaS that generates comprehensive third-party vendor risk dossiers from uploaded artifacts (SOC 2, DPAs, questionnaires): exec summary, control coverage, gaps with severity, follow-up questions, and draft contract clauses.",
+    stack: ["Next.js 14", "TypeScript", "PostgreSQL + Prisma + pgvector", "GPT-4o", "NextAuth"],
+    highlight: "In-database pgvector RAG with a clean multi-tenant data model and PDF export",
+    frameworks: ["NIST CSF", "ISO 27001", "SOC 2", "HIPAA"],
+    proprietary: true,
+  },
+  {
+    name: "Reconciliation Engine",
+    codename: "3-Way Triangulation",
+    slug: "reconciliation-engine",
+    group: "grc",
+    tagline: "Claims vs policy vs framework triangulation",
+    description:
+      "A compliance conflict engine that triangulates three sources of truth, what people claim, what policy docs say, and what a framework requires, to surface understated risk, overstated maturity, or missing documentation.",
+    stack: ["FastAPI", "DeepSeek to Claude to GPT-4o chain", "React", "Vite"],
+    highlight: "5-agent pipeline with 8-thread parallel LLM and 6 conflict types",
+    frameworks: ["NIST CSF 2.0", "NIST 800-53", "ISO 27001"],
+    proprietary: true,
+  },
+  {
+    name: "Compliance Copilot",
+    codename: "Deterministic Maturity Scorer",
+    slug: "compliance-copilot",
+    group: "grc",
+    tagline: "Rule-based CMMI maturity scoring, no LLM",
+    description:
+      "An app that assesses security policy documents against NIST CSF v2.0, ISO 27001, and SOC 2 and computes CMMI-style maturity scores, deliberately deterministic and rule-based for cost and reproducibility. The judgment call to not use AI where it isn't needed.",
+    stack: ["FastAPI", "pdfplumber", "Docker", "Azure App Service"],
+    highlight: "Deterministic by design; pluggable mapper factory with evidence snippets",
+    frameworks: ["NIST CSF 2.0", "ISO 27001", "SOC 2"],
+    repo: "https://github.com/pranavsaji/compliance-copilot",
+  },
+
+  // ===== Governed RAG & Knowledge =====
+  {
+    name: "governed_rag_core",
+    codename: "Governed, Pluggable RAG Platform",
+    slug: "governed-rag-core",
+    group: "rag",
+    tagline: "Auditable RAG core with a governance lifecycle",
+    description:
+      "A reference implementation of a modular, governed, auditable RAG core with a formal draft to validate to propose to approve to publish artifact lifecycle and a full audit ledger. The most architecturally sophisticated project in the suite.",
+    stack: ["FastAPI", "Next.js", "7 LLM providers", "8 vector stores", "LangChain / LangGraph / LlamaIndex / Haystack"],
+    highlight: "~38 swappable plugins across 12 categories; provider-agnostic by design",
+    frameworks: ["Governance lifecycle"],
+    proprietary: true,
+    featured: true,
+  },
+  {
+    name: "GovAssist AI",
+    codename: "Municipal RAG Assistant",
+    slug: "govassist-ai",
+    group: "rag",
+    tagline: "Public-sector RAG across web, SMS & email",
+    description:
+      "A RAG chatbot for municipalities giving staff and residents accurate, source-cited answers grounded in the agency's own documents, 24/7 across web, email, and SMS, with SAML SSO and prompt-injection defense.",
+    stack: ["FastAPI", "Claude Sonnet", "Weaviate", "local embeddings + reranker", "SAML / Azure AD", "Twilio / SendGrid"],
+    highlight: "Targets under 3s p95, 94% self-service resolution, 5+ languages, 500+ concurrent users",
+    frameworks: ["SAML 2.0"],
+    proprietary: true,
+  },
+
+  // ===== MSSP & SOC Automation =====
+  {
+    name: "MSSP Hub",
+    codename: "Incident Orchestration",
+    slug: "mssp-hub",
+    group: "mssp",
+    tagline: "Normalize & route security incidents at scale",
+    description:
+      "A platform that ingests security incidents from multiple MSSP providers, normalizes them into one schema, applies automation rules, and fans out notifications across Slack, Email, Teams, Discord, and webhooks.",
+    stack: ["Next.js 16", "NestJS 11", "Prisma 6", "PostgreSQL", "BullMQ", "Redis"],
+    highlight: "6 provider adapters, 5 notification channels, incident dedupe with bidirectional sync",
+    frameworks: ["MSSP"],
+    proprietary: true,
+  },
+
+  // ===== Government Contracting =====
+  {
+    name: "RFP Bidder",
+    codename: "Gov Opportunity Aggregator",
+    slug: "rfp-bidder",
+    group: "govcon",
+    tagline: "Federated federal opportunity search",
+    description:
+      "A US government contract and grant opportunity aggregator that federates search across SAM.gov, Simpler Grants, Data.gov, FPDS, and Socrata into one searchable interface with caching and CSV export.",
+    stack: ["FastAPI", "Next.js 16", "React 19", "SQLite cache"],
+    highlight: "5 federated federal data sources with defensive JSON traversal and graceful source skipping",
+    frameworks: ["GovCon"],
+    proprietary: true,
   },
 ];
 

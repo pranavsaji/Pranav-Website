@@ -1,16 +1,22 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { projects, projectCategories } from "@/lib/data";
+import { projects, projectCategories, symosisProjects } from "@/lib/data";
 import ProjectsExplorer from "@/components/ProjectsExplorer";
+import SymosisSuite from "@/components/SymosisSuite";
 
 export const metadata: Metadata = {
-  title: "AI Projects - Healthcare, Finance, Security & Agentic AI",
+  title: "AI Projects - Security Platforms, Healthcare, Finance & Agentic AI",
   description:
-    "50+ AI projects by Pranav Saji across healthcare, finance, cybersecurity, agentic AI, and enterprise search. Explore production LLM systems, multi-agent frameworks, RAG pipelines, and full-stack AI apps, organized by domain.",
+    "70+ AI projects by Pranav Saji, including a production Symosis Security suite (AI-agent governance, autonomous pentesting, SSPM, GRC automation) plus open-source work across healthcare, finance, agentic AI, and enterprise search, organized by domain.",
   keywords: [
     "Pranav Saji projects",
     "AI portfolio",
-    "AI engineering projects",
+    "AI security platforms",
+    "Symosis Security",
+    "AI agent governance",
+    "SSPM",
+    "GRC automation",
+    "autonomous penetration testing",
     "agentic AI projects",
     "healthcare AI projects",
     "finance AI projects",
@@ -25,9 +31,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://pranav-saji.com/projects",
-    title: "AI Projects by Pranav Saji - Healthcare, Finance, Security & Agentic AI",
+    title: "AI Projects by Pranav Saji - Security Platforms, Healthcare, Finance & Agentic AI",
     description:
-      "50+ AI projects across healthcare, finance, cybersecurity, agentic AI, and enterprise, organized by domain. Production LLM systems, multi-agent frameworks, and RAG pipelines.",
+      "70+ AI projects: a production Symosis Security suite plus open-source work across healthcare, finance, agentic AI, and enterprise, organized by domain.",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Pranav Saji AI Projects" }],
   },
   twitter: {
@@ -57,25 +63,39 @@ const collectionSchema = {
   url: "https://pranav-saji.com/projects",
   name: "AI Projects by Pranav Saji",
   description:
-    "A portfolio of 50+ AI and machine learning projects across healthcare, finance, cybersecurity, agentic AI, and enterprise search.",
+    "A portfolio of 70+ AI and machine learning projects, including a production Symosis Security suite and open-source work across healthcare, finance, cybersecurity, agentic AI, and enterprise search.",
   isPartOf: { "@id": "https://pranav-saji.com/#website" },
   about: { "@id": "https://pranav-saji.com/#pranav-saji" },
   mainEntity: {
     "@type": "ItemList",
-    numberOfItems: projects.length,
-    itemListElement: projects.map((p, i) => ({
-      "@type": "ListItem",
-      position: i + 1,
-      item: {
-        "@type": "SoftwareSourceCode",
-        name: p.name,
-        description: p.description,
-        codeRepository: p.repo,
-        programmingLanguage: p.language,
-        author: { "@type": "Person", "@id": "https://pranav-saji.com/#pranav-saji", name: "Pranav Saji" },
-        ...(("demo" in p && p.demo) ? { url: p.demo } : {}),
-      },
-    })),
+    numberOfItems: symosisProjects.length + projects.length,
+    itemListElement: [
+      ...symosisProjects.map((p, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "SoftwareApplication",
+          name: p.name,
+          applicationCategory: "SecurityApplication",
+          description: p.description,
+          author: { "@type": "Person", "@id": "https://pranav-saji.com/#pranav-saji", name: "Pranav Saji" },
+          ...(("repo" in p && p.repo) ? { codeRepository: p.repo } : {}),
+        },
+      })),
+      ...projects.map((p, i) => ({
+        "@type": "ListItem",
+        position: symosisProjects.length + i + 1,
+        item: {
+          "@type": "SoftwareSourceCode",
+          name: p.name,
+          description: p.description,
+          codeRepository: p.repo,
+          programmingLanguage: p.language,
+          author: { "@type": "Person", "@id": "https://pranav-saji.com/#pranav-saji", name: "Pranav Saji" },
+          ...(("demo" in p && p.demo) ? { url: p.demo } : {}),
+        },
+      })),
+    ],
   },
 };
 
@@ -90,7 +110,7 @@ const breadcrumbSchema = {
 
 export default function ProjectsPage() {
   const domainCount = projectCategories.length;
-  const liveCount = projects.filter((p) => "demo" in p && p.demo).length;
+  const totalCount = projects.length + symosisProjects.length;
 
   return (
     <>
@@ -115,30 +135,44 @@ export default function ProjectsPage() {
               <span className="text-gradient">Every Domain That Matters</span>
             </h1>
             <p className="text-slate-400 text-lg max-w-2xl leading-relaxed">
-              A working portfolio of {projects.length}+ AI and machine learning
-              projects, from securing autonomous agents to shipping clinical and
-              financial systems. Filter by domain to see depth across healthcare,
-              finance, cybersecurity, agentic AI, and the enterprise.
+              A working portfolio of {totalCount}+ projects, from a production
+              security-product suite shipped as Head of AI Security at Symosis, to
+              open-source AI work spanning healthcare, finance, agentic systems,
+              and the enterprise.
             </p>
           </div>
 
           {/* Stat strip */}
-          <div className="grid grid-cols-3 gap-4 mb-14 max-w-xl">
+          <div className="grid grid-cols-3 gap-4 mb-16 max-w-xl">
             <div className="stat-card text-center">
-              <div className="text-2xl md:text-3xl font-bold text-white">{projects.length}+</div>
+              <div className="text-2xl md:text-3xl font-bold text-white">{totalCount}+</div>
               <div className="text-xs text-slate-500 mt-1">Projects</div>
+            </div>
+            <div className="stat-card text-center">
+              <div className="text-2xl md:text-3xl font-bold text-white">{symosisProjects.length}</div>
+              <div className="text-xs text-slate-500 mt-1">Security Platforms</div>
             </div>
             <div className="stat-card text-center">
               <div className="text-2xl md:text-3xl font-bold text-white">{domainCount}</div>
               <div className="text-xs text-slate-500 mt-1">Domains</div>
             </div>
-            <div className="stat-card text-center">
-              <div className="text-2xl md:text-3xl font-bold text-white">{liveCount}</div>
-              <div className="text-xs text-slate-500 mt-1">Live Demos</div>
-            </div>
           </div>
 
+          {/* Symosis Security Suite - flagship production work */}
+          <SymosisSuite />
+
+          <div className="divider mb-16" />
+
           {/* Domain overview */}
+          <div className="mb-6">
+            <h2 className="text-xs font-semibold uppercase tracking-widest text-blue-300 mb-2">
+              Open-Source & Personal Projects
+            </h2>
+            <p className="text-slate-400 text-sm max-w-2xl">
+              Public builds across every domain I work in. Filter to see depth in
+              a space.
+            </p>
+          </div>
           <div className="mb-16">
             <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-6">
               Domains

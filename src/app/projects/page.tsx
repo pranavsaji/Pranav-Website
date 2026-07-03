@@ -148,26 +148,35 @@ export default function ProjectsPage() {
             </div>
           </div>
 
+          {/* Browse by Domain - prominent, right under the stats */}
+          <div className="mb-20">
+            <div className="mb-6">
+              <h2 className="heading-md text-white mb-2">
+                Explore by <span className="text-gradient">Domain</span>
+              </h2>
+              <p className="text-slate-400 text-sm max-w-2xl">
+                Every domain I have shipped AI in, from healthcare and finance to
+                security and agentic systems. Click a tile to open that domain and
+                see its projects.
+              </p>
+            </div>
+            <DomainTiles />
+          </div>
+
           {/* Symosis Security Suite - flagship production work */}
           <SymosisSuite />
 
           <div className="divider mb-16" />
 
-          {/* Domain overview */}
+          {/* Open-Source & Personal Projects */}
           <div className="mb-6">
             <h2 className="text-xs font-semibold uppercase tracking-widest text-blue-300 mb-2">
               Open-Source & Personal Projects
             </h2>
             <p className="text-slate-400 text-sm max-w-2xl">
-              Public builds across every domain I work in. Filter to see depth in
-              a space.
+              Public builds across every domain I work in. Filter, or open a
+              domain tile above to see depth in a space.
             </p>
-          </div>
-          <div className="mb-16">
-            <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-6">
-              Browse by Domain
-            </h2>
-            <DomainTiles />
           </div>
 
           {/* Interactive explorer */}

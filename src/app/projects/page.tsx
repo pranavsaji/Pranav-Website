@@ -3,6 +3,7 @@ import Link from "next/link";
 import { projects, projectCategories, symosisProjects } from "@/lib/data";
 import ProjectsExplorer from "@/components/ProjectsExplorer";
 import SymosisSuite from "@/components/SymosisSuite";
+import DomainTiles from "@/components/DomainTiles";
 
 export const metadata: Metadata = {
   title: "AI Projects - Security Platforms, Healthcare, Finance & Agentic AI",
@@ -43,17 +44,6 @@ export const metadata: Metadata = {
       "50+ AI projects across healthcare, finance, security, and agentic AI, organized by domain.",
     creator: "@PranavInnovates",
   },
-};
-
-const DOMAIN_ACCENT: Record<string, string> = {
-  red: "text-red-300 border-red-500/20 bg-red-500/[0.04]",
-  indigo: "text-indigo-300 border-indigo-500/20 bg-indigo-500/[0.04]",
-  emerald: "text-emerald-300 border-emerald-500/20 bg-emerald-500/[0.04]",
-  amber: "text-amber-300 border-amber-500/20 bg-amber-500/[0.04]",
-  blue: "text-blue-300 border-blue-500/20 bg-blue-500/[0.04]",
-  fuchsia: "text-fuchsia-300 border-fuchsia-500/20 bg-fuchsia-500/[0.04]",
-  cyan: "text-cyan-300 border-cyan-500/20 bg-cyan-500/[0.04]",
-  violet: "text-violet-300 border-violet-500/20 bg-violet-500/[0.04]",
 };
 
 const collectionSchema = {
@@ -175,29 +165,13 @@ export default function ProjectsPage() {
           </div>
           <div className="mb-16">
             <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-6">
-              Domains
+              Browse by Domain
             </h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              {projectCategories.map((cat) => {
-                const n = projects.filter((p) => p.category === cat.slug).length;
-                return (
-                  <div
-                    key={cat.slug}
-                    className={`rounded-xl border p-5 ${DOMAIN_ACCENT[cat.accent]}`}
-                  >
-                    <div className="flex items-baseline justify-between mb-2">
-                      <h3 className="text-white font-semibold text-sm">{cat.name}</h3>
-                      <span className="text-xs opacity-70">{n}</span>
-                    </div>
-                    <p className="text-slate-400 text-xs leading-relaxed">{cat.tagline}</p>
-                  </div>
-                );
-              })}
-            </div>
+            <DomainTiles />
           </div>
 
           {/* Interactive explorer */}
-          <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-6">
+          <h2 id="explore" className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-6 scroll-mt-24">
             Explore All Work
           </h2>
           <ProjectsExplorer />

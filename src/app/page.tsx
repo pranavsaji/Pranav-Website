@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { stats, experiences, skillCategories } from "@/lib/data";
+import { stats, experiences, skillCategories, projects, symosisProjects } from "@/lib/data";
+import DomainTiles from "@/components/DomainTiles";
 
 export const metadata: Metadata = {
   title: "Pranav Saji - AI Leader, Tech Entrepreneur & Full-Stack Engineer | San Francisco",
@@ -72,6 +73,7 @@ const faqs = faqSchema.mainEntity.map((q) => ({
 
 export default function Home() {
   const featured = experiences.slice(0, 3);
+  const totalProjects = projects.length + symosisProjects.length;
 
   return (
     <>
@@ -189,6 +191,51 @@ export default function Home() {
             ))}
           </div>
           <div className="divider mt-12" />
+        </div>
+      </section>
+
+      {/* ── Projects preview ────────────────────────── */}
+      <section className="section-sm">
+        <div className="container">
+          <div className="flex items-end justify-between mb-4">
+            <div>
+              <h2 className="heading-lg text-white">
+                Featured <span className="text-gradient">Projects</span>
+              </h2>
+              <p className="text-slate-400 mt-2 text-sm">
+                {totalProjects}+ projects across every domain I work in
+              </p>
+            </div>
+            <Link
+              href="/projects"
+              className="text-sm text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-1 shrink-0"
+            >
+              View all
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+          </div>
+
+          <p className="text-slate-400 text-sm leading-relaxed max-w-2xl mb-8">
+            From a production security-product suite built as Head of AI Security
+            at Symosis, to open-source AI across healthcare, finance, and agentic
+            systems. Pick a domain to explore the work.
+          </p>
+
+          <DomainTiles compact />
+
+          <div className="mt-10 flex flex-wrap gap-3">
+            <Link href="/projects" className="btn btn-primary">
+              Explore all {totalProjects}+ projects
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+            <Link href="/projects#symosis" className="btn btn-outline">
+              Symosis Security Suite
+            </Link>
+          </div>
         </div>
       </section>
 

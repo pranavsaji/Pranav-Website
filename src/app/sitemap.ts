@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getAllPosts } from "@/lib/blog";
+import { projectCategories } from "@/lib/data";
 
 // Real last-modified dates. Update a page's date when its content meaningfully
 // changes — emitting `new Date()` on every build makes Google ignore the field.
@@ -61,5 +62,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...blogPages];
+  // Per-domain project pages (/projects/healthcare, /projects/finance, ...)
+  const domainPages: MetadataRoute.Sitemap = projectCategories.map((c) => ({
+    url: `${base}/projects/${c.slug}`,
+    lastModified: new Date(PAGE_DATES["/projects"]),
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
+  return [...staticPages, ...blogPages, ...domainPages];
 }

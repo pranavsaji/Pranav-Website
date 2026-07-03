@@ -59,6 +59,10 @@ next-env.d.ts
 
 # newsletter working drafts (not deployed as web pages)
 /newsletter linkedin/
+/newsletters/
 
 # private speaker submission working docs (Sessionize / AISS)
 /sessionaize/
+
+# HackerNoon article working drafts (not deployed as web pages)
+/hackernoon/

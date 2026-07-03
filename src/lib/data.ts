@@ -264,6 +264,696 @@ export const stats = [
   { value: "20+", label: "Clients from Fortune 100 companies to multiple successful startups" },
 ];
 
+// Project domains - each maps to a real vertical Pranav has shipped AI in.
+// `accent` drives the category pill + filter color on /projects.
+export const projectCategories = [
+  {
+    slug: "ai-security",
+    name: "AI Security & Governance",
+    tagline:
+      "Securing agents, non-human identities, and the AI tool layer for enterprises.",
+    accent: "red",
+  },
+  {
+    slug: "agentic",
+    name: "Agentic AI & Multi-Agent Systems",
+    tagline:
+      "Autonomous and multi-agent systems that plan, use tools, and get real work done.",
+    accent: "indigo",
+  },
+  {
+    slug: "healthcare",
+    name: "Healthcare AI",
+    tagline:
+      "Clinical assistants, diagnostic models, and patient-facing AI built for a regulated space.",
+    accent: "emerald",
+  },
+  {
+    slug: "finance",
+    name: "Finance & Fintech AI",
+    tagline:
+      "Financial RAG, fraud detection, and risk modeling for banking and markets.",
+    accent: "amber",
+  },
+  {
+    slug: "enterprise",
+    name: "Enterprise AI & Search",
+    tagline:
+      "Knowledge graphs, semantic search, and LLM platforms wired into real business data.",
+    accent: "blue",
+  },
+  {
+    slug: "content",
+    name: "Content & Media Generation",
+    tagline:
+      "Generative pipelines for writing, video, audio, and research at scale.",
+    accent: "fuchsia",
+  },
+  {
+    slug: "devtools",
+    name: "Developer & Productivity Tools",
+    tagline:
+      "LLM-powered tooling that speeds up how people build, apply, and ship.",
+    accent: "cyan",
+  },
+  {
+    slug: "applied-ml",
+    name: "Applied ML & Consumer Apps",
+    tagline:
+      "Forecasting, computer vision, and full-stack products shipped to real users.",
+    accent: "violet",
+  },
+];
+
+// Curated from github.com/pranavsaji. `repo` is the source; `demo` is a live deployment where one exists.
+export const projects = [
+  // ===== AI Security & Governance =====
+  {
+    name: "AgentGuard",
+    slug: "agentguard",
+    category: "ai-security",
+    tagline: "Non-human identity governance for the agent era",
+    description:
+      "SaaS platform that discovers, risk-scores, and auto-rotates non-human identities (service accounts, API keys, agent credentials) across AWS, Azure, GCP, and GitHub. Closes the fastest-growing gap in enterprise AI security: the exploding population of machine identities that agents create and use.",
+    tags: ["Non-Human Identity", "Cloud Security", "AI Governance", "AWS", "Azure", "GCP"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/agentguard",
+    featured: true,
+    year: 2026,
+  },
+  {
+    name: "MCPGuard",
+    slug: "mcpguard",
+    category: "ai-security",
+    tagline: "The 'npm audit' for Model Context Protocol servers",
+    description:
+      "A security scanner for MCP servers that detects tool poisoning, rug-pull tool definitions, and prompt-injection payloads hidden in tool metadata before an agent ever trusts them. Purpose-built for the MCP supply-chain attack surface that is now the most urgent problem in agentic AI security.",
+    tags: ["MCP Security", "Tool Poisoning", "Supply Chain", "Agentic AI Security", "Static Analysis"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/mcpguard",
+    featured: true,
+    year: 2026,
+  },
+  {
+    name: "Attack Surface Intel",
+    slug: "attack-surface-intel",
+    category: "ai-security",
+    tagline: "AI-powered external attack surface management",
+    description:
+      "External attack surface management and cyber threat intelligence platform that maps an organization's internet-facing footprint and enriches it with AI-driven risk analysis, giving security teams a live, prioritized view of exposure.",
+    tags: ["Attack Surface Management", "Threat Intelligence", "Cybersecurity", "OSINT"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/attack-surface-intel",
+    year: 2026,
+  },
+  {
+    name: "Compliance Copilot",
+    slug: "compliance-copilot",
+    category: "ai-security",
+    tagline: "AI assistant for security compliance and audit",
+    description:
+      "LLM assistant that accelerates security reviews and audit-readiness by mapping controls, drafting evidence, and answering compliance questions against frameworks, cutting the manual effort in SOC 2, ISO, and enterprise vendor assessments.",
+    tags: ["Compliance", "GRC", "Audit Automation", "LLM", "SOC 2"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/compliance-copilot",
+    year: 2025,
+  },
+  {
+    name: "Fake Finder",
+    slug: "fake-finder",
+    category: "ai-security",
+    tagline: "AI misinformation and fake-content detector",
+    description:
+      "Detection system that flags AI-generated and manipulated content, helping teams defend against misinformation and synthetic-media fraud, an increasingly weaponized threat vector for enterprises.",
+    tags: ["Misinformation", "Deepfake Detection", "Content Integrity", "ML"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/fake-finder",
+    year: 2026,
+  },
+  {
+    name: "Plagiarism Detector",
+    slug: "plagiarism-detector",
+    category: "ai-security",
+    tagline: "AI-assisted originality and plagiarism checker",
+    description:
+      "Semantic plagiarism detection that goes beyond string matching to catch paraphrased and AI-rewritten copying using embedding-based similarity.",
+    tags: ["Plagiarism Detection", "Embeddings", "NLP", "Content Integrity"],
+    language: "TypeScript",
+    repo: "https://github.com/pranavsaji/plagiarism-detector",
+    year: 2026,
+  },
+
+  // ===== Agentic AI & Multi-Agent Systems =====
+  {
+    name: "RFP Autopilot",
+    slug: "rfp-autopilot",
+    category: "agentic",
+    tagline: "Multi-agent system that writes winning RFP responses",
+    description:
+      "Agentic RFP autopilot that decomposes a request for proposal, researches answers across a knowledge base, and drafts compliant, on-brand responses with a coordinated team of specialized agents, collapsing days of proposal work into hours.",
+    tags: ["Multi-Agent", "RFP Automation", "LLM Orchestration", "RAG", "Agentic AI"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/rfp-autopilot",
+    featured: true,
+    year: 2026,
+  },
+  {
+    name: "LangGraph Multi-Agent System",
+    slug: "langgraph-multi-agent-system",
+    category: "agentic",
+    tagline: "Stateful multi-agent orchestration with LangGraph",
+    description:
+      "A multi-agent orchestration framework built on LangGraph, wiring specialized agents into a stateful graph with shared memory, tool routing, and human-in-the-loop checkpoints, a reference architecture for production agent workflows.",
+    tags: ["LangGraph", "Multi-Agent", "Orchestration", "LLMOps", "Agentic AI"],
+    language: "Jupyter Notebook",
+    repo: "https://github.com/pranavsaji/langgraph-multi-agent-system",
+    featured: true,
+    year: 2026,
+  },
+  {
+    name: "Multi-Agent Workflows (LlamaIndex)",
+    slug: "multiagents-llamaindex",
+    category: "agentic",
+    tagline: "Collaborative agent workflows on LlamaIndex",
+    description:
+      "Multi-agent workflows built with LlamaIndex, coordinating retrieval, reasoning, and tool-using agents over enterprise documents to answer complex, multi-step questions.",
+    tags: ["LlamaIndex", "Multi-Agent", "RAG", "Agent Workflows"],
+    language: "Jupyter Notebook",
+    repo: "https://github.com/pranavsaji/multiagents-llamaindex",
+    year: 2026,
+  },
+  {
+    name: "Multi-Agent Task Automation",
+    slug: "multi-agent-system",
+    category: "agentic",
+    tagline: "Agents that collaborate to automate tasks end to end",
+    description:
+      "A multi-agent system for collaborative task automation, where planner, worker, and reviewer agents divide a goal, execute in parallel, and reconcile results.",
+    tags: ["Multi-Agent", "Task Automation", "Agent Collaboration", "Node.js"],
+    language: "JavaScript",
+    repo: "https://github.com/pranavsaji/multi-agent-system",
+    year: 2026,
+  },
+  {
+    name: "AI Code Review Agent",
+    slug: "ai-code-review-agent",
+    category: "agentic",
+    tagline: "Autonomous agent that reviews pull requests",
+    description:
+      "An autonomous code-review agent that reads diffs, reasons about correctness and security, and posts actionable review comments, bringing consistent senior-level review to every pull request.",
+    tags: ["Code Review", "Autonomous Agent", "DevSecOps", "LLM"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/ai-code-review-agent",
+    year: 2025,
+  },
+  {
+    name: "Job Scout Agent",
+    slug: "job-scout-agent",
+    category: "agentic",
+    tagline: "Autonomous agent that hunts and ranks jobs",
+    description:
+      "An autonomous agent that continuously scouts job boards, matches roles against a candidate profile, and ranks the best-fit opportunities without manual searching.",
+    tags: ["Autonomous Agent", "Job Search", "Web Automation", "LLM"],
+    language: "TypeScript",
+    repo: "https://github.com/pranavsaji/job-scout-agent",
+    year: 2025,
+  },
+
+  // ===== Healthcare AI =====
+  {
+    name: "Cura Healthcare",
+    slug: "cura-healthcare",
+    category: "healthcare",
+    tagline: "AI-first healthcare experience",
+    description:
+      "A healthcare application that brings AI into the patient journey, from intake and triage to guidance, designed for the trust and clarity a clinical setting demands.",
+    tags: ["Healthcare", "Patient Experience", "AI Assistant", "Full-Stack"],
+    language: "TypeScript",
+    repo: "https://github.com/pranavsaji/cura-healthcare",
+    featured: true,
+    year: 2026,
+  },
+  {
+    name: "PatientCare RAG Bot",
+    slug: "patientcare-rag-bot",
+    category: "healthcare",
+    tagline: "Grounded clinical Q&A over medical knowledge",
+    description:
+      "A retrieval-augmented chatbot that answers patient-care questions grounded in a curated medical knowledge base, reducing hallucination risk in a domain where accuracy is non-negotiable.",
+    tags: ["Healthcare", "RAG", "Clinical NLP", "Vector Search", "LLM"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/Patientcare_RAG_Bot",
+    year: 2025,
+  },
+  {
+    name: "Melanoma Detection",
+    slug: "melanoma-detection",
+    category: "healthcare",
+    tagline: "CNN skin-cancer classifier from dermoscopic images",
+    description:
+      "A custom convolutional neural network that classifies melanoma and other skin conditions from dermoscopic images, applying deep learning to early cancer screening.",
+    tags: ["Medical Imaging", "Computer Vision", "CNN", "TensorFlow", "Deep Learning"],
+    language: "Jupyter Notebook",
+    repo: "https://github.com/pranavsaji/Melanoma-Detection",
+    year: 2024,
+  },
+  {
+    name: "BreatheIT MCP",
+    slug: "breatheit-mcp",
+    category: "healthcare",
+    tagline: "MCP server for a wellness platform",
+    description:
+      "A Model Context Protocol server for the BreatheIT wellness platform, exposing platform data and actions to AI agents through the emerging standard for tool integration.",
+    tags: ["MCP", "Wellness", "Health Tech", "AI Integration"],
+    language: "JavaScript",
+    repo: "https://github.com/pranavsaji/breatheit-mcp",
+    year: 2026,
+  },
+
+  // ===== Finance & Fintech AI =====
+  {
+    name: "FinRAG",
+    slug: "finrag",
+    category: "finance",
+    tagline: "Retrieval-augmented AI for financial documents",
+    description:
+      "A financial RAG system that answers questions over filings, reports, and market documents with source-grounded citations, built for the accuracy and traceability finance workflows require.",
+    tags: ["Finance", "RAG", "Document AI", "Vector Search", "LLM"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/FinRAG",
+    featured: true,
+    year: 2025,
+  },
+  {
+    name: "Mitigating Banking Fraud",
+    slug: "mitigating-banking-fraud",
+    category: "finance",
+    tagline: "ML fraud detection on imbalanced transaction data",
+    description:
+      "A machine-learning pipeline that detects fraudulent banking transactions on highly imbalanced data, using resampling and ensemble models to maximize recall without drowning analysts in false positives.",
+    tags: ["Fraud Detection", "Imbalanced Data", "Classification", "Risk", "ML"],
+    language: "Jupyter Notebook",
+    repo: "https://github.com/pranavsaji/Mitigating-Banking-Fraud",
+    year: 2023,
+  },
+  {
+    name: "Stock Analyzer",
+    slug: "stock-analyzer",
+    category: "finance",
+    tagline: "AI-assisted equity analysis",
+    description:
+      "A tool that analyzes stocks by combining market data with AI-generated summaries and signals, turning raw financials into readable insight.",
+    tags: ["Finance", "Equity Analysis", "Market Data", "LLM"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/Stock-Analyzer",
+    year: 2025,
+  },
+  {
+    name: "Lending Club Case Study",
+    slug: "lending-club-case-study",
+    category: "finance",
+    tagline: "Credit-risk EDA on consumer loans",
+    description:
+      "An exploratory data analysis of Lending Club loan data identifying the driving factors behind loan default, the kind of credit-risk analysis that underpins lending decisions.",
+    tags: ["Credit Risk", "EDA", "Data Analysis", "Lending"],
+    language: "Jupyter Notebook",
+    repo: "https://github.com/pranavsaji/LendingClubCaseStudy",
+    year: 2022,
+  },
+  {
+    name: "Housing Price Prediction",
+    slug: "housing-price-prediction",
+    category: "finance",
+    tagline: "Regression modeling for property valuation",
+    description:
+      "A regression model that predicts housing prices from property and market features, covering the full workflow from feature engineering to model evaluation.",
+    tags: ["Regression", "Price Prediction", "Feature Engineering", "ML"],
+    language: "Jupyter Notebook",
+    repo: "https://github.com/pranavsaji/Housing-Price-Prediction",
+    year: 2022,
+  },
+
+  // ===== Enterprise AI & Search =====
+  {
+    name: "Enterprise Knowledge Graph",
+    slug: "enterprise-kg",
+    category: "enterprise",
+    tagline: "Knowledge graphs built over organizational data",
+    description:
+      "A builder that constructs an enterprise knowledge graph over an organization's data, connecting people, documents, and entities so AI systems can reason over relationships instead of isolated chunks.",
+    tags: ["Knowledge Graph", "Enterprise AI", "GraphRAG", "Semantic Layer"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/enterprise-kg",
+    featured: true,
+    year: 2026,
+  },
+  {
+    name: "Smart Search",
+    slug: "smart-search",
+    category: "enterprise",
+    tagline: "Semantic search that understands intent",
+    description:
+      "An AI-powered semantic search application that retrieves by meaning rather than keywords, delivering relevant results across large document and product corpora.",
+    tags: ["Semantic Search", "Embeddings", "Vector Search", "RAG"],
+    language: "TypeScript",
+    repo: "https://github.com/pranavsaji/smart-search",
+    year: 2026,
+  },
+  {
+    name: "Azure OpenAI Chatbot",
+    slug: "azure-openai-chatbot",
+    category: "enterprise",
+    tagline: "Enterprise chatbot on Azure OpenAI",
+    description:
+      "A production-oriented conversational assistant built on Azure OpenAI, demonstrating enterprise deployment patterns: managed keys, grounding, and controlled responses.",
+    tags: ["Azure OpenAI", "Enterprise", "Chatbot", "Cloud"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/Azure-OpenAI-Chatbot",
+    year: 2024,
+  },
+  {
+    name: "Chat Assistant",
+    slug: "chat-assistant",
+    category: "enterprise",
+    tagline: "LLM-powered conversational assistant",
+    description:
+      "A flexible LLM chat assistant scaffold with streaming responses and tool hooks, a clean foundation for domain-specific copilots.",
+    tags: ["Chatbot", "LLM", "Conversational AI"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/chat-assistant",
+    year: 2026,
+  },
+  {
+    name: "E-commerce Chatbot",
+    slug: "ecommerce-chatbot",
+    category: "enterprise",
+    tagline: "Shopping assistant for online storefronts",
+    description:
+      "A conversational commerce assistant that helps shoppers find products, answer questions, and complete purchases, lifting conversion through natural-language discovery.",
+    tags: ["E-commerce", "Conversational AI", "Product Discovery", "LLM"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/E-commerce-chatbot",
+    year: 2025,
+  },
+  {
+    name: "Context Splitter",
+    slug: "context-splitter",
+    category: "enterprise",
+    tagline: "Smart chunking for LLM pipelines",
+    description:
+      "A document and context splitter that chunks source material intelligently for LLM pipelines, preserving structure and semantics to improve retrieval quality.",
+    tags: ["Chunking", "RAG", "Document Processing", "LLM Infrastructure"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/context-splitter",
+    year: 2026,
+  },
+  {
+    name: "SEO Tool",
+    slug: "seo-tool",
+    category: "enterprise",
+    tagline: "AI-driven SEO analysis and optimization",
+    description:
+      "An AI SEO tool that audits pages, surfaces optimization opportunities, and generates recommendations to improve search visibility.",
+    tags: ["SEO", "Content Optimization", "Marketing AI", "LLM"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/seo-tool",
+    year: 2026,
+  },
+  {
+    name: "Newsletter Platform",
+    slug: "newsletter-platform",
+    category: "enterprise",
+    tagline: "AI-assisted authoring and delivery",
+    description:
+      "A newsletter platform that uses AI to draft, format, and personalize issues, then handles delivery, an end-to-end publishing workflow.",
+    tags: ["Content Platform", "Personalization", "LLM", "Full-Stack"],
+    language: "TypeScript",
+    repo: "https://github.com/pranavsaji/newsletter-platform",
+    year: 2026,
+  },
+
+  // ===== Content & Media Generation =====
+  {
+    name: "Article Writer",
+    slug: "article-writer",
+    category: "content",
+    tagline: "AI long-form content writer",
+    description:
+      "An AI article and content writer that researches a topic and produces structured, on-brand long-form drafts, built to scale content production without losing quality.",
+    tags: ["Content Generation", "Copywriting", "LLM", "SEO"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/article-writer",
+    year: 2026,
+  },
+  {
+    name: "News2Social",
+    slug: "news2social",
+    category: "content",
+    tagline: "Turn news articles into social posts",
+    description:
+      "A pipeline that ingests news articles and generates platform-tailored social-media posts, automating the news-to-distribution loop.",
+    tags: ["Content Automation", "Social Media", "Summarization", "LLM"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/news2social",
+    year: 2026,
+  },
+  {
+    name: "Video Creator",
+    slug: "video-creator",
+    category: "content",
+    tagline: "AI video creation pipeline",
+    description:
+      "An AI video creation pipeline that assembles scripts, voiceover, and visuals into finished videos, compressing production into an automated workflow.",
+    tags: ["Video Generation", "Multimodal AI", "Media Pipeline", "TTS"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/video-creator",
+    year: 2026,
+  },
+  {
+    name: "Translate Video",
+    slug: "translate-video",
+    category: "content",
+    tagline: "AI video translation and dubbing",
+    description:
+      "A tool that translates and re-voices video into other languages, combining transcription, translation, and speech synthesis to localize content automatically.",
+    tags: ["Video Translation", "Dubbing", "Speech AI", "Localization"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/translate_video",
+    year: 2025,
+  },
+  {
+    name: "EchoScribe",
+    slug: "echoscribe",
+    category: "content",
+    tagline: "AI transcription and note-taking",
+    description:
+      "An AI transcription tool that turns speech and audio into accurate, structured text and notes, built for meetings, interviews, and research.",
+    tags: ["Speech-to-Text", "Transcription", "Whisper", "Audio AI"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/EchoScribe",
+    year: 2025,
+  },
+  {
+    name: "Research Paper Helper",
+    slug: "research-paper-helper",
+    category: "content",
+    tagline: "AI assistant for reading research papers",
+    description:
+      "An assistant that reads, summarizes, and answers questions about academic papers, helping researchers digest dense literature faster.",
+    tags: ["Research", "Summarization", "Document AI", "LLM"],
+    language: "TeX",
+    repo: "https://github.com/pranavsaji/research-paper-helper",
+    year: 2026,
+  },
+
+  // ===== Developer & Productivity Tools =====
+  {
+    name: "Prompt Builder",
+    slug: "prompt-builder",
+    category: "devtools",
+    tagline: "Interactive prompt-engineering workbench",
+    description:
+      "An interactive builder for crafting, testing, and refining prompts, giving teams a structured way to engineer and version their prompts.",
+    tags: ["Prompt Engineering", "Developer Tools", "LLM", "Productivity"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/prompt-builder",
+    year: 2026,
+  },
+  {
+    name: "Code Explainer",
+    slug: "code-explainer",
+    category: "devtools",
+    tagline: "AI that explains unfamiliar code",
+    description:
+      "A tool that reads source code and produces clear, human explanations of what it does and why, accelerating onboarding and code comprehension.",
+    tags: ["Developer Tools", "Code Understanding", "LLM", "DX"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/code-explainer",
+    year: 2025,
+  },
+  {
+    name: "Text to CSV",
+    slug: "text-to-csv",
+    category: "devtools",
+    tagline: "Turn unstructured text into structured data",
+    description:
+      "An LLM-powered converter that extracts structured CSV from messy, unstructured text, a practical bridge from documents to databases.",
+    tags: ["Data Extraction", "Structured Output", "ETL", "LLM"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/text-to-csv",
+    year: 2026,
+  },
+  {
+    name: "Idea Generator",
+    slug: "idea-generator",
+    category: "devtools",
+    tagline: "AI brainstorming partner",
+    description:
+      "An AI idea-generation tool that expands a seed prompt into a diverse set of concepts, a fast brainstorming partner for product and content teams.",
+    tags: ["Ideation", "Creativity", "LLM", "Product"],
+    language: "TypeScript",
+    repo: "https://github.com/pranavsaji/idea-generator",
+    year: 2026,
+  },
+  {
+    name: "Page Summarizer & QA Extension",
+    slug: "page-summarizer-qa-extension",
+    category: "devtools",
+    tagline: "Browser extension for instant page Q&A",
+    description:
+      "A browser extension that summarizes any web page and answers questions about it in place, bringing an LLM copilot to the reading experience.",
+    tags: ["Browser Extension", "Summarization", "Q&A", "Productivity"],
+    language: "JavaScript",
+    repo: "https://github.com/pranavsaji/page-summarizer-QA-extension",
+    year: 2025,
+  },
+  {
+    name: "IntelliApply Extension",
+    slug: "intelliapply-extension",
+    category: "devtools",
+    tagline: "Intelligent job-application autofill",
+    description:
+      "A browser extension that intelligently autofills job applications from a candidate profile, eliminating the repetitive data entry of the job hunt.",
+    tags: ["Browser Extension", "Automation", "Autofill", "Productivity"],
+    language: "TypeScript",
+    repo: "https://github.com/pranavsaji/intelliapply-extension",
+    year: 2026,
+  },
+  {
+    name: "JobFusion AI",
+    slug: "jobfusion-ai",
+    category: "devtools",
+    tagline: "AI job-search and application assistant",
+    description:
+      "An AI assistant that streamlines the whole job search, matching roles, tailoring materials, and tracking applications in one place.",
+    tags: ["Job Search", "Career Tech", "LLM", "Automation"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/jobfusion-ai",
+    year: 2026,
+  },
+  {
+    name: "Prospector",
+    slug: "prospector",
+    category: "devtools",
+    tagline: "AI sales-prospecting assistant",
+    description:
+      "An AI sales-prospecting assistant that researches leads and drafts personalized outreach, helping sales teams find and engage the right accounts faster.",
+    tags: ["Sales", "Prospecting", "Outreach", "LLM"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/prospector",
+    year: 2026,
+  },
+
+  // ===== Applied ML & Consumer Apps =====
+  {
+    name: "Advanced Time Series Analysis",
+    slug: "advanced-time-series-analysis",
+    category: "applied-ml",
+    tagline: "Forecasting repository activity with LSTM & Prophet",
+    description:
+      "A time-series forecasting system that predicts repository activity and trends using TensorFlow/Keras LSTM networks alongside Facebook Prophet and StatsModels, benchmarking classical and deep-learning forecasters.",
+    tags: ["Time Series", "Forecasting", "LSTM", "Prophet", "TensorFlow"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/Advanced-Time-Series-Analysis-for-Repository-Management-",
+    year: 2024,
+  },
+  {
+    name: "Handwritten Text Recognition",
+    slug: "handwritten-text-recognition",
+    category: "applied-ml",
+    tagline: "Deep-learning OCR for handwriting",
+    description:
+      "A deep-learning model that recognizes handwritten text from images, applying computer vision and sequence modeling to the classic OCR challenge.",
+    tags: ["Computer Vision", "OCR", "Deep Learning", "CNN"],
+    language: "Jupyter Notebook",
+    repo: "https://github.com/pranavsaji/Handwritten_text_recognition",
+    year: 2024,
+  },
+  {
+    name: "Social Network & Happiness Analysis",
+    slug: "social-network-happiness-analysis",
+    category: "applied-ml",
+    tagline: "Graph analytics on social and well-being data",
+    description:
+      "An online social-network analysis project that studies world-happiness data through graph analytics and community detection, extracting insight from network structure.",
+    tags: ["Network Analysis", "Graph Analytics", "Data Science", "NetworkX"],
+    language: "Jupyter Notebook",
+    repo: "https://github.com/pranavsaji/Online-Social-Network-Analysis--World-Happiness-Analysis-Project",
+    year: 2024,
+  },
+  {
+    name: "SF Event Finder",
+    slug: "event-finder",
+    category: "applied-ml",
+    tagline: "Live app for discovering San Francisco events",
+    description:
+      "A deployed web app that surfaces and recommends San Francisco events, pairing a clean product experience with AI-assisted discovery.",
+    tags: ["Full-Stack", "Recommendations", "Consumer App", "Live"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/Event-finder",
+    demo: "https://sf-events-wine.vercel.app",
+    featured: true,
+    year: 2026,
+  },
+  {
+    name: "Job Finder",
+    slug: "job-finder",
+    category: "applied-ml",
+    tagline: "Live job-discovery web app",
+    description:
+      "A deployed job-discovery application that helps users search and filter opportunities through a fast, modern interface.",
+    tags: ["Full-Stack", "Job Search", "Consumer App", "Live"],
+    language: "TypeScript",
+    repo: "https://github.com/pranavsaji/Job-finder",
+    demo: "https://job-finder-two-eta.vercel.app",
+    year: 2026,
+  },
+  {
+    name: "Restaurant Finder",
+    slug: "restaurant-finder",
+    category: "applied-ml",
+    tagline: "Restaurant discovery app",
+    description:
+      "A restaurant-discovery app that helps users find places to eat with smart filtering and a clean, responsive interface.",
+    tags: ["Full-Stack", "Discovery", "Consumer App"],
+    language: "TypeScript",
+    repo: "https://github.com/pranavsaji/restaurant-finder",
+    year: 2026,
+  },
+  {
+    name: "Movie Finder",
+    slug: "movie-finder",
+    category: "applied-ml",
+    tagline: "AI movie recommendation app",
+    description:
+      "A movie-discovery app that recommends films based on user preferences, combining a content catalog with AI-driven suggestions.",
+    tags: ["Recommendations", "Consumer App", "ML"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/movie-finder",
+    year: 2025,
+  },
+];
+
 export const recognitions = [
   {
     title: "Speaker",

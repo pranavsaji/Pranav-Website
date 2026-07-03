@@ -1,6 +1,20 @@
 {
   "posts": [
     {
+      "slug": "claude-sonnet-5-agentic-default-2026",
+      "title": "Claude Sonnet 5 Just Made Frontier Agents the Default. Here's What Changes",
+      "category": "AI",
+      "date": "2026-07-02",
+      "topics": ["Claude Sonnet 5", "Anthropic", "agentic AI", "LLM benchmarks", "AI strategy", "enterprise AI", "model routing"]
+    },
+    {
+      "slug": "agentic-ai-governance-gap-2026",
+      "title": "72% in Production, 60% Ungoverned: The Agentic AI Gap Nobody Is Pricing In",
+      "category": "AI Cybersecurity",
+      "date": "2026-07-02",
+      "topics": ["agentic AI", "AI governance", "non-human identity", "AI risk", "enterprise AI", "prompt injection", "least privilege"]
+    },
+    {
       "slug": "prompt-injection-to-rce-agent-frameworks",
       "title": "When a Prompt Becomes a Shell: Agent Frameworks Are Turning Text Into RCE",
       "category": "AI Cybersecurity",

@@ -30,6 +30,7 @@ export async function GET() {
 - [Pranav Saji - AI Security Expert](${BASE}/ai-security): LLM security, prompt injection, agentic AI security, and MCP security.
 - [About Pranav Saji](${BASE}/about): Background, experience, and biography.
 - [Experience](${BASE}/experience): Professional roles and impact.
+- [Projects](${BASE}/projects): 50+ AI projects across healthcare, finance, cybersecurity, agentic AI, and enterprise search, organized by domain.
 - [Blog](${BASE}/blog): Writing on AI, LLMs, agentic systems, and AI security.
 - [Contact](${BASE}/contact): How to reach Pranav Saji.
 

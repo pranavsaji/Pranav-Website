@@ -323,6 +323,13 @@ export const projectCategories = [
       "Forecasting, computer vision, and full-stack products shipped to real users.",
     accent: "violet",
   },
+  {
+    slug: "systems",
+    name: "Systems & Databases",
+    tagline:
+      "Database internals written from scratch in C: storage, buffering, records, and indexing.",
+    accent: "orange",
+  },
 ];
 
 // Curated from github.com/pranavsaji. `repo` is the source; `demo` is a live deployment where one exists.
@@ -363,6 +370,18 @@ export const projects = [
     language: "TypeScript",
     repo: "https://github.com/pranavsaji/plagiarism-detector",
     year: 2026,
+  },
+  {
+    name: "Autonomous Standards Compiler",
+    slug: "autonomous-standards-compiler",
+    category: "ai-security",
+    tagline: "Compile security standards into structured controls",
+    description:
+      "An autonomous pipeline that compiles regulatory standards and security policy text into structured, machine-readable requirements and controls, turning dense compliance documents into data that governance tooling can act on.",
+    tags: ["Compliance Automation", "GRC", "Policy as Code", "NLP"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/Autonomous-Standards-Compiler",
+    year: 2025,
   },
 
   // ===== Agentic AI & Multi-Agent Systems =====
@@ -439,6 +458,30 @@ export const projects = [
     language: "TypeScript",
     repo: "https://github.com/pranavsaji/job-scout-agent",
     year: 2025,
+  },
+  {
+    name: "RFP Builder",
+    slug: "rfp-builder",
+    category: "agentic",
+    tagline: "AI-assisted RFP response builder",
+    description:
+      "An AI-assisted builder for drafting and structuring RFP responses section by section, keeping proposal answers compliant and on-brand, the interactive counterpart to the fully autonomous RFP Autopilot.",
+    tags: ["RFP Automation", "Proposal Writing", "LLM", "Agentic AI"],
+    language: "TypeScript",
+    repo: "https://github.com/pranavsaji/rfp-builder",
+    year: 2026,
+  },
+  {
+    name: "Logistics Integrations Assistant",
+    slug: "logistics-integrations-assistant",
+    category: "agentic",
+    tagline: "AI assistant for logistics system integrations",
+    description:
+      "An AI assistant that helps logistics teams stand up system integrations, guiding connector configuration and integration workflows so carriers, warehouses, and order systems talk to each other faster.",
+    tags: ["Logistics", "System Integration", "AI Assistant", "Workflow Automation"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/logistics-integrations-assistant",
+    year: 2026,
   },
 
   // ===== Healthcare AI =====
@@ -727,6 +770,42 @@ export const projects = [
     repo: "https://github.com/pranavsaji/research-paper-helper",
     year: 2026,
   },
+  {
+    name: "Trustworthy Study Search",
+    slug: "trustworthy-study-search",
+    category: "content",
+    tagline: "Credibility-ranked academic and video search",
+    description:
+      "A study-focused search tool that surfaces academic papers and educational videos with previews, ranking results for trustworthiness so learners and researchers start from credible sources.",
+    tags: ["Academic Search", "Information Retrieval", "EdTech", "Research"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/Trustworthy-Study-Search",
+    year: 2025,
+  },
+  {
+    name: "Video Editor",
+    slug: "video-editor",
+    category: "content",
+    tagline: "Programmatic video editing in Python",
+    description:
+      "A Python video-editing utility that trims, processes, and transforms video assets programmatically, automating the repetitive cutting and conversion steps of a media pipeline.",
+    tags: ["Video Processing", "Media Pipeline", "Automation", "Python"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/video-editor",
+    year: 2026,
+  },
+  {
+    name: "YouTube Downloader",
+    slug: "youtube-downloader",
+    category: "content",
+    tagline: "Video and audio download utility",
+    description:
+      "A utility for downloading YouTube video and audio content for offline processing, a practical building block that feeds the video translation and editing pipelines.",
+    tags: ["Media Tooling", "Video", "Audio", "Utilities"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/youtube-downloader",
+    year: 2026,
+  },
 
   // ===== Developer & Productivity Tools =====
   {
@@ -825,6 +904,42 @@ export const projects = [
     repo: "https://github.com/pranavsaji/prospector",
     year: 2026,
   },
+  {
+    name: "AutoApply Pro",
+    slug: "autoapply-pro",
+    category: "devtools",
+    tagline: "Automated job-application workflows",
+    description:
+      "An automation assistant that streamlines job-application workflows end to end, handling the repetitive fill-and-submit cycle so candidates can spend their time on the roles that matter.",
+    tags: ["Automation", "Job Search", "Career Tech", "Productivity"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/autoapply-pro",
+    year: 2025,
+  },
+  {
+    name: "Project Builder",
+    slug: "project-builder",
+    category: "devtools",
+    tagline: "AI project scaffolding and code generation",
+    description:
+      "A scaffolding utility that generates project structures and boilerplate with AI assistance, taking a developer from an idea to a runnable codebase skeleton in minutes.",
+    tags: ["Scaffolding", "Code Generation", "Developer Tools", "LLM"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/Project-builder",
+    year: 2025,
+  },
+  {
+    name: "Mistral LLM Experiments",
+    slug: "mistral-llm-experiments",
+    category: "devtools",
+    tagline: "Hands-on experiments with open-weight Mistral models",
+    description:
+      "Notebook experiments with Mistral large language models, covering inference, prompting, and evaluation of open-weight models as practical alternatives to closed APIs.",
+    tags: ["Open-Source LLMs", "Mistral", "Model Evaluation", "Notebooks"],
+    language: "Jupyter Notebook",
+    repo: "https://github.com/pranavsaji/Mistral_LLM",
+    year: 2024,
+  },
 
   // ===== Applied ML & Consumer Apps =====
   {
@@ -913,6 +1028,116 @@ export const projects = [
     language: "Python",
     repo: "https://github.com/pranavsaji/movie-finder",
     year: 2025,
+  },
+  {
+    name: "Flairlabs GenAI Real Estate",
+    slug: "flairlabs-genai-real-estate",
+    category: "applied-ml",
+    tagline: "Natural-language property search platform",
+    description:
+      "A generative-AI real estate platform supporting natural-language property search and matching, letting buyers describe the home they want instead of wrestling with filter checkboxes.",
+    tags: ["Real Estate", "GenAI", "Semantic Search", "Property Matching"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/Flairlabs",
+    year: 2024,
+  },
+  {
+    name: "Real Estate Analytics (Streamlit)",
+    slug: "real-estate-streamlit",
+    category: "applied-ml",
+    tagline: "Interactive property search and analysis",
+    description:
+      "A Streamlit application for interactive real-estate search and analysis, pairing property data with fast, explorable dashboards for demos and decision support.",
+    tags: ["Real Estate", "Streamlit", "Data Apps", "Analytics"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/real_estate_streamlit",
+    year: 2024,
+  },
+  {
+    name: "Real Estate Web App",
+    slug: "real-estate-app",
+    category: "applied-ml",
+    tagline: "Web-based property browsing",
+    description:
+      "A lightweight web application for browsing and discovering property listings, an early full-stack take on the real-estate discovery experience.",
+    tags: ["Real Estate", "Web App", "Front-End"],
+    language: "HTML",
+    repo: "https://github.com/pranavsaji/real_estate_app",
+    year: 2024,
+  },
+  {
+    name: "Smart Educational Platform",
+    slug: "smart-educational-platform",
+    category: "applied-ml",
+    tagline: "AI-supported learning platform prototype",
+    description:
+      "An education-technology platform prototype supporting learning workflows, student support, and course experiences, exploring how AI can personalize the classroom.",
+    tags: ["EdTech", "Learning Platform", "AI in Education", "Full-Stack"],
+    language: "Full-Stack",
+    repo: "https://github.com/pranavsaji/Smart-Educational-Platform",
+    year: 2026,
+  },
+  {
+    name: "Bike Sharing Demand Analysis",
+    slug: "bike-sharing-demand-analysis",
+    category: "applied-ml",
+    tagline: "Regression modeling of bike-share ridership",
+    description:
+      "A machine-learning analysis of bike-sharing demand, modeling how weather, season, and time of day drive ridership so operators can plan capacity ahead of the curve.",
+    tags: ["Regression", "Demand Forecasting", "Data Science", "ML"],
+    language: "Jupyter Notebook",
+    repo: "https://github.com/pranavsaji/Bike-sharing",
+    year: 2022,
+  },
+
+  // ===== Systems & Databases =====
+  {
+    name: "B+ Tree Index",
+    slug: "b-plus-tree-index",
+    category: "systems",
+    tagline: "Disk-based B+ tree index in C",
+    description:
+      "A disk-based B+ tree index implemented from scratch in C, supporting ordered key storage, search, insertion, and deletion, the same data structure that powers real database indexes.",
+    tags: ["B+ Tree", "Indexing", "Database Internals", "C"],
+    language: "C",
+    repo: "https://github.com/pranavsaji/B--Tree-Index---Advanced-Database",
+    year: 2024,
+  },
+  {
+    name: "Database Storage Manager",
+    slug: "database-storage-manager",
+    category: "systems",
+    tagline: "Page-level file storage engine in C",
+    description:
+      "A database storage manager handling file and page-level operations, reading, writing, and appending fixed-size pages on disk, the lowest layer of a database engine built by hand.",
+    tags: ["Storage Engine", "File I/O", "Database Internals", "C"],
+    language: "C",
+    repo: "https://github.com/pranavsaji/Storage-Manager---Advanced-Database",
+    year: 2024,
+  },
+  {
+    name: "Database Buffer Manager",
+    slug: "database-buffer-manager",
+    category: "systems",
+    tagline: "Buffer pool with page-replacement strategies",
+    description:
+      "A buffer manager that caches disk pages in memory frames, managing reads, writes, dirty-page flushing, and replacement policies to minimize disk I/O, the performance heart of a database engine.",
+    tags: ["Buffer Pool", "Caching", "Page Replacement", "C"],
+    language: "C",
+    repo: "https://github.com/pranavsaji/Buffer-manager---Advanced-database",
+    year: 2024,
+  },
+  {
+    name: "Database Record Manager",
+    slug: "database-record-manager",
+    category: "systems",
+    tagline: "Table and record operations over paged storage",
+    description:
+      "A record manager supporting record navigation, insertion, deletion, and table scans over paged storage, built on the storage and buffer layers to complete a working mini database stack.",
+    tags: ["Record Management", "Table Scans", "Database Internals", "C"],
+    language: "C",
+    repo: "https://github.com/pranavsaji/Record-manager---Advanced-Database",
+    year: 2024,
   },
 ];
 

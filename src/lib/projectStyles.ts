@@ -9,7 +9,8 @@ export type Accent =
   | "blue"
   | "fuchsia"
   | "cyan"
-  | "violet";
+  | "violet"
+  | "orange";
 
 export const ACCENT: Record<
   Accent,
@@ -113,6 +114,17 @@ export const ACCENT: Record<
     iconBg: "bg-violet-500/10 text-violet-300 border-violet-500/20",
     glow: "bg-violet-500/20",
   },
+  orange: {
+    pill: "bg-orange-500/10 text-orange-300 border-orange-500/20",
+    dot: "bg-orange-400",
+    activeBtn: "bg-orange-500/15 text-orange-200 border-orange-500/40",
+    hoverBorder: "hover:border-orange-500/40",
+    text: "text-orange-300",
+    tileBg: "from-orange-500/[0.08]",
+    tileBorder: "hover:border-orange-500/40",
+    iconBg: "bg-orange-500/10 text-orange-300 border-orange-500/20",
+    glow: "bg-orange-500/20",
+  },
 };
 
 // One line-art icon (SVG path d) per project domain slug.
@@ -125,4 +137,5 @@ export const DOMAIN_ICON: Record<string, string> = {
   content: "M12 3l1.9 4.6L18.5 8.5l-4.6 1.9L12 15l-1.9-4.6L5.5 8.5l4.6-.9L12 3zM18 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z",
   devtools: "M8 7l-4 5 4 5M16 7l4 5-4 5M14 4l-4 16",
   "applied-ml": "M4 20V4M4 20h16M8 20v-5M12 20V9M16 20v-8",
+  systems: "M12 3c4.4 0 8 1.34 8 3s-3.6 3-8 3-8-1.34-8-3 3.6-3 8-3zM4 6v12c0 1.66 3.6 3 8 3s8-1.34 8-3V6M4 12c0 1.66 3.6 3 8 3s8-1.34 8-3",
 };

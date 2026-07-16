@@ -15,7 +15,7 @@ Personal portfolio site for Pranav Saji (AI Leader, SF Bay Area) — deployed at
 |------|---------|
 | `src/lib/data.ts` | Single source of truth — all content (experiences, stats, skills, recognitions, publications, `projects`, `projectCategories`, `symosisProjects`) |
 | `src/lib/projectStyles.ts` | `ACCENT` (Tailwind class strings per accent color) + `DOMAIN_ICON` (SVG path per domain slug) — a new project domain needs entries in both |
-| `src/app/projects/` | Projects hub (65 open-source + 24 Symosis = "85+"), per-domain SEO pages at `/projects/[domain]` (9 domains incl. `systems`), all derived from `projectCategories` |
+| `src/app/projects/` | Projects hub (67 open-source + 24 Symosis = "90+"), per-domain SEO pages at `/projects/[domain]` (9 domains incl. `systems`), all derived from `projectCategories` |
 | `src/app/globals.css` | Global styles, custom classes (`.card`, `.btn`, `.stat-card`, `.text-gradient`, `.tag`) |
 | `src/app/layout.tsx` | Root layout — fonts, Nav, Footer |
 | `src/app/page.tsx` | Home: hero, stats strip, featured experience, skills preview, FAQ, CTA |
@@ -37,8 +37,8 @@ npm run lint     # ESLint
 - Stats strip: 3 leader-tier metrics only (`$50M+`, `3M+`, `Fortune 500`) — keep executive-level, no percentages
 - Color system: `#040d1e` navy background; blue-indigo gradient (`#3b82f6 → #6366f1 → #0ea5e9`) for `.text-gradient`; trust-building deep navy matches LinkedIn/IBM aesthetic
 - No `node_modules` present in repo — run `npm install` before `npm run dev`
-- Projects tab mirrors github.com/pranavsaji (80 repos): all substantive repos are in `data.ts`; test/fork/profile repos (claude-test, rufus, churntest, fluttertest*, Course, portfolio forks, tipcalculator, older portfolios) deliberately excluded
-- Project counts ("85+") are hardcoded in `/projects` metadata + `llms.txt` — update both when adding projects; bump `/projects` date in `sitemap.ts`
+- Projects tab mirrors github.com/pranavsaji (82 repos): all substantive repos are in `data.ts`; test/fork/profile repos (claude-test, rufus, churntest, fluttertest*, Course, portfolio forks, tipcalculator, older portfolios, Java-Project) deliberately excluded
+- Project counts ("90+") are hardcoded in `/projects` metadata + `llms.txt` — update both when adding projects; bump `/projects` date in `sitemap.ts`
 
 ## Git / Deploy
 - Remote: `git@github.com:pranavsaji/Pranav-Website.git` (branch: `main`)

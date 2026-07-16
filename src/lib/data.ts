@@ -486,6 +486,32 @@ export const projects = [
 
   // ===== Healthcare AI =====
   {
+    name: "Substantia",
+    slug: "substantia",
+    category: "healthcare",
+    tagline: "Deterministic regulatory reasoning for FDA 510(k) and EU MDR",
+    description:
+      "A regulatory reasoning platform for medical device submissions built on one principle: the model reasons, drafts, and explains, while deterministic code classifies, decides equivalence, enforces gates, and binds citations. Every published claim traces to a source through a knowledge graph, backed by a hash-chained audit ledger and eval gates that guard against hallucination in a submission where accuracy is legally binding.",
+    tags: ["Regulatory AI", "FDA 510(k)", "EU MDR", "Knowledge Graph", "Audit Ledger", "Compliance"],
+    language: "Python",
+    repo: "https://github.com/pranavsaji/substantia",
+    featured: true,
+    year: 2026,
+  },
+  {
+    name: "Dental AI Platform",
+    slug: "dental-ai-platform",
+    category: "healthcare",
+    tagline: "AI-native operating system for multi-location dental groups",
+    description:
+      "An intelligent control plane that sits above a legacy practice management system (OpenDental), mirrors on-prem data to the cloud through an idempotent edge synchronizer, and orchestrates LangGraph agents for scheduling, billing, and clinical workflows on Temporal-durable execution, with a human approval gate in front of every consequential action. A patient cancellation in the PMS triggers an agent that backfills the slot and books the replacement appointment back into OpenDental, end to end.",
+    tags: ["Healthcare", "LangGraph", "Temporal", "Multi-Agent", "EHR Integration", "pgvector"],
+    language: "TypeScript",
+    repo: "https://github.com/pranavsaji/dental-ai-platform",
+    featured: true,
+    year: 2026,
+  },
+  {
     name: "Cura Healthcare",
     slug: "cura-healthcare",
     category: "healthcare",

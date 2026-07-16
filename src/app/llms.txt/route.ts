@@ -30,7 +30,7 @@ export async function GET() {
 - [Pranav Saji - AI Security Expert](${BASE}/ai-security): LLM security, prompt injection, agentic AI security, and MCP security.
 - [About Pranav Saji](${BASE}/about): Background, experience, and biography.
 - [Experience](${BASE}/experience): Professional roles and impact.
-- [Projects](${BASE}/projects): 85+ AI projects, including a production Symosis Security suite (AI-agent governance, autonomous pentesting, SSPM, GRC automation, governed RAG) built single-handedly as Head of AI Security, plus open-source work across healthcare, finance, agentic AI, enterprise search, and database systems, organized by domain.
+- [Projects](${BASE}/projects): 90+ AI projects, including a production Symosis Security suite (AI-agent governance, autonomous pentesting, SSPM, GRC automation, governed RAG) built single-handedly as Head of AI Security, plus open-source work across healthcare, finance, agentic AI, enterprise search, and database systems, organized by domain.
 - [Blog](${BASE}/blog): Writing on AI, LLMs, agentic systems, and AI security.
 - [Contact](${BASE}/contact): How to reach Pranav Saji.
 

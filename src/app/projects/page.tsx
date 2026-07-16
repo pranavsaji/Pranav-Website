@@ -8,7 +8,7 @@ import DomainTiles from "@/components/DomainTiles";
 export const metadata: Metadata = {
   title: "AI Projects - Security Platforms, Healthcare, Finance & Agentic AI",
   description:
-    "85+ AI projects by Pranav Saji, including a production Symosis Security suite (AI-agent governance, autonomous pentesting, SSPM, GRC automation) plus open-source work across healthcare, finance, agentic AI, enterprise search, and database systems, organized by domain.",
+    "90+ AI projects by Pranav Saji, including a production Symosis Security suite (AI-agent governance, autonomous pentesting, SSPM, GRC automation) plus open-source work across healthcare, finance, agentic AI, enterprise search, and database systems, organized by domain.",
   keywords: [
     "Pranav Saji projects",
     "AI portfolio",
@@ -34,14 +34,14 @@ export const metadata: Metadata = {
     url: "https://pranav-saji.com/projects",
     title: "AI Projects by Pranav Saji - Security Platforms, Healthcare, Finance & Agentic AI",
     description:
-      "85+ AI projects: a production Symosis Security suite plus open-source work across healthcare, finance, agentic AI, and enterprise, organized by domain.",
+      "90+ AI projects: a production Symosis Security suite plus open-source work across healthcare, finance, agentic AI, and enterprise, organized by domain.",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Pranav Saji AI Projects" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "AI Projects by Pranav Saji",
     description:
-      "85+ AI projects across healthcare, finance, security, and agentic AI, organized by domain.",
+      "90+ AI projects across healthcare, finance, security, and agentic AI, organized by domain.",
     creator: "@PranavInnovates",
   },
 };
@@ -53,7 +53,7 @@ const collectionSchema = {
   url: "https://pranav-saji.com/projects",
   name: "AI Projects by Pranav Saji",
   description:
-    "A portfolio of 85+ AI and machine learning projects, including a production Symosis Security suite and open-source work across healthcare, finance, cybersecurity, agentic AI, enterprise search, and database systems.",
+    "A portfolio of 90+ AI and machine learning projects, including a production Symosis Security suite and open-source work across healthcare, finance, cybersecurity, agentic AI, enterprise search, and database systems.",
   isPartOf: { "@id": "https://pranav-saji.com/#website" },
   about: { "@id": "https://pranav-saji.com/#pranav-saji" },
   mainEntity: {

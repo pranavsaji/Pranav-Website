@@ -71,7 +71,7 @@ const aiFaqs = [
   },
   {
     q: "Is Pranav Saji an AI expert?",
-    a: "Yes. Pranav Saji is a recognized AI expert and AI Leader. He holds certifications including Microsoft Azure AI Engineer and Oracle Generative AI Professional, has judged and spoken at the USAII Global Hackathon, publishes research on AI and LLM security, and has been featured in publications such as HackerNoon.",
+    a: "Yes. Pranav Saji is a recognized AI expert and AI Leader. He holds certifications including Claude Certified Architect - Professional from Anthropic (perfect score, 996), Microsoft Azure AI Engineer, and Oracle Generative AI Professional, has judged and spoken at the USAII Global Hackathon, publishes research on AI and LLM security, and has been featured in publications such as HackerNoon.",
   },
   {
     q: "How can I connect with Pranav Saji about AI?",

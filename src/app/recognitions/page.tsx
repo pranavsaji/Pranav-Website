@@ -183,6 +183,19 @@ export default function Recognitions() {
               <div key={i} className="card p-5">
                 <h3 className="text-white text-sm font-medium leading-snug mb-1">{cert.name}</h3>
                 <p className="text-slate-500 text-xs">{cert.issuer}</p>
+                {cert.note && (
+                  <p className="text-blue-400 text-xs mt-2 font-medium">{cert.note}</p>
+                )}
+                {cert.url && (
+                  <a
+                    href={cert.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-slate-400 hover:text-white text-xs mt-2 inline-block underline underline-offset-2"
+                  >
+                    View credential
+                  </a>
+                )}
               </div>
             ))}
           </div>

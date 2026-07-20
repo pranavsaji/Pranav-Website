@@ -13,7 +13,7 @@ Personal portfolio site for Pranav Saji (AI Leader, SF Bay Area) — deployed at
 ## File Map
 | File | Purpose |
 |------|---------|
-| `src/lib/data.ts` | Single source of truth — all content (experiences, stats, skills, recognitions, publications, `projects`, `projectCategories`, `symosisProjects`) |
+| `src/lib/data.ts` | Single source of truth — all content (experiences, stats, skills, recognitions, publications, `projects`, `projectCategories`, `symosisProjects`, `certifications` — the last supports optional `note` (score/highlight) and `url` (credential link), both rendered on /about and /recognitions) |
 | `src/lib/projectStyles.ts` | `ACCENT` (Tailwind class strings per accent color) + `DOMAIN_ICON` (SVG path per domain slug) — a new project domain needs entries in both |
 | `src/app/projects/` | Projects hub (67 open-source + 24 Symosis = "90+"), per-domain SEO pages at `/projects/[domain]` (9 domains incl. `systems`), all derived from `projectCategories` |
 | `src/app/globals.css` | Global styles, custom classes (`.card`, `.btn`, `.stat-card`, `.text-gradient`, `.tag`) |
@@ -66,4 +66,4 @@ One file per Qwoted journalist opportunity. Named `NNN-short-description-reporte
 Convention: never write a new pitch without creating a corresponding file here first.
 
 ## Last Updated
-2026-07-08
+2026-07-19

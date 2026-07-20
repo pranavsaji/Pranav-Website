@@ -6,13 +6,13 @@ import { projectCategories } from "@/lib/data";
 // changes — emitting `new Date()` on every build makes Google ignore the field.
 const PAGE_DATES: Record<string, string> = {
   "": "2026-06-11",
-  "/about": "2026-05-22",
-  "/ai": "2026-06-09",
+  "/about": "2026-07-19",
+  "/ai": "2026-07-19",
   "/experience": "2026-05-22",
   "/projects": "2026-07-16",
   "/ai-security": "2026-06-09",
   "/skills": "2026-05-22",
-  "/recognitions": "2026-05-22",
+  "/recognitions": "2026-07-19",
   "/research": "2026-05-22",
   "/writing": "2026-06-03",
   "/contact": "2026-05-22",

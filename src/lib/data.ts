@@ -209,7 +209,18 @@ export const education = [
   },
 ];
 
-export const certifications = [
+export const certifications: {
+  name: string;
+  issuer: string;
+  note?: string;
+  url?: string;
+}[] = [
+  {
+    name: "Claude Certified Architect - Professional",
+    issuer: "Anthropic",
+    note: "Perfect score: 996 / 100% in every category",
+    url: "https://www.credly.com/badges/a2858ff6-9cff-4d7b-8606-159a5e9bdc57/public_url",
+  },
   { name: "CompTIA Security+", issuer: "CompTIA" },
   { name: "Microsoft Certified: Azure AI Engineer Associate", issuer: "Microsoft" },
   { name: "Oracle Cloud Infrastructure 2024 Generative AI Certified Professional", issuer: "Oracle" },

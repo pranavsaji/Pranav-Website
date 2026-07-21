@@ -1,137 +1,323 @@
 {
   "posts": [
     {
+      "slug": "tiered-frontier-models-flagship-is-dead-2026",
+      "title": "The Single Flagship Is Dead: Every Frontier Lab Just Split Into Three Models",
+      "category": "AI",
+      "date": "2026-07-20",
+      "topics": [
+        "GPT-5.6",
+        "Claude Fable 5",
+        "frontier models",
+        "model routing",
+        "agentic AI",
+        "AI strategy",
+        "enterprise AI"
+      ]
+    },
+    {
+      "slug": "always-on-autopilot-agents-org-design-2026",
+      "title": "Your Next Direct Report Never Sleeps: The Always-On Agent Era Just Began",
+      "category": "AI",
+      "date": "2026-07-20",
+      "topics": [
+        "autonomous agents",
+        "Microsoft Scout",
+        "agentic AI",
+        "AI governance",
+        "non-human identity",
+        "enterprise AI",
+        "AI strategy"
+      ]
+    },
+    {
+      "slug": "long-horizon-wall-where-agent-roi-is-real-2026",
+      "title": "The Long-Horizon Wall: Why Your AI Agent Aces the Demo and Stalls on the Job",
+      "category": "AI",
+      "date": "2026-07-20",
+      "topics": [
+        "AI agents",
+        "METR",
+        "SWE-bench",
+        "long-horizon tasks",
+        "agentic AI",
+        "AI ROI",
+        "enterprise AI"
+      ]
+    },
+    {
       "slug": "claude-sonnet-5-agentic-default-2026",
       "title": "Claude Sonnet 5 Just Made Frontier Agents the Default. Here's What Changes",
       "category": "AI",
       "date": "2026-07-02",
-      "topics": ["Claude Sonnet 5", "Anthropic", "agentic AI", "LLM benchmarks", "AI strategy", "enterprise AI", "model routing"]
+      "topics": [
+        "Claude Sonnet 5",
+        "Anthropic",
+        "agentic AI",
+        "LLM benchmarks",
+        "AI strategy",
+        "enterprise AI",
+        "model routing"
+      ]
     },
     {
       "slug": "agentic-ai-governance-gap-2026",
       "title": "72% in Production, 60% Ungoverned: The Agentic AI Gap Nobody Is Pricing In",
       "category": "AI Cybersecurity",
       "date": "2026-07-02",
-      "topics": ["agentic AI", "AI governance", "non-human identity", "AI risk", "enterprise AI", "prompt injection", "least privilege"]
+      "topics": [
+        "agentic AI",
+        "AI governance",
+        "non-human identity",
+        "AI risk",
+        "enterprise AI",
+        "prompt injection",
+        "least privilege"
+      ]
     },
     {
       "slug": "prompt-injection-to-rce-agent-frameworks",
       "title": "When a Prompt Becomes a Shell: Agent Frameworks Are Turning Text Into RCE",
       "category": "AI Cybersecurity",
       "date": "2026-06-09",
-      "topics": ["prompt injection", "remote code execution", "Semantic Kernel", "CVE-2026-26030", "CVE-2026-25592", "agent frameworks", "sandbox escape", "LLM security"]
+      "topics": [
+        "prompt injection",
+        "remote code execution",
+        "Semantic Kernel",
+        "CVE-2026-26030",
+        "CVE-2026-25592",
+        "agent frameworks",
+        "sandbox escape",
+        "LLM security"
+      ]
     },
     {
       "slug": "lethal-trifecta-ai-agents",
       "title": "The Lethal Trifecta: Why Your Most Useful AI Agent Is One Bad Email Away From a Breach",
       "category": "AI Cybersecurity",
       "date": "2026-06-09",
-      "topics": ["lethal trifecta", "prompt injection", "data exfiltration", "EchoLeak", "GeminiJack", "RAG security", "least privilege", "AI governance"]
+      "topics": [
+        "lethal trifecta",
+        "prompt injection",
+        "data exfiltration",
+        "EchoLeak",
+        "GeminiJack",
+        "RAG security",
+        "least privilege",
+        "AI governance"
+      ]
     },
     {
       "slug": "ai-coding-agent-rce-symjack-trustfall",
       "title": "Your AI Coding Agent Will Hand Over Your Machine. SymJack and TrustFall Just Proved It",
       "category": "AI Cybersecurity",
       "date": "2026-06-03",
-      "topics": ["AI coding agents", "remote code execution", "SymJack", "TrustFall", "symlink hijack", "CI security", "agent trust model", "supply chain security"]
+      "topics": [
+        "AI coding agents",
+        "remote code execution",
+        "SymJack",
+        "TrustFall",
+        "symlink hijack",
+        "CI security",
+        "agent trust model",
+        "supply chain security"
+      ]
     },
     {
       "slug": "ai-cyber-weapon-executive-order-2026",
       "title": "The Government Just Called AI a Cyber Weapon. Your Threat Model Hasn't Caught Up",
       "category": "AI Cybersecurity",
       "date": "2026-06-03",
-      "topics": ["AI executive order", "frontier model cyber capabilities", "AI governance", "agentic attacks", "threat modeling", "Mexico government breach", "AI regulation"]
+      "topics": [
+        "AI executive order",
+        "frontier model cyber capabilities",
+        "AI governance",
+        "agentic attacks",
+        "threat modeling",
+        "Mexico government breach",
+        "AI regulation"
+      ]
     },
     {
       "slug": "ai-bill-nobody-threat-modeled",
       "title": "The $500 Million AI Bill Nobody Threat-Modeled",
       "category": "AI Cybersecurity",
       "date": "2026-06-03",
-      "topics": ["AI agent security", "non-human identity", "prompt injection", "least privilege", "AI governance", "agent guardrails", "AI cost controls"]
+      "topics": [
+        "AI agent security",
+        "non-human identity",
+        "prompt injection",
+        "least privilege",
+        "AI governance",
+        "agent guardrails",
+        "AI cost controls"
+      ]
     },
     {
       "slug": "appsec-program-stalls-year-two",
       "title": "Your AppSec Program Will Stall in Year Two. Here's Why",
       "category": "AI Cybersecurity",
       "date": "2026-06-03",
-      "topics": ["AppSec", "vulnerability management", "security program", "DevSecOps", "reachability prioritization", "blast radius", "security workflows"]
+      "topics": [
+        "AppSec",
+        "vulnerability management",
+        "security program",
+        "DevSecOps",
+        "reachability prioritization",
+        "blast radius",
+        "security workflows"
+      ]
     },
     {
       "slug": "mcp-poisoning-attack-defense-2026",
       "title": "MCP Poisoning: The Supply Chain Attack Hiding Inside Your AI Agent",
       "category": "AI Cybersecurity",
       "date": "2026-05-28",
-      "topics": ["MCP poisoning", "tool poisoning", "rug pull attack", "MCP supply chain", "CVE-2025-54136", "agentic AI security", "prompt injection MCP"]
+      "topics": [
+        "MCP poisoning",
+        "tool poisoning",
+        "rug pull attack",
+        "MCP supply chain",
+        "CVE-2025-54136",
+        "agentic AI security",
+        "prompt injection MCP"
+      ]
     },
     {
       "slug": "claude-opus-4-8-what-leaders-need-to-know",
       "title": "Claude Opus 4.8: What AI Leaders Actually Need to Know",
       "category": "AI",
       "date": "2026-05-28",
-      "topics": ["Claude Opus 4.8", "Anthropic", "agentic AI", "effort control", "dynamic workflows", "AI model benchmarks"]
+      "topics": [
+        "Claude Opus 4.8",
+        "Anthropic",
+        "agentic AI",
+        "effort control",
+        "dynamic workflows",
+        "AI model benchmarks"
+      ]
     },
     {
       "slug": "ai-security-llm-threat-landscape-2025",
       "title": "The LLM Threat Landscape: What Every Security Team Needs to Know in 2026",
       "category": "AI Cybersecurity",
       "date": "2026-05-20",
-      "topics": ["prompt injection", "model inversion", "jailbreaking", "supply chain attacks", "agentic systems", "LLM security"]
+      "topics": [
+        "prompt injection",
+        "model inversion",
+        "jailbreaking",
+        "supply chain attacks",
+        "agentic systems",
+        "LLM security"
+      ]
     },
     {
       "slug": "agentic-ai-enterprise-2025",
       "title": "Agentic AI in the Enterprise: From Chatbot to Autonomous Workforce",
       "category": "AI",
       "date": "2026-05-15",
-      "topics": ["agentic AI", "enterprise AI", "multi-agent systems", "AI governance", "LLM orchestration"]
+      "topics": [
+        "agentic AI",
+        "enterprise AI",
+        "multi-agent systems",
+        "AI governance",
+        "LLM orchestration"
+      ]
     },
     {
       "slug": "rag-security-risks-enterprise",
       "title": "RAG Security: The Hidden Risks in Your Knowledge Base Pipeline",
       "category": "AI Cybersecurity",
       "date": "2026-05-10",
-      "topics": ["RAG security", "knowledge base poisoning", "indirect prompt injection", "vector database security", "retrieval manipulation"]
+      "topics": [
+        "RAG security",
+        "knowledge base poisoning",
+        "indirect prompt injection",
+        "vector database security",
+        "retrieval manipulation"
+      ]
     },
     {
       "slug": "building-production-ai-agents-langchain",
       "title": "Building Production-Ready AI Agents with LangChain: Lessons from the Field",
       "category": "AI",
       "date": "2026-05-05",
-      "topics": ["LangChain", "production AI agents", "LLMOps", "agent architecture", "prompt engineering", "observability"]
+      "topics": [
+        "LangChain",
+        "production AI agents",
+        "LLMOps",
+        "agent architecture",
+        "prompt engineering",
+        "observability"
+      ]
     },
     {
       "slug": "model-context-protocol-ai-tool-integration",
       "title": "Model Context Protocol: The Standard That's Quietly Wiring AI to Everything",
       "category": "AI",
       "date": "2026-05-28",
-      "topics": ["MCP", "model context protocol", "AI tool integration", "agentic AI infrastructure", "AI standards"]
+      "topics": [
+        "MCP",
+        "model context protocol",
+        "AI tool integration",
+        "agentic AI infrastructure",
+        "AI standards"
+      ]
     },
     {
       "slug": "eu-ai-act-compliance-guide-2026",
       "title": "EU AI Act 2026: What High-Risk AI Systems Actually Need to Comply",
       "category": "AI Cybersecurity",
       "date": "2026-05-26",
-      "topics": ["EU AI Act", "AI compliance", "AI governance", "AI regulation", "high-risk AI systems"]
+      "topics": [
+        "EU AI Act",
+        "AI compliance",
+        "AI governance",
+        "AI regulation",
+        "high-risk AI systems"
+      ]
     },
     {
       "slug": "ai-deepfake-threats-enterprise-2026",
       "title": "Deepfake Threats in 2026: How Synthetic Media is Reshaping Enterprise Security",
       "category": "AI Cybersecurity",
       "date": "2026-05-24",
-      "topics": ["deepfakes", "synthetic media", "social engineering", "AI fraud", "identity security", "voice cloning"]
+      "topics": [
+        "deepfakes",
+        "synthetic media",
+        "social engineering",
+        "AI fraud",
+        "identity security",
+        "voice cloning"
+      ]
     },
     {
       "slug": "reasoning-models-production-2026",
       "title": "Reasoning Models in Production: When Extended Thinking Actually Pays Off",
       "category": "AI",
       "date": "2026-05-22",
-      "topics": ["reasoning models", "extended thinking", "Claude Opus", "o3", "LLMOps", "AI routing"]
+      "topics": [
+        "reasoning models",
+        "extended thinking",
+        "Claude Opus",
+        "o3",
+        "LLMOps",
+        "AI routing"
+      ]
     },
     {
       "slug": "teaching-ai-to-team-up-understand-mcp",
       "title": "Teaching AI to Team Up: The Easy Way to Understand MCP",
       "category": "AI",
       "date": "2025-07-15",
-      "topics": ["MCP", "model context protocol", "AI agents", "agent collaboration", "LLM", "AI integration"]
+      "topics": [
+        "MCP",
+        "model context protocol",
+        "AI agents",
+        "agent collaboration",
+        "LLM",
+        "AI integration"
+      ]
     }
   ]
 }

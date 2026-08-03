@@ -12,9 +12,9 @@ const PAGE_DATES: Record<string, string> = {
   "/projects": "2026-07-16",
   "/ai-security": "2026-06-09",
   "/skills": "2026-05-22",
-  "/recognitions": "2026-07-19",
+  "/recognitions": "2026-08-03",
   "/research": "2026-05-22",
-  "/writing": "2026-06-03",
+  "/writing": "2026-08-03",
   "/contact": "2026-05-22",
 };
 

@@ -1565,6 +1565,15 @@ export const symosisProjects = [
 
 export const recognitions = [
   {
+    title: "Top 5 AI/ML Writer",
+    event: "HackerNoon",
+    type: "WRITER",
+    description:
+      "Named one of HackerNoon's top five writers in Artificial Intelligence, ranked among thousands of contributors on one of the largest technology publications for software engineers and AI practitioners. Writing focused on AI agent security, MCP tool poisoning, and the emerging tool-layer attack surface.",
+    link: "https://hackernoon.com/c/ai/writers",
+    linkLabel: "View Top Writers",
+  },
+  {
     title: "Speaker",
     event: "OWASP Global AppSec USA 2026",
     type: "SPEAKER",

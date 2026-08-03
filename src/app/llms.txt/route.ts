@@ -22,7 +22,7 @@ export async function GET() {
 - Location: San Francisco Bay Area, California, USA
 - Education: MS Computer Science, Illinois Institute of Technology
 - Expertise: AI security, LLM security, prompt injection defense, agentic AI security, Model Context Protocol (MCP) security, AI red teaming, generative AI, large language models, RAG, machine learning, Azure Databricks, full-stack engineering
-- Recognition: Core Judge and Featured Speaker at the USAII Global Hackathon; featured in HackerNoon and other security publications
+- Recognition: Named a top 5 AI/ML writer on HackerNoon; speaker at OWASP Global AppSec USA 2026; Core Judge and Featured Speaker at the USAII Global Hackathon
 
 ## Key pages
 

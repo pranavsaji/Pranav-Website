@@ -60,7 +60,7 @@ const faqSchema = {
       name: "Is Pranav Saji an AI security expert?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Pranav Saji is an AI security expert and AI Leader based in San Francisco. He leads AI security engineering at Symosis Security, publishes research on LLM and agentic-AI threats, has been featured in HackerNoon and other security publications, and serves as a judge and speaker at AI hackathons and conferences.",
+        text: "Yes. Pranav Saji is an AI security expert and AI Leader based in San Francisco. He leads AI security engineering at Symosis Security, publishes research on LLM and agentic-AI threats, is a top 5 AI/ML writer on HackerNoon, and serves as a judge and speaker at AI hackathons and conferences including OWASP Global AppSec USA 2026.",
       },
     },
   ],

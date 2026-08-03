@@ -5,12 +5,12 @@ import { recognitions, certifications } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Recognitions & Awards - Pranav Saji | AI Leader San Francisco",
   description:
-    "Pranav Saji - Core Judge and Featured Speaker at the USAII Global Hackathon. Founding Engineer at Y Combinator F24 startup Flair Labs. Microsoft, Databricks, Oracle, and CompTIA certified AI engineer.",
+    "Pranav Saji - Top 5 AI/ML writer on HackerNoon, OWASP Global AppSec USA 2026 speaker, Core Judge and Featured Speaker at the USAII Global Hackathon. Founding Engineer at Y Combinator F24 startup Flair Labs. Microsoft, Databricks, Oracle, and CompTIA certified AI engineer.",
   alternates: { canonical: "https://pranav-saji.com/recognitions" },
   openGraph: {
     title: "Recognitions & Awards - Pranav Saji",
     description:
-      "USAII Global Hackathon Core Judge & Speaker. Y Combinator F24 Founding Engineer. Microsoft, Databricks, Oracle, CompTIA certified.",
+      "Top 5 AI/ML writer on HackerNoon. OWASP Global AppSec USA 2026 speaker. USAII Global Hackathon Core Judge & Speaker. Y Combinator F24 Founding Engineer.",
     url: "https://pranav-saji.com/recognitions",
   },
 };
@@ -23,6 +23,18 @@ const awardsSchema = {
     {
       "@type": "ListItem",
       position: 1,
+      item: {
+        "@type": "Award",
+        name: "Top 5 AI/ML Writer - HackerNoon",
+        url: "https://hackernoon.com/c/ai/writers",
+        description:
+          "Named one of HackerNoon's top five writers in Artificial Intelligence, ranked among thousands of contributors on one of the largest technology publications for software engineers and AI practitioners.",
+        about: "Artificial Intelligence, Machine Learning, AI Security",
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
       item: {
         "@type": "Event",
         name: "USAII Global Hackathon - Core Judge",
@@ -37,7 +49,7 @@ const awardsSchema = {
     },
     {
       "@type": "ListItem",
-      position: 2,
+      position: 3,
       item: {
         "@type": "Event",
         name: "USAII Global Hackathon - Featured Speaker",
@@ -51,7 +63,7 @@ const awardsSchema = {
     },
     {
       "@type": "ListItem",
-      position: 3,
+      position: 4,
       item: {
         "@type": "Role",
         name: "Founding Engineer - Flair Labs (Y Combinator F24)",
@@ -73,6 +85,11 @@ const breadcrumb = {
 };
 
 const typeStyles: Record<string, { bg: string; border: string; text: string }> = {
+  WRITER: {
+    bg: "rgba(16, 185, 129, 0.06)",
+    border: "rgba(16, 185, 129, 0.2)",
+    text: "#34d399",
+  },
   JUDGE: {
     bg: "rgba(245, 158, 11, 0.06)",
     border: "rgba(245, 158, 11, 0.2)",

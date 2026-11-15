@@ -32,6 +32,7 @@ export async function GET() {
 - [Experience](${BASE}/experience): Professional roles and impact.
 - [Projects](${BASE}/projects): 90+ AI projects, including a production Symosis Security suite (AI-agent governance, autonomous pentesting, SSPM, GRC automation, governed RAG) built single-handedly as Head of AI Security, plus open-source work across healthcare, finance, agentic AI, enterprise search, and database systems, organized by domain.
 - [Blog](${BASE}/blog): Writing on AI, LLMs, agentic systems, and AI security.
+- [Videos](${BASE}/videos): Pranav Innovates, Pranav's video channel: daily tech news, developer tools, AI research papers explained and short AI lessons (YouTube @PranavInnovates, Instagram @pranavinnovates; every video with sources and narration at https://pranavinnovates.com/videos/).
 - [Contact](${BASE}/contact): How to reach Pranav Saji.
 
 ## Writing

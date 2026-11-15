@@ -15,6 +15,7 @@ const PAGE_DATES: Record<string, string> = {
   "/recognitions": "2026-08-03",
   "/research": "2026-05-22",
   "/writing": "2026-08-03",
+  "/videos": "2026-11-15",
   "/contact": "2026-05-22",
 };
 
@@ -34,6 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/skills": 0.8,
     "/recognitions": 0.8,
     "/writing": 0.8,
+    "/videos": 0.8,
     "/research": 0.7,
     "/contact": 0.7,
   };
